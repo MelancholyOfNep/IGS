@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -33,5 +34,10 @@ public class PlayerMovement : MonoBehaviour
 
 		velocity.y += gravity * Time.deltaTime;
 		characterController.Move(velocity * Time.deltaTime);
+
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.Quit();
+		}
 	}
 }
