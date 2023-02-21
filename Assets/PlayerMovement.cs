@@ -7,13 +7,13 @@ public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField] CharacterController characterController;
 	[SerializeField] float speed;
-	[SerializeField] float gravity;
+	[SerializeField] float gravity = 9.81f;
 	[SerializeField] Transform groundCheck;
 	[SerializeField] float groundDistance;
 	[SerializeField] LayerMask groundMask;
 
-	Vector3 velocity;
-	bool isGrounded;
+	[SerializeField] Vector3 velocity;
+	[SerializeField] bool isGrounded;
 
 	// Update is called once per frame
 	void Update()
@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
 		if (isGrounded && velocity.y < 0)
 		{
-			velocity.y = -2f;
+			velocity.y = -4f;
 		}
 
 		float x = Input.GetAxis("Horizontal");
