@@ -22,12 +22,12 @@ public class PlayerControls : MonoBehaviour
 	[SerializeField] Transform playerBody;
 	public float mouseSensitivity;
 	[SerializeField] Camera cam;
-
-	float xRot = 0f;
-
+    [SerializeField] const float Snappiness = 50.0f; // larger values of this cause less filtering, more responsiveness
+    float xRot = 0f;
 	float xAccumulator; // this is a member variable, NOT a local!
 	float yAccumulator;
-	const float Snappiness = 200.0f; // larger values of this cause less filtering, more responsiveness
+
+	[SerializeField] bool inputEnabled = true;
 
 	void Start()
 	{
@@ -40,30 +40,35 @@ public class PlayerControls : MonoBehaviour
 
 		if (isGrounded && velocity.y < 0)
 		{
-			velocity.y = -4f;
+			velocity.y = -6f;
 		}
 
-		float x = Input.GetAxis("Horizontal");
-		float z = Input.GetAxis("Vertical");
+        // Gravity
+        velocity.y += gravity * Time.deltaTime;
+        characterController.Move(velocity * Time.deltaTime);
 
-		Vector3 move = transform.right * x + transform.forward * z;
-		characterController.Move(move * speed * Time.deltaTime);
+        if (inputEnabled == true)
+		{
+			// Keyboard stuff
+            float x = Input.GetAxis("Horizontal");
+            float z = Input.GetAxis("Vertical");
 
-		velocity.y += gravity * Time.deltaTime;
-		characterController.Move(velocity * Time.deltaTime);
+            Vector3 move = transform.right * x + transform.forward * z;
+            characterController.Move(move * speed * Time.deltaTime);
+			
+			// Mouse stuff
+            float inputX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+			xAccumulator = Mathf.Lerp(xAccumulator, inputX, Snappiness * Time.deltaTime);
 
-		// Mouse stuff
-		float inputX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-		xAccumulator = Mathf.Lerp(xAccumulator, inputX, Snappiness * Time.deltaTime);
+			float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+			yAccumulator = Mathf.Lerp(yAccumulator, inputY, Snappiness * Time.deltaTime);
 
-		float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-		yAccumulator = Mathf.Lerp(yAccumulator, inputY, Snappiness * Time.deltaTime);
+			xRot -= yAccumulator;
+			xRot = Mathf.Clamp(xRot, -90f, 90f);
 
-		xRot -= yAccumulator;
-		xRot = Mathf.Clamp(xRot, -90f, 90f);
-
-		cam.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
-		playerBody.Rotate(Vector3.up * xAccumulator /*mouseX*/);
+			cam.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
+			playerBody.Rotate(Vector3.up * xAccumulator /*mouseX*/);
+		}
 
 		// Quit function
 		if (Input.GetKeyDown(KeyCode.Escape))
