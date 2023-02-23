@@ -149,30 +149,30 @@ public class CommunicationManager : MonoBehaviour
 
     public void LoadIntoStoryVariables(Story story)
     {
-        /*foreach (System.Collections.Generic.KeyValuePair<string, int> s in MysteryManager.facts)
+        foreach (System.Collections.Generic.KeyValuePair<string, int> x in InvestigationManager.evidence)
         {
 
-            if (story.variablesState.GlobalVariableExistsWithName(s.Key))
+            if (story.variablesState.GlobalVariableExistsWithName(x.Key))
             {
-                story.variablesState[s.Key] = s.Value;
+                story.variablesState[x.Key] = x.Value;
             }
-        }*/
+        }
     }
 
     public void LoadFromStoryVariables(Story story)
     {
-        foreach (var s in story.variablesState)
+        foreach (var x in story.variablesState)
         {
-            /*if (MysteryManager.facts.ContainsKey(s))
+            if (InvestigationManager.evidence.ContainsKey(x))
             {
-                MysteryManager.facts[s] = (int)story.variablesState[s];
-                //Debug.Log("Changed: " + s + " " + (int)story.variablesState[s]);
+                InvestigationManager.evidence[x] = (int)story.variablesState[x];
+                //Debug.Log("Changed: " + x + " " + (int)story.variablesState[x]);
             }
             else
             {
-                MysteryManager.facts.Add(s, (int)story.variablesState[s]);
-                //Debug.Log("Registered: " + s + " " + (int)story.variablesState[s]);
-            }*/
+                InvestigationManager.evidence.Add(x, (int)story.variablesState[x]);
+                //Debug.Log("Registered: " + x + " " + (int)story.variablesState[x]);
+            }
         }
     }
 }
