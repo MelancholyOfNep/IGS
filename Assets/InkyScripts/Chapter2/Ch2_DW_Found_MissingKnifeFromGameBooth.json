@@ -1,0 +1,1 @@
+﻿{"inkVersion":21,"root":[["#","^name Player","/#","^Wait, there's a knife missing here. I thought the murder weapon was a gun, though.","\n","#","^name Player","/#","^Was there a knife involved, too?","\n","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"global decl":["ev",1,{"VAR=":"ch2Evidence1"},"/ev","end",null],"#f":1}],"listDefs":{}}
