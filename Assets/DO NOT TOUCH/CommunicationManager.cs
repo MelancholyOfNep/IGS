@@ -70,8 +70,11 @@ public class CommunicationManager : MonoBehaviour
         // Read all the content until we can't continue any more
         while (activeConversation.canContinue)
         {
+            Debug.Log("Continued");
             // Continue gets the next line of the story
             string text = activeConversation.Continue();
+            Debug.Log(text);
+
             //if (text.Contains(":"))
             //         {
             //	string[] strs = text.Split(':');
@@ -92,6 +95,7 @@ public class CommunicationManager : MonoBehaviour
 
     public void DisplayOptions()
     {
+        Debug.Log("hello");
         // Display all the choices, if there are any!
         if (activeConversation.currentChoices.Count > 0)
         {

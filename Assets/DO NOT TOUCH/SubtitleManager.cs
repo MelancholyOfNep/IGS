@@ -7,6 +7,7 @@ using System.Text;
 public class SubtitleManager : MonoBehaviour
 {
 	public static SubtitleManager Instance;
+	public static SubtitleManager ExamineInstance;
 	public float secondPerCharacter;
 	public float minimumSecondsBeforeDestruction;
 	public float secondsPerWord;
@@ -26,6 +27,9 @@ public class SubtitleManager : MonoBehaviour
 	public UnityEngine.Events.UnityEvent OnUnpaused;
 	public bool pauseOnLastString = false;
 
+	[Header("Bool")]
+	public bool subtitle;
+
 	public void SetTextPause(bool to)
 	{
 		textPaused = to;
@@ -39,7 +43,11 @@ public class SubtitleManager : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-		Instance = this;
+		if (subtitle == true)
+			Instance = this;
+		else if (subtitle == false)
+			ExamineInstance = this;
+			
 		//secondsBeforeDestruction = PlayerPrefs.GetFloat("subtitleCooldown", secondsBeforeDestruction);
 	}
 
@@ -115,9 +123,9 @@ public class SubtitleManager : MonoBehaviour
 
 		msg = msg.Replace("~", "\n");
 
-		if (msg.Contains(":"))
+		if (msg.Contains("`"))
 		{
-			string[] strs = msg.Split(':');
+			string[] strs = msg.Split('`');
 			preface = string.Format("<b>{0}:</b> ", strs[0]);
 			msg = strs[1];
 		}

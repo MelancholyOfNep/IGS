@@ -128,9 +128,9 @@ GameObject:
   - component: {fileID: 4383474365275096260}
   - component: {fileID: 4383474365275096270}
   - component: {fileID: 4383474365275096256}
-  - component: {fileID: 4383474365275096269}
-  - component: {fileID: 4383474365275096268}
   - component: {fileID: 4383474365275096267}
+  - component: {fileID: 4383474365275096268}
+  - component: {fileID: 4383474365275096269}
   m_Layer: 0
   m_Name: NewPlayer
   m_TagString: Player
@@ -291,7 +291,7 @@ MonoBehaviour:
   OnStep:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4383474365275096269
+--- !u!114 &4383474365275096267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,21 +300,86 @@ MonoBehaviour:
   m_GameObject: {fileID: 4383474365275096261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5651753b0cf32ee42be961a1b5bbb330, type: 3}
+  m_Script: {fileID: 11500000, guid: e813e59aed42c6f41833f6a795722f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockingLayers:
-    serializedVersion: 2
-    m_Bits: 243
-  interactiveRange: 4
-  interactiveRadius: 1
-  OnInteractDown:
+  subscribeToTag: player
+  triggerMessages:
+  - message: lock
+    publishersRequired: 1
+    MinimumCalls: 0
+    OnTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4383474365275096268}
+          m_TargetAssemblyTypeName: PlayerLocker, Assembly-CSharp
+          m_MethodName: LockControls
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4383474365275096268}
+          m_TargetAssemblyTypeName: PlayerLocker, Assembly-CSharp
+          m_MethodName: Halt
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4383474365275096270}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4383474365275096268}
+          m_TargetAssemblyTypeName: PlayerLocker, Assembly-CSharp
+          m_MethodName: SetRBKinematic
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4383474365275096270}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - message: unlock
+    publishersRequired: 1
+    MinimumCalls: 0
+    OnTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4383474365275096268}
+          m_TargetAssemblyTypeName: PlayerLocker, Assembly-CSharp
+          m_MethodName: UnlockControls
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4383474365275096268}
+          m_TargetAssemblyTypeName: PlayerLocker, Assembly-CSharp
+          m_MethodName: SetRBNotKinematic
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4383474365275096270}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  OnPublisherDetected:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractUp:
-    m_PersistentCalls:
-      m_Calls: []
-  pickUpPoint: {fileID: 0}
 --- !u!114 &4383474365275096268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,7 +495,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   FirstPersonController: {fileID: 4383474365275096256}
---- !u!114 &4383474365275096267
+--- !u!114 &4383474365275096269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -439,83 +504,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 4383474365275096261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e813e59aed42c6f41833f6a795722f4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5651753b0cf32ee42be961a1b5bbb330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subscribeToTag: player
-  triggerMessages:
-  - message: lock
-    publishersRequired: 1
-    MinimumCalls: 0
-    OnTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4383474365275096268}
-          m_TargetAssemblyTypeName: PlayerLocker, Assembly-CSharp
-          m_MethodName: LockControls
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 4383474365275096268}
-          m_TargetAssemblyTypeName: PlayerLocker, Assembly-CSharp
-          m_MethodName: Halt
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 4383474365275096270}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 4383474365275096268}
-          m_TargetAssemblyTypeName: PlayerLocker, Assembly-CSharp
-          m_MethodName: SetRBKinematic
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 4383474365275096270}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - message: unlock
-    publishersRequired: 1
-    MinimumCalls: 0
-    OnTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4383474365275096268}
-          m_TargetAssemblyTypeName: PlayerLocker, Assembly-CSharp
-          m_MethodName: UnlockControls
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 4383474365275096268}
-          m_TargetAssemblyTypeName: PlayerLocker, Assembly-CSharp
-          m_MethodName: SetRBNotKinematic
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 4383474365275096270}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  OnPublisherDetected:
+  blockingLayers:
+    serializedVersion: 2
+    m_Bits: 243
+  interactiveRange: 4
+  interactiveRadius: 1
+  OnInteractDown:
     m_PersistentCalls:
       m_Calls: []
+  OnInteractUp:
+    m_PersistentCalls:
+      m_Calls: []
+  pickUpPoint: {fileID: 0}

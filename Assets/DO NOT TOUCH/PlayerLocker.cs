@@ -50,13 +50,13 @@ public class PlayerLocker : MonoBehaviour
 	{
 		if (to)
 		{
-			Cursor.visible = true;
-			Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
 		}
 		else
 		{
-			Cursor.visible = false;
-			Cursor.lockState = CursorLockMode.Locked;
-		}
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
 	}
 }

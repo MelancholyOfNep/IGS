@@ -28,7 +28,7 @@ public class ExamineScript : MonoBehaviour
 	{
 		if (cooldownStamp == Time.time || Time.time - cooldownStamp >= messageCooldown)
 		{
-			SubtitleManager.Instance.DisplayMessage(messages[nextMessage]);
+			SubtitleManager.ExamineInstance.DisplayMessage(messages[nextMessage]);
 
 			if (nextMessage + 1 < messages.Length)
 			{
