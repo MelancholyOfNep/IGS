@@ -359,6 +359,14 @@ public class FirstPersonController : MonoBehaviour
         #endregion
 
         CheckGround();
+        
+        if(Input.GetButtonDown("Debug View Inventory"))
+        {
+            foreach(KeyValuePair<string, int> pair in InvestigationManager.evidence)
+            {
+                print(pair.Key + " " + pair.Value);
+            }
+        }
 
         if (enableHeadBob)
         {
@@ -452,7 +460,6 @@ public class FirstPersonController : MonoBehaviour
 
         if (Physics.Raycast(origin, direction, out RaycastHit hit, distance))
         {
-            Debug.DrawRay(origin, direction * distance, Color.red);
             isGrounded = true;
         }
         else

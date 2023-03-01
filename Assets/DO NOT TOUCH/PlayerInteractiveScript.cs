@@ -56,13 +56,6 @@ public class PlayerInteractiveScript : MonoBehaviour
 				activeComponent = null;
 			}
 		}
-		else if (Input.GetButtonDown("Debug View Inventory"))
-		{
-			if (InvestigationManager.evidence.ContainsKey("cube_discovered"))
-				print("cube: " + InvestigationManager.evidence["cube_discovered"]);
-			else
-				print("cube: 0");
-		}
 		else if (Input.GetButtonDown("Cancel"))
 		{
 			Application.Quit();

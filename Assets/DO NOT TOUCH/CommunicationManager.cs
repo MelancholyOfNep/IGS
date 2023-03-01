@@ -70,21 +70,8 @@ public class CommunicationManager : MonoBehaviour
         // Read all the content until we can't continue any more
         while (activeConversation.canContinue)
         {
-            Debug.Log("Continued");
             // Continue gets the next line of the story
             string text = activeConversation.Continue();
-            Debug.Log(text);
-
-            //if (text.Contains(":"))
-            //         {
-            //	string[] strs = text.Split(':');
-            //	dialogueTextManager.preface = string.Format("<b>{0}:</b> ", strs[0]);
-            //	text = strs[1];
-            //         }
-            //else
-            //         {
-            //	dialogueTextManager.preface = "";
-            //         }
 
             // This removes any white space from the text.
             text = text.Trim();
@@ -95,7 +82,6 @@ public class CommunicationManager : MonoBehaviour
 
     public void DisplayOptions()
     {
-        Debug.Log("hello");
         // Display all the choices, if there are any!
         if (activeConversation.currentChoices.Count > 0)
         {
