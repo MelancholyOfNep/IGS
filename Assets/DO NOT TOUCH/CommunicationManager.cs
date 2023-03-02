@@ -16,6 +16,8 @@ public class CommunicationManager : MonoBehaviour
     [Header("Display")]
     public SubtitleManager dialogueTextManager;
     public float defaultSecondsPerCharacter = 0.01f;
+    public int chapterNumber = 0;
+    public bool isDarkWorld = false;
 
     public static CommunicationManager Instance;
 
