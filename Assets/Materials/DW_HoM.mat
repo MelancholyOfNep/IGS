@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Brown
+  m_Name: DW_HoM
   m_Shader: {fileID: 4800000, guid: 055eab4e84dc70a47ae75b3125a22de6, type: 3}
   m_ShaderKeywords: _BRDF_MODE_LAMBERT _FOG_ON _LIGHTING_BAKED_ON _LIGHTING_DYNAMIC_ON
     _SHADING_EVALUATION_MODE_PER_VERTEX _TEXTURE_FILTER_MODE_TEXTURE_IMPORT_SETTINGS
@@ -26,8 +26,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 3a89d566fa14e0b46ac527076fc35d53, type: 3}
+        m_Scale: {x: 5, y: 5}
         m_Offset: {x: 0, y: 0}
     - _ReflectionCubemap:
         m_Texture: {fileID: 0}
@@ -74,7 +74,7 @@ Material:
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
     - _DrawDistanceOverride: {r: 100, g: 10000, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _MainColor: {r: 0.7075472, g: 0.4934626, b: 0.37112853, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _PrecisionColorOverrideParameters: {r: 0, g: 0, b: 0, a: 0}
     - _PrecisionGeometryOverrideParameters: {r: 0, g: 0, b: 0, a: 0}
     - _ReflectionColor: {r: 1, g: 1, b: 1, a: 1}
