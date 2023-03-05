@@ -1983,7 +1983,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsPerCharacter: 0.05
-  conversation: {fileID: 4900000, guid: 2ce87f0321f4102468e6240454ea3c59, type: 3}
+  conversationChapter0: {fileID: 0}
+  conversationChapter1: {fileID: 4900000, guid: efd793b37a65c1c4596f53978a8a6fba, type: 3}
+  conversationChapter2: {fileID: 0}
+  conversationChapter3: {fileID: 0}
+  conversationChapter4: {fileID: 0}
+  conversationChapter5: {fileID: 0}
+  conversationChapter0Dark: {fileID: 0}
+  conversationChapter1Dark: {fileID: 4900000, guid: 2ce87f0321f4102468e6240454ea3c59, type: 3}
+  conversationChapter2Dark: {fileID: 0}
+  conversationChapter3Dark: {fileID: 0}
+  conversationChapter4Dark: {fileID: 0}
+  conversationChapter5Dark: {fileID: 0}
   OnConversationStart:
     m_PersistentCalls:
       m_Calls: []
@@ -4984,6 +4995,8 @@ MonoBehaviour:
         m_CallState: 2
   dialogueTextManager: {fileID: 1193070924}
   defaultSecondsPerCharacter: 0.05
+  chapterNumber: 1
+  isDarkWorld: 0
 --- !u!4 &2074745018
 Transform:
   m_ObjectHideFlags: 0

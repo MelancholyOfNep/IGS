@@ -362,10 +362,11 @@ public class FirstPersonController : MonoBehaviour
         
         if(Input.GetButtonDown("Debug View Inventory"))
         {
-            foreach(KeyValuePair<string, int> pair in InvestigationManager.evidence)
+            CommunicationManager.Instance.isDarkWorld = true;
+            /*foreach(KeyValuePair<string, int> pair in InvestigationManager.evidence)
             {
                 print(pair.Key + " " + pair.Value);
-            }
+            }*/
         }
 
         if (enableHeadBob)
