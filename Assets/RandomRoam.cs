@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class RandomRoam : MonoBehaviour
 {
-    public float moveSpeed = 3f;
+    public float moveSpeed = 1f;
     public float rotSpeed = 100f;
 
     private bool isWandering = false;
