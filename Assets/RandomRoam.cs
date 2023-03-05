@@ -43,7 +43,7 @@ public class RandomRoam : MonoBehaviour
         int rotateWait = Random.Range(1, 4);
         int rotateLorR = Random.Range(1, 2);
         int walkWait = Random.Range(1, 5);
-        int walkTime = Random.Range(1, 6);
+        int walkTime = Random.Range(1, 15);
 
         isWandering = true;
 
