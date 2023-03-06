@@ -1406,6 +1406,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5467747947383548725, guid: e6c6f98f588f4424e8cc3950f67a685d, type: 3}
+--- !u!1 &361858180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2687437485778843111, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+  m_PrefabInstance: {fileID: 2687437486185413288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &361858181
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361858180}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &369927612 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 901897122485332503, guid: 844212c9dfa74834b8884cce7af4327b, type: 3}
@@ -3361,43 +3380,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.213
+      value: 23.14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0424
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -45.925
+      value: -48.82
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.42059362
+      value: 0.40058723
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.4205937
+      value: -0.44009203
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5684198
+      value: 0.58269197
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.56841975
+      value: 0.55346096
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
+      value: -93.983
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 17.001999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 107.002
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3656,7 +3675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3424
+      value: 1.061
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7f5fd8ce530dd64682b7bc01da0e1cb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4071,7 +4090,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760948192}
   m_LocalRotation: {x: 0.9999805, y: 0.0062540546, z: -0.000000052154064, w: 0.000000013038516}
-  m_LocalPosition: {x: 0.00002, y: -0.01239, z: -0.0067}
+  m_LocalPosition: {x: 0.00007, y: -0.01239, z: -0.0067}
   m_LocalScale: {x: 0.00040452305, y: 0.0007189388, z: 0.0033625772}
   m_Children: []
   m_Father: {fileID: 2026537220}
