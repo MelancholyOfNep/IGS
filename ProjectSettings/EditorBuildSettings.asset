@@ -8,4 +8,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DO NOT TOUCH/Scenes/Michael's Testbed.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Light World Scenes/LW_Carnival_Outside 1.unity
+    guid: 28173a011faee6f43947d47454ce9038
+  - enabled: 1
+    path: Assets/Scenes/Light World Scenes/LW_CircusTent.unity
+    guid: 781f85b51b4d76a4598cfd92dd838c25
+  - enabled: 1
+    path: Assets/Scenes/Light World Scenes/LW_HallofMirrors.unity
+    guid: ae0fdb22fd6906f4689640d32f1108f1
+  - enabled: 1
+    path: Assets/Scenes/Light World Scenes/LW_Janitor'sCloset.unity
+    guid: 1a4291e4653161144b7ded0f102610b0
+  - enabled: 1
+    path: Assets/Scenes/Dark World Scenes/DW_CircusTent.unity
+    guid: 2aea677b5fbe37740a4de756b8d80cbf
+  - enabled: 1
+    path: Assets/Scenes/Dark World Scenes/DW_HallofMirrors.unity
+    guid: 9fce0f1d36908694f87305a654130725
+  - enabled: 1
+    path: Assets/Scenes/Dark World Scenes/DW_Janitor'sCloset.unity
+    guid: 0b8aa2fc6814dfc46a95cda205f536c1
   m_configObjects: {}
