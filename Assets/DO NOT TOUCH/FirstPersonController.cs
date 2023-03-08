@@ -18,6 +18,8 @@ public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
 
+    public GameManager manager;
+
     #region Camera Movement Variables
 
     public Camera playerCamera;
@@ -136,6 +138,7 @@ public class FirstPersonController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
 
         crosshairObject = GetComponentInChildren<Image>();
 
@@ -371,11 +374,11 @@ public class FirstPersonController : MonoBehaviour
 
         if(Input.GetButtonDown("Save Debug"))
         {
-            InvestigationManager.Save();
+            manager.Save();
         }
         if(Input.GetButtonDown("Load Debug"))
         {
-            InvestigationManager.Load();
+            manager.Load();
         }
 
         if (enableHeadBob)
