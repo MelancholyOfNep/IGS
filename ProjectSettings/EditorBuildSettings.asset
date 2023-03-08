@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dark World Scenes/DW_Janitor'sCloset.unity
     guid: 0b8aa2fc6814dfc46a95cda205f536c1
+  - enabled: 1
+    path: Assets/Scenes/Dark World Scenes/DW_Tim'sRoom.unity
+    guid: bd91c35035faa6748bf28f0120d27014
   m_configObjects: {}
