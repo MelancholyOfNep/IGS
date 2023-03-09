@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Quit : MonoBehaviour
 {
-    public void QuitGame()
-    {
-        Debug.Log("fuck");
-        Application.Quit();
-    }
+	public void QuitGame()
+	{
+		Application.Quit();
+	}
 }
