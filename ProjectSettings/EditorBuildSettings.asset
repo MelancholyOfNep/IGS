@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Light World Scenes/LW_Janitor'sCloset.unity
     guid: 1a4291e4653161144b7ded0f102610b0
   - enabled: 1
+    path: Assets/Scenes/Light World Scenes/LW_Tim'sRoom.unity
+    guid: 16eb6be0b1bc44943bb0eff970693be7
+  - enabled: 1
     path: Assets/Scenes/Dark World Scenes/DW_CircusTent.unity
     guid: 2aea677b5fbe37740a4de756b8d80cbf
   - enabled: 1
