@@ -8,6 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject pauseBG;
+    public bool paused = false;
+
     public SaveGame saveGame;
 
     private void Awake()
@@ -58,12 +61,6 @@ public class GameManager : MonoBehaviour
             file.Close();
 
             StartCoroutine(LoadSceneFromSave(saveGame.savedScene));
-
-            SceneManager.LoadScene(saveGame.savedScene);
-            GameObject player = GameObject.FindWithTag("Player");
-            player.transform.position = new Vector3(saveGame.playerPositionX, saveGame.playerPositionY, saveGame.playerPositionZ);
-            player.transform.rotation = Quaternion.Euler(saveGame.playerRotX, saveGame.playerRotY, saveGame.playerRotZ);
-            InvestigationManager.evidence = saveGame.savedEvidence;
         }
         else
         {
@@ -84,5 +81,7 @@ public class GameManager : MonoBehaviour
         player.transform.position = new Vector3(saveGame.playerPositionX, saveGame.playerPositionY, saveGame.playerPositionZ);
         player.transform.rotation = Quaternion.Euler(saveGame.playerRotX, saveGame.playerRotY, saveGame.playerRotZ);
         InvestigationManager.evidence = saveGame.savedEvidence;
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>().pauseBG.SetActive(false);
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>().paused = false;
     }
 }

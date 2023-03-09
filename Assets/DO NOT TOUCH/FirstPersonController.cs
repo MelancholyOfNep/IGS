@@ -8,6 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Android;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -296,9 +297,13 @@ public class FirstPersonController : MonoBehaviour
                         isSprintCooldown = true;
                     }
                 }
+                // REMOVE THIS IF WE REMOVE CROUCHING
+                enableCrouch = false;
             }
             else
             {
+                // REMOVE THIS IF WE REMOVE CROUCHING
+                enableCrouch = true;
                 // Regain sprint while not sprinting
                 sprintRemaining = Mathf.Clamp(sprintRemaining += 1 * Time.deltaTime, 0, sprintDuration);
             }
@@ -384,6 +389,34 @@ public class FirstPersonController : MonoBehaviour
         if (enableHeadBob)
         {
             HeadBob();
+        }
+
+        if(Input.GetButtonDown("Cancel"))
+        {
+            if(manager.paused)
+            {
+                manager.pauseBG.SetActive(false);
+                Time.timeScale = 1.0f;
+                manager.paused = false;
+                playerCanMove = true;
+                cameraCanMove = true;
+                enableSprint = true;
+                enableCrouch = true;
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = false;
+            }
+            else
+            {
+                manager.pauseBG.SetActive(true);
+                Time.timeScale = 0.0f;
+                manager.paused = true;
+                playerCanMove = false;
+                cameraCanMove = false;
+                enableSprint = false;
+                enableCrouch = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
         }
     }
 

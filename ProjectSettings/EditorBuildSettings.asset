@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/DO NOT TOUCH/Scenes/Michael's Testbed.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: dc22d21bcc7f0bf4b886176763450b74
+  - enabled: 1
     path: Assets/Scenes/Light World Scenes/LW_Carnival_Outside 1.unity
     guid: 28173a011faee6f43947d47454ce9038
   - enabled: 1

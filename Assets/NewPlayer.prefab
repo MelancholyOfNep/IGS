@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93425f0578627cb44b997d6d76f8f497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   playerCamera: {fileID: 4527974387935323874}
   fov: 70
   invertCamera: 0
@@ -279,7 +280,7 @@ MonoBehaviour:
   enableJump: 0
   jumpKey: 32
   jumpPower: 5
-  enableCrouch: 1
+  enableCrouch: 0
   holdToCrouch: 1
   crouchKey: 306
   crouchHeight: 0.75
