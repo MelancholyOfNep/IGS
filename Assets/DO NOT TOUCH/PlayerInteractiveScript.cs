@@ -56,10 +56,6 @@ public class PlayerInteractiveScript : MonoBehaviour
 				activeComponent = null;
 			}
 		}
-		else if (Input.GetButtonDown("Cancel"))
-		{
-			Application.Quit();
-		}
 		else if (activeComponent)
 		{
 

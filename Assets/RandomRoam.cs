@@ -8,6 +8,8 @@ public class RandomRoam : MonoBehaviour
     public float moveSpeed = 1f;
     public float rotSpeed = 100f;
 
+    public bool isTalking = false;
+
     private bool isWandering = false;
     private bool isRotatingLeft = false;
     private bool isRotatingRight = false;
@@ -16,24 +18,27 @@ public class RandomRoam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isWandering == false)
+        if (!isTalking)
         {
-            StartCoroutine(Wander());
-        }
-        if (isRotatingRight == true)
-        {
-            //gameObject.GetComponent<Animator>().Play("idle");
-            transform.Rotate(transform.up * Time.deltaTime * rotSpeed);
-        }
-        if (isRotatingLeft == true)
-        {
-            //gameObject.GetComponent<Animator>().Play("idle");
-            transform.Rotate(transform.up * Time.deltaTime * -rotSpeed);
-        }
-        if (isWalking == true)
-        {
-            //gameObject.GetComponent<Animator>().Play("waalk");
-            transform.position += transform.forward * moveSpeed * Time.deltaTime;
+            if (isWandering == false)
+            {
+                StartCoroutine(Wander());
+            }
+            if (isRotatingRight == true)
+            {
+                //gameObject.GetComponent<Animator>().Play("idle");
+                transform.Rotate(transform.up * Time.deltaTime * rotSpeed);
+            }
+            if (isRotatingLeft == true)
+            {
+                //gameObject.GetComponent<Animator>().Play("idle");
+                transform.Rotate(transform.up * Time.deltaTime * -rotSpeed);
+            }
+            if (isWalking == true)
+            {
+                //gameObject.GetComponent<Animator>().Play("waalk");
+                transform.position += transform.forward * moveSpeed * Time.deltaTime;
+            }
         }
     }
 
@@ -65,5 +70,19 @@ public class RandomRoam : MonoBehaviour
             isRotatingLeft = false;
         }
         isWandering = false;
+    }
+
+    public void StopWalking()
+    {
+        isTalking = true;
+        StopAllCoroutines();
+        transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
+        Time.timeScale = 0.0f;
+    }
+
+    public void ContinueWalking()
+    {
+        isTalking = false;
+        Time.timeScale = 1.0f;
     }
 }

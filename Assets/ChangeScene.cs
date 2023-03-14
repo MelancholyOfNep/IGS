@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChangeScene: MonoBehaviour
-{
-
+{    
     public string LevelName;
+    public string nextScenePlayerLocation;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,7 @@ public class ChangeScene: MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>().playerStartLocation = nextScenePlayerLocation;
             SceneManager.LoadScene(LevelName);
         }
 

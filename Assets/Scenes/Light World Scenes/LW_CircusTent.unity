@@ -425,6 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelName: LW_Carnival_Outside 1
+  nextScenePlayerLocation: LWOutsideTent
 --- !u!1 &375404288
 GameObject:
   m_ObjectHideFlags: 0

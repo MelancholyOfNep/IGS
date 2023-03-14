@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2687437485778843128}
   - component: {fileID: 2687437485778843129}
   - component: {fileID: 2687437486272784712}
-  - component: {fileID: 6931981875039970093}
   m_Layer: 0
   m_Name: Jules_Parent
   m_TagString: Untagged
@@ -26,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2687437485778843111}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -167.867, y: 0.377, z: -4.880447}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.81757, y: 0.81757, z: 0.81757}
   m_Children:
   - {fileID: 2504295352811276406}
   m_Father: {fileID: 0}
@@ -48,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   rotSpeed: 100
+  isTalking: 0
 --- !u!195 &2687437486272784712
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -70,20 +70,6 @@ NavMeshAgent:
   m_BaseOffset: 1.6
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!64 &6931981875039970093
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2687437485778843111}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1001 &2687437485818458013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -161,8 +147,115 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 243aee01e181ea342b65b115e6500b97, type: 3}
+--- !u!1 &2993446754068337356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 243aee01e181ea342b65b115e6500b97, type: 3}
+  m_PrefabInstance: {fileID: 2687437485818458013}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2504295352811276406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 243aee01e181ea342b65b115e6500b97, type: 3}
   m_PrefabInstance: {fileID: 2687437485818458013}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &2687437486185413290
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993446754068337356}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1239507417351147634, guid: 243aee01e181ea342b65b115e6500b97, type: 3}
+--- !u!114 &2687437486185413294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993446754068337356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec18f3370f017c848b609159f49d5a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageOnPublish: 
+  ENABLED: 1
+  tags: []
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2687437486185413295}
+        m_TargetAssemblyTypeName: CommunicationSubject, Assembly-CSharp
+        m_MethodName: StartConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerUp:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2687437486185413295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993446754068337356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28941ab4dba41df428370ddb34c5b02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsPerCharacter: 0.05
+  conversationChapter0: {fileID: 4900000, guid: c78f017c966a6cf4e944c498c882d56b, type: 3}
+  conversationChapter1: {fileID: 4900000, guid: e036c6a14b910984a9cf7a31d513276f, type: 3}
+  conversationChapter2: {fileID: 0}
+  conversationChapter3: {fileID: 4900000, guid: 46c7fc6e7c293d7498325038181e76e8, type: 3}
+  conversationChapter4: {fileID: 0}
+  conversationChapter5: {fileID: 0}
+  conversationChapter0Dark: {fileID: 0}
+  conversationChapter1Dark: {fileID: 4900000, guid: 2ce87f0321f4102468e6240454ea3c59, type: 3}
+  conversationChapter2Dark: {fileID: 4900000, guid: a0e11627b7929934a87d58e89e25f7a8, type: 3}
+  conversationChapter3Dark: {fileID: 4900000, guid: cf4d2abb7ddc1594994e4587fd9da953, type: 3}
+  conversationChapter4Dark: {fileID: 0}
+  conversationChapter5Dark: {fileID: 0}
+  OnConversationStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2687437485778843129}
+        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
+        m_MethodName: StopWalking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnConversationEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2687437485778843129}
+        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
+        m_MethodName: ContinueWalking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

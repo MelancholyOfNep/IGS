@@ -49,6 +49,7 @@ public class CommunicationManager : MonoBehaviour
     public void StartConversation()
     {
         OnConversationStart.Invoke();
+        activeSubject.OnConversationStart.Invoke();
         conversationWindow.gameObject.SetActive(true);
         DisplayText();
     }

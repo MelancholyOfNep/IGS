@@ -26,34 +26,44 @@ public class CommunicationSubject : MonoBehaviour
 
     public void StartConversation()
     {
-        if (CommunicationManager.Instance.isDarkWorld == false)
+        GameManager manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
+        if (manager.isDarkWorld == false)
         {
-            if (CommunicationManager.Instance.chapterNumber == 0)
+            /*
+            int[] chapterNo = { 0, 1, 2, 3, 4, 5 };
+            TextAsset[] chapterConvos = { conversationChapter0, conversationChapter1, conversationChapter2, conversationChapter3, conversationChapter4, conversationChapter5 };
+            foreach(int ch in chapterNo)
+            {
+                if (manager.chapter == ch)
+                    story = new Story(chapterConvos[ch].text);
+            }
+            */
+            if (manager.chapter == 0)
                 story = new Story(conversationChapter0.text);
-            else if (CommunicationManager.Instance.chapterNumber == 1)
+            else if (manager.chapter == 1)
                 story = new Story(conversationChapter1.text);
-            else if (CommunicationManager.Instance.chapterNumber == 2)
+            else if (manager.chapter == 2)
                 story = new Story(conversationChapter2.text);
-            else if (CommunicationManager.Instance.chapterNumber == 3)
+            else if (manager.chapter == 3)
                 story = new Story(conversationChapter3.text);
-            else if (CommunicationManager.Instance.chapterNumber == 4)
+            else if (manager.chapter == 4)
                 story = new Story(conversationChapter4.text);
-            else if (CommunicationManager.Instance.chapterNumber == 5)
+            else if (manager.chapter == 5)
                 story = new Story(conversationChapter5.text);
         }
-        else if (CommunicationManager.Instance.isDarkWorld == true)
+        else if (manager.isDarkWorld == true)
         {
-            if (CommunicationManager.Instance.chapterNumber == 0)
+            if (manager.chapter == 0)
                 story = new Story(conversationChapter0Dark.text);
-            else if (CommunicationManager.Instance.chapterNumber == 1)
+            else if (manager.chapter == 1)
                 story = new Story(conversationChapter1Dark.text);
-            else if (CommunicationManager.Instance.chapterNumber == 2)
+            else if (manager.chapter == 2)
                 story = new Story(conversationChapter2Dark.text);
-            else if (CommunicationManager.Instance.chapterNumber == 3)
+            else if (manager.chapter == 3)
                 story = new Story(conversationChapter3Dark.text);
-            else if (CommunicationManager.Instance.chapterNumber == 4)
+            else if (manager.chapter == 4)
                 story = new Story(conversationChapter4Dark.text);
-            else if (CommunicationManager.Instance.chapterNumber == 5)
+            else if (manager.chapter == 5)
                 story = new Story(conversationChapter5Dark.text);
         }
 
@@ -65,6 +75,25 @@ public class CommunicationSubject : MonoBehaviour
 
     public void EndConversation()
     {
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>().ChapterCheck();
         OnConversationEnd.Invoke();
+    }
+
+    public void ColdOpen()
+    {
+        GameManager manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
+        
+        if (manager.chapter == 0)
+        {
+            story = new Story(conversationChapter0.text);
+        }
+
+        else if (manager.chapter == 1)
+        {
+            story = new Story(conversationChapter1.text);
+        }
+        CommunicationManager.Instance.LoadSubject(this);
+        CommunicationManager.Instance.StartConversation();
+        CommunicationManager.Instance.ChangeSecondsPerCharacter(secondsPerCharacter);
     }
 }
