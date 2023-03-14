@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 5794471416857602182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -173.02, y: 0.25, z: -4.95}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.81757, y: 0.81757, z: 0.81757}
   m_Children:
   - {fileID: 6332237482199081555}
   m_Father: {fileID: 0}
@@ -314,6 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   rotSpeed: 100
+  isTalking: 0
 --- !u!64 &5245427384136213576
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -328,3 +329,91 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -483827033842483876, guid: 2607eca050109844098f33bbef6d3d2e, type: 3}
+--- !u!114 &565145954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482593658714321892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec18f3370f017c848b609159f49d5a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageOnPublish: 
+  ENABLED: 1
+  tags: []
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 565145955}
+        m_TargetAssemblyTypeName: CommunicationSubject, Assembly-CSharp
+        m_MethodName: StartConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerUp:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &565145955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482593658714321892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28941ab4dba41df428370ddb34c5b02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsPerCharacter: 0.05
+  conversationChapter0: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter1: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter2: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter3: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter4: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter5: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter0Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter1Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter2Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter3Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter4Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter5Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  OnConversationStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5794471417173284550}
+        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
+        m_MethodName: StopWalking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnConversationEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5794471417173284550}
+        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
+        m_MethodName: ContinueWalking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

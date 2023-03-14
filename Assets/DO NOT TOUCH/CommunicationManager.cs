@@ -58,7 +58,8 @@ public class CommunicationManager : MonoBehaviour
     {
         LoadFromStoryVariables(activeConversation);
         OnConversationEnd.Invoke();
-        activeSubject.OnConversationEnd.Invoke();
+        //activeSubject.OnConversationEnd.Invoke();
+        activeSubject.EndConversation();
         conversationWindow.gameObject.SetActive(false);
     }
 

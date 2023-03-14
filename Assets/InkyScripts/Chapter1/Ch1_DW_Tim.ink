@@ -1,63 +1,36 @@
-#name Tim
-Please don't come near me.
+VAR ch1Evidence1 = 0
 
-#name Player
-Ok. Are you okay?
-
-#name Tim
-I don't know.
-
-#name Player
-Yeah, I get that.
-
--> Choices
+Tim` Please don't come near me.
++   [Ok. Are you okay?]
+    Tim` I don't know.
++   +   [Yeah, I get that.] -> Choices
 
 ==Choices==
-+ Do you remember me?
+(What should I ask them?)
++   [Do you remember me?]
     -> Choice1
     
-+ You're the acrobat, right?
++   [You're the acrobat, right?]
     -> Choice2
     
 ==Choice1==
-#name Tim
-I-I don't think we've ever met.
-
-#name Player
-Right. Well, I promise I won't hurt you. I just want to figure out what's going on.
-
--> DONE
+Tim` I-I don't think we've ever met.
++   [Right. Well, I promise I won't hurt you. I just want to figure out what's going on.] -> Outro
 
 ==Choice2==
-#name Tim
-Y-yeah. How did you know?
+Tim` Y-yeah. How did you know?
++   [Intuition, or something. Something very bad happened.]
+    Tim` I know.
++   +   [(continue)]-> Outro
 
-#name Player
-Intuition, or something. Something very bad happened.
+==Outro==
+Tim` The Ring Master is dead.
++   [Dead?]
+    Tim` Murdered.
++   +   [(continue)]
+        Tim` His body was found in the Circus Tent after our morning performance.
 
-#name Tim
-I know.
-
--> DONE
-
-==DONE==
-#name Tim 
-The Ring Master is dead.
-
-#name Player
-Dead?
-
-#name Tim 
-Murdered.
-#name Tim 
-His body was found in the Circus Tent after our morning performance.
-
-VAR ch1Evidence1 = 1
-
-#name Player
-When?
-
-#name Tim 
-I- I don't know. Today just feels cursed.
-
--> END
+~ch1Evidence1 = 1
++   +   +   [When?]
+            Tim` I- I don't know. Today just feels cursed.
++   +   +   +   [(exit)] -> END

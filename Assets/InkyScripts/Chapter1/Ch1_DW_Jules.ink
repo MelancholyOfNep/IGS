@@ -42,7 +42,7 @@ Jules` I was fired.
 ==Question==
 Jules` You want to tell me something?
 +   { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
-+   { ch1Evidence1} [There was a body found in the circus tent after the morning performance.] -> EvidenceB
++   { ch1Evidence1 == 1} [There was a body found in the circus tent after the morning performance.] -> EvidenceB
 + [Never mind.] -> END
 
 ==EvidenceA==

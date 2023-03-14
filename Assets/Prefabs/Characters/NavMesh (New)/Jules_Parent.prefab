@@ -219,16 +219,16 @@ MonoBehaviour:
   secondsPerCharacter: 0.05
   conversationChapter0: {fileID: 4900000, guid: c78f017c966a6cf4e944c498c882d56b, type: 3}
   conversationChapter1: {fileID: 4900000, guid: e036c6a14b910984a9cf7a31d513276f, type: 3}
-  conversationChapter2: {fileID: 0}
+  conversationChapter2: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
   conversationChapter3: {fileID: 4900000, guid: 46c7fc6e7c293d7498325038181e76e8, type: 3}
-  conversationChapter4: {fileID: 0}
-  conversationChapter5: {fileID: 0}
-  conversationChapter0Dark: {fileID: 0}
+  conversationChapter4: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter5: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter0Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
   conversationChapter1Dark: {fileID: 4900000, guid: 2ce87f0321f4102468e6240454ea3c59, type: 3}
   conversationChapter2Dark: {fileID: 4900000, guid: a0e11627b7929934a87d58e89e25f7a8, type: 3}
   conversationChapter3Dark: {fileID: 4900000, guid: cf4d2abb7ddc1594994e4587fd9da953, type: 3}
-  conversationChapter4Dark: {fileID: 0}
-  conversationChapter5Dark: {fileID: 0}
+  conversationChapter4Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter5Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
   OnConversationStart:
     m_PersistentCalls:
       m_Calls:

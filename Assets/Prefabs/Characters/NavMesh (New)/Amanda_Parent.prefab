@@ -25,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6591620836616055612}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -171.209, y: 0.406, z: -4.961}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.81757, y: 0.81757, z: 0.81757}
   m_Children:
   - {fileID: 6697025575188631151}
   m_Father: {fileID: 0}
@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   rotSpeed: 100
+  isTalking: 0
 --- !u!195 &6591620837464640454
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -250,6 +251,94 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &152042527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6321732176448804053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28941ab4dba41df428370ddb34c5b02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsPerCharacter: 0.05
+  conversationChapter0: {fileID: 4900000, guid: de17cc2c79bdf694a9af70f1f8af8c0b, type: 3}
+  conversationChapter1: {fileID: 4900000, guid: 3d7541776ed1d7d4dafdbe8b3ae407b4, type: 3}
+  conversationChapter2: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter3: {fileID: 4900000, guid: 9be2788dbb096974d847c5edfa505065, type: 3}
+  conversationChapter4: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter5: {fileID: 4900000, guid: 2f97b5f08343aeb46b28555f196b985b, type: 3}
+  conversationChapter0Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter1Dark: {fileID: 4900000, guid: f0ee6201d8b00c74fa189283a8359830, type: 3}
+  conversationChapter2Dark: {fileID: 4900000, guid: df5b047750552624db601d72172933e6, type: 3}
+  conversationChapter3Dark: {fileID: 4900000, guid: 0479b3ba7e7eb4042b3f6f758689663f, type: 3}
+  conversationChapter4Dark: {fileID: 4900000, guid: fa207478e2d8ef24da496e1e9b4fef0a, type: 3}
+  conversationChapter5Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  OnConversationStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6591620836616055613}
+        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
+        m_MethodName: StopWalking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnConversationEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6591620836616055613}
+        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
+        m_MethodName: ContinueWalking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &152042528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6321732176448804053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec18f3370f017c848b609159f49d5a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageOnPublish: 
+  ENABLED: 1
+  tags: []
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 152042527}
+        m_TargetAssemblyTypeName: CommunicationSubject, Assembly-CSharp
+        m_MethodName: StartConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerUp:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!64 &6591620836298458114
 MeshCollider:
   m_ObjectHideFlags: 0

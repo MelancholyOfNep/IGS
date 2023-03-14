@@ -1,19 +1,12 @@
-#name Tim
-Hey there! I'm about to perform.
+VAR ch1Evidence7 = 0
 
-#name Player
-That's great! You're going to do great.
+Tim` Hey there! I'm about to perform.
++   [That's great! You're going to do great.]
+    Thank you, I'm excited to perform again today.
++   +   [(continue)]
+        Tim` You know, this morning I completely forgot to wear my uniform flower. I made sure to grab it for this performance. I can't go forgetting that twice!
++   +   +   [(continue)]
+            Tim` And look! Isn't it pretty?
 
-#name Tim
-Thank you, I'm excited to perform again today.
-#name Tim
-You know, this morning I completely forgot to wear my uniform flower. I made sure to grab it for this performance. I can't go forgetting that twice!
-#name Tim
-And look! Isn't it pretty?
-
-VAR ch1Evidence7 = 1
-
-#name Player
-It's very pretty. Well, I wish you the best in your performance.
-
--> END
+~ch1Evidence7 = 1
++   +   +   +   [It's very pretty. Well, I wish you the best in your performance. (exit)] -> END

@@ -96,32 +96,40 @@ public class GameManager : MonoBehaviour
 
 	public void ChapterCheck()
 	{
+		Debug.Log("checked");
 		if (chapter == 1)
 		{
-			string[] pieces = { "ch1evidence0", "ch1evidence1", "ch1evidence2", "ch1evidence3", "ch1evidence4" };
+			string[] pieces = { "ch1Evidence0", "ch1Evidence1", "ch1Evidence2", "ch1Evidence3", "ch1Evidence4", "ch1Evidence5", "ch1Evidence6", "ch1Evidence7" };
 			bool allEvidenceCollected = true;
 
 			foreach(string piece in pieces)
 			{
+				Debug.Log("ran");
 				if (InvestigationManager.evidence.ContainsKey(piece))
 				{
 					if ((InvestigationManager.evidence.TryGetValue(piece, out int value) && value == 0))
 					{
+						Debug.Log("False");
 						allEvidenceCollected=false;
 					}
 				}
 				else
-					allEvidenceCollected = false;
+				{
+					Debug.Log("False");
+                    allEvidenceCollected = false;
+                }
+					
 			}
 			if (allEvidenceCollected)
 			{
-				chapter = 2;
+				SceneManager.LoadScene("MainMenu");
+				//chapter = 2;
 				OnCh2Start.Invoke();
 			}
 		}
 		else if (chapter == 2)
 		{
-
+			//SceneManager.LoadScene("MainMenu");
 		}
 	}
 }
