@@ -6506,7 +6506,7 @@ GameObject:
   - component: {fileID: 1594918206}
   - component: {fileID: 1594918209}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: MirrorDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7082,6 +7082,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelName: LW_CircusTent
   nextScenePlayerLocation: 
+--- !u!1 &1783314347 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 30684877ebdfea648a2d84f98069e637, type: 3}
+  m_PrefabInstance: {fileID: 1525000030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1783314348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783314347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3b4ec5ff57a444781c5d6442a9e11f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1810192006
 GameObject:
   m_ObjectHideFlags: 0
@@ -8644,6 +8661,62 @@ PrefabInstance:
     - target: {fileID: 2687437485778843128, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationStart.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1783314348}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationStart.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationStart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: unlockDoors
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationStart.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationStart.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MirrorLock, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationStart.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: RandomRoam, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687437486185413295, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}
+      propertyPath: OnConversationStart.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 750018165f5e0264e85e1d4786a4a0f5, type: 3}

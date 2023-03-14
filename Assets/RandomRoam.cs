@@ -77,12 +77,10 @@ public class RandomRoam : MonoBehaviour
         isTalking = true;
         StopAllCoroutines();
         transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
-        Time.timeScale = 0.0f;
     }
 
     public void ContinueWalking()
     {
         isTalking = false;
-        Time.timeScale = 1.0f;
     }
 }

@@ -75,7 +75,7 @@ public class CommunicationSubject : MonoBehaviour
 
     public void EndConversation()
     {
-        GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>().ChapterCheck();
+        //GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>().ChapterCheck();
         OnConversationEnd.Invoke();
     }
 
