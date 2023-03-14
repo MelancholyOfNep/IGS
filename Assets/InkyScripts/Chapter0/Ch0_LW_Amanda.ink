@@ -1,7 +1,7 @@
 Player` Hi!
 +   [(continue)]
     Amanda` Aah!
-+   +   Sorry, I didn't mean to startle you.
++   +   [Sorry, I didn't mean to startle you.]
         Amanda` No, no. It's okay.
 +   +   +   [(continue)]
             Amanda` It's just... I wasn't expecting someone to talk to me.
@@ -11,9 +11,9 @@ Player` Hi!
 ->Choices
 
 ==Choices==
-+Could you point me towards the Ring Master? I have a meeting.
++   [Could you point me towards the Ring Master? I have a meeting.]
     -> Outro
-+What's your name?
++   [What's your name?]
     -> Choice2
 
 ==Choice2==
