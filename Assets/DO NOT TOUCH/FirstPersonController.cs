@@ -387,6 +387,7 @@ public class FirstPersonController : MonoBehaviour
             InvestigationManager.evidence.Add("ch1Evidence5", 1);
             InvestigationManager.evidence.Add("ch1Evidence6", 1);
             InvestigationManager.evidence.Add("ch1Evidence7", 1);
+			InvestigationManager.evidence.Add("ch1Evidence8", 1);
         }
 
 		if(Input.GetButtonDown("Save Debug"))

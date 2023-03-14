@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
 		Debug.Log("checked");
 		if (chapter == 1)
 		{
-			string[] pieces = { "ch1Evidence0", "ch1Evidence1", "ch1Evidence2", "ch1Evidence3", "ch1Evidence4", "ch1Evidence5", "ch1Evidence6", "ch1Evidence7" };
+			string[] pieces = { "ch1Evidence0", "ch1Evidence1", "ch1Evidence2", "ch1Evidence3", "ch1Evidence4", "ch1Evidence5", "ch1Evidence6", "ch1Evidence7", "ch1Evidence8" };
 			bool allEvidenceCollected = true;
 
 			foreach(string piece in pieces)
