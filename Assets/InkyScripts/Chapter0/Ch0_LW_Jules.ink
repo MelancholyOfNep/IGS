@@ -1,6 +1,3 @@
--> Intro
-
-==Intro==
 Jules` What are you doing here?
 +   [Oh, I'm a journalist. And you're a clown?]
     Jules` You don't need to rub it in my face.
