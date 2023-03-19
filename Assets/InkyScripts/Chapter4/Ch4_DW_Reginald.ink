@@ -1,34 +1,16 @@
-#name player
-What? Who are you?
-
-#name Reginald
-Me? Well, I'm Reginald. What are you doing here?
-
-#name Player
-The day reset. Just like Jake said.
-#name Player
-We're starting the day again. Is there anything I can do?
-
-#name Reginald
-I'm sorry I didn't quite catch that. Now what were you doing here?
-
-#name Player
-You're Reginald?
-
-#name Reginald
-I'm Reginald. You're not very good at answering questions-
-
-#name Player
-The Ring Master. You're still alive?
-
-#name Reginald
-Should I be dead?
-
-#name Player
-Yes. Well, no. Not yet.
-
-#name Reginald
-Sorry? What was that? Was that a threat?
+Player` What? Who are you?
++ [(continue)]
+    Reginald` Me? Well, I'm Reginald. What are you doing here?
++   + [The day reset. Just like Jake said.]
+        Player` We're starting the day again. Is there anything I can do?
++   +   + [(continue)]
+            Reginald` I'm sorry I didn't quite catch that. Now what were you doing here?
++   +   +   + [You're Reginald?]
+                Reginald` I'm Reginald. You're not very good at answering questions-
++   +   +   +   + [The Ring Master. You're still alive?]
+                    Reginald` Should I be dead?
++   +   +   +   +   + [Yes. Well, no. Not yet.]
+                        Reginald` Sorry? What was that? Was that a threat?
 
 #name Player
 No, not a threat. It's just... Jake is going to murder you today.

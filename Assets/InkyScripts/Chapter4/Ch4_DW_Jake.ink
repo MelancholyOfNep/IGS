@@ -1,2 +1,2 @@
-#name Jake
-One minute until midnight. Everything is about to change.
+Jake` One minute until midnight. Everything is about to change.
++ [(exit)] -> END

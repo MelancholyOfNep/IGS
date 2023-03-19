@@ -1,27 +1,10 @@
-#name Jules
-I made up my mind. After this mess, I'm leaving.
-
-#name Player
-Leaving? But weren't you fired?
-
-#name Jules
-Yeah, but I'm leaving on my own will. I'm not going to let a dead person dictate my life.
-
-#name Player
-So what are you going to do?
-
-#name Jules
-I'm going to fix my lef and be an acrobat again.
-#name Jules
-I heard Jake is this medicine genuius. Maybe I'll ask him for help with my leg.
-
-#name Player
-I wouldn't do that.
-
-#name Jules
-Why-
-
-#name Player
-Just... Don't.
-
--> END
+Jules` I made up my mind. After this mess, I'm leaving.
++ [Leaving? But weren't you fired?]
+    Jules` Yeah, but I'm leaving on my own will. I'm not going to let a dead person dictate my life.
++   + [So what are you going to do?]
+        Jules` I'm going to fix my leg and be an acrobat again.
++   +   + [(continue)]
+            Jules` I heard Jake is this medicine genuius. Maybe I'll ask him for help with my leg.
++   +   +   + [I wouldn't do that.]
+                Jules` Why-
++   +   +   +   + [Just... Don't.] -> END
