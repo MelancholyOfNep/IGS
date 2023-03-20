@@ -36,7 +36,7 @@ Jake` I know.
 +   +   + [(continue)]
             Jake` Do you know how long it took to figure out how to split a timeline?
 +   +   +   + [(continue)]
-                Jake` I had to elarn how to separaet a single day in it's own isolated world.
+                Jake` I had to elarn how to separate a single day in it's own isolated world.
 +   +   +   +   + [(continue)]
                     Jake` A whole day, ripped from this unverse and brought into it's own.
 +   +   +   +   +   + [(continue)]
