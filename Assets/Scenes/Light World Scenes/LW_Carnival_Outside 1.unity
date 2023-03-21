@@ -247,7 +247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -345,7 +345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1070,7 +1070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2001,7 +2001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000000059604645
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2875,7 +2875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28941ab4dba41df428370ddb34c5b02c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsPerCharacter: 0.05
+  secondsPerCharacter: 0.025
   conversationChapter0: {fileID: 4900000, guid: efd793b37a65c1c4596f53978a8a6fba, type: 3}
   conversationChapter1: {fileID: 0}
   conversationChapter2: {fileID: 0}
@@ -2980,7 +2980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3151,7 +3151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3847,7 +3847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4647,7 +4647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5295,113 +5295,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8678823145569952518, guid: e6c6f98f588f4424e8cc3950f67a685d, type: 3}
---- !u!1 &1297469630 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5867913754474992045, guid: 55b630c8e2b075645b07d1d6d139e3cc, type: 3}
-  m_PrefabInstance: {fileID: 6750453467171472957}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1297469631
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297469630}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6863757274920195210, guid: e29c970f127ca1b40b0591017db4f257, type: 3}
---- !u!114 &1297469632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297469630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28941ab4dba41df428370ddb34c5b02c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  secondsPerCharacter: 0
-  conversationChapter0: {fileID: 4900000, guid: 83fc16e92b9f31449b7dc6b0987872a7, type: 3}
-  conversationChapter1: {fileID: 4900000, guid: 55a5054b63e9ff647bbe965cd66d58e5, type: 3}
-  conversationChapter2: {fileID: 0}
-  conversationChapter3: {fileID: 0}
-  conversationChapter4: {fileID: 0}
-  conversationChapter5: {fileID: 0}
-  conversationChapter0Dark: {fileID: 0}
-  conversationChapter1Dark: {fileID: 4900000, guid: 0e32084874671d14b8c2db940e5402ea, type: 3}
-  conversationChapter2Dark: {fileID: 0}
-  conversationChapter3Dark: {fileID: 0}
-  conversationChapter4Dark: {fileID: 0}
-  conversationChapter5Dark: {fileID: 0}
-  OnConversationStart:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1608685259}
-        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
-        m_MethodName: StopWalking
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnConversationEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1608685259}
-        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
-        m_MethodName: ContinueWalking
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1297469633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297469630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec18f3370f017c848b609159f49d5a6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messageOnPublish: 
-  ENABLED: 1
-  tags: []
-  OnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1297469632}
-        m_TargetAssemblyTypeName: CommunicationSubject, Assembly-CSharp
-        m_MethodName: StartConversation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnTriggerUp:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &1314110734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6466,17 +6359,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 844212c9dfa74834b8884cce7af4327b, type: 3}
---- !u!114 &1608685259 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6750453467991363830, guid: 55b630c8e2b075645b07d1d6d139e3cc, type: 3}
-  m_PrefabInstance: {fileID: 6750453467171472957}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a6e49e096b55b543917616bd0e8afa3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1608685260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6750453467991363825, guid: 55b630c8e2b075645b07d1d6d139e3cc, type: 3}
@@ -7029,7 +6911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7498,7 +7380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7786,7 +7668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000000059604645
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8aee9b8fbaf88f4b94bce1567b3353d, type: 3}
       propertyPath: m_LocalPosition.z

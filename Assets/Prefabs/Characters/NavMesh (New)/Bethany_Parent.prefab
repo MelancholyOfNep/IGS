@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28941ab4dba41df428370ddb34c5b02c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsPerCharacter: 0.05
+  secondsPerCharacter: 0.025
   conversationChapter0: {fileID: 4900000, guid: 30ebd6c43826c2d499241708ffe33548, type: 3}
   conversationChapter1: {fileID: 4900000, guid: 9e76ab09f1293e54b9548817e799bba1, type: 3}
   conversationChapter2: {fileID: 4900000, guid: a1e788bb67f03ab45b1217e6188e5507, type: 3}
