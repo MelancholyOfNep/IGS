@@ -6019,11 +6019,11 @@ PrefabInstance:
     - target: {fileID: -1461304994638716399, guid: 30684877ebdfea648a2d84f98069e637, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: cbc5eb02092d6a04894e1719e1f42704, type: 2}
+      objectReference: {fileID: 2100000, guid: bbf1006d0ff7f7c47be2f8ca21e4b8a2, type: 2}
     - target: {fileID: -678588488315902003, guid: 30684877ebdfea648a2d84f98069e637, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: cbc5eb02092d6a04894e1719e1f42704, type: 2}
+      objectReference: {fileID: 2100000, guid: bbf1006d0ff7f7c47be2f8ca21e4b8a2, type: 2}
     - target: {fileID: 919132149155446097, guid: 30684877ebdfea648a2d84f98069e637, type: 3}
       propertyPath: m_Name
       value: Mirror House
