@@ -65,10 +65,10 @@ Jules` I get it. Becasue if the body was found right after the performance, it m
 -> ChoicesB
 
 ==ChoicesB==
-+ I was wondering if you saw anything that night.
++ [I was wondering if you saw anything that night.]
     -> ChoiceB1
     
-+ Yes.
++ [Yes.]
     -> ChoiceB2
     
 ==ChoiceB1==
