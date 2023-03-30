@@ -52,7 +52,7 @@ Material:
     - _AffineTextureWarpingWeight: 0.3
     - _BRDFMode: 0
     - _Cull: 2
-    - _FogWeight: 1
+    - _FogWeight: 0.77
     - _LightingBaked: 1
     - _LightingDynamic: 1
     - _LightingMode: 0
