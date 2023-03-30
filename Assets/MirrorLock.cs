@@ -12,12 +12,17 @@ public class MirrorLock : MonoBehaviour
 			InvestigationManager.evidence.Add("mirrorLocked", 1);
 		mirrorDoor = GameObject.Find("MirrorDoor");
 		if (InvestigationManager.evidence["mirrorLocked"] == 1)
-			mirrorDoor.GetComponent<ChangeScene>().enabled = false;
+		{
+            mirrorDoor.GetComponent<ChangeScene>().enabled = false;
+			mirrorDoor.GetComponent<MeshCollider>().isTrigger = false;
+        }
+			
 	}
 
 	public void unlockDoors()
 	{
 		InvestigationManager.evidence["mirrorLocked"] = 0;
 		mirrorDoor.GetComponent<ChangeScene>().enabled = true;
-	}
+        mirrorDoor.GetComponent<MeshCollider>().isTrigger = true;
+    }
 }
