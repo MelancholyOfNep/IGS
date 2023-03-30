@@ -13209,7 +13209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8468443260275529135, guid: bf695e4e41a06d74d8b3d40e77a14e60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -166
+      value: -165.24
       objectReference: {fileID: 0}
     - target: {fileID: 8468443260275529135, guid: bf695e4e41a06d74d8b3d40e77a14e60, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13249,3 +13249,110 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf695e4e41a06d74d8b3d40e77a14e60, type: 3}
+--- !u!1 &8468443262086956841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8738282447992604528, guid: bf695e4e41a06d74d8b3d40e77a14e60, type: 3}
+  m_PrefabInstance: {fileID: 8468443262086956840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8468443262086956842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8468443262086956841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28941ab4dba41df428370ddb34c5b02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsPerCharacter: 0
+  conversationChapter0: {fileID: 4900000, guid: b9d459e9fc0cc2149bb618508a46dccc, type: 3}
+  conversationChapter1: {fileID: 4900000, guid: 402a4c0f2909c444392fbcb65b1453fc, type: 3}
+  conversationChapter2: {fileID: 0}
+  conversationChapter3: {fileID: 4900000, guid: 7814ef4dafe945543a50ec12e578cc50, type: 3}
+  conversationChapter4: {fileID: 0}
+  conversationChapter5: {fileID: 4900000, guid: b504c9455b33feb47afa8eac69b2cd4f, type: 3}
+  conversationChapter0Dark: {fileID: 0}
+  conversationChapter1Dark: {fileID: 4900000, guid: 7467ef9c51c903e4ba8cf539e68a2102, type: 3}
+  conversationChapter2Dark: {fileID: 4900000, guid: f4b678627ca78c246980ba5529b3fef3, type: 3}
+  conversationChapter3Dark: {fileID: 4900000, guid: 397958cfec2dd5f468f7ad55b92c3130, type: 3}
+  conversationChapter4Dark: {fileID: 4900000, guid: 68d612ccfb89d0446ae40551b5acaf19, type: 3}
+  conversationChapter5Dark: {fileID: 0}
+  OnConversationStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2088260233}
+        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
+        m_MethodName: StopWalking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnConversationEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2088260233}
+        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
+        m_MethodName: ContinueWalking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8468443262086956843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8468443262086956841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec18f3370f017c848b609159f49d5a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageOnPublish: 
+  ENABLED: 1
+  tags: []
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8468443262086956842}
+        m_TargetAssemblyTypeName: CommunicationSubject, Assembly-CSharp
+        m_MethodName: StartConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerUp:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!64 &8468443262086956844
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8468443262086956841}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2432184157604312505, guid: a3b379182ccbc2942b48a78ac4b19019, type: 3}
