@@ -1,10 +1,4 @@
-#name Tim
-That's a shame.
-
-#name Player
-Do you know who did it?
-
-#name Tim
-I'm so sorry I don't know.
-
--> END
+Tim` That's a shame.
++ [Do you know who did it?]
+    Tim` I'm so sorry I don't know.
++   + [(exit)] -> END

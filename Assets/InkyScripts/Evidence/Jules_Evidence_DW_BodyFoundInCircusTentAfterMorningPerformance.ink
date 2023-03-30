@@ -1,11 +1,6 @@
-#name Jules
-I get it. Becasue if the body was found right after the performance, it makes sense that they were murdered during the performance. While everyone else was performing.
-
-#name Player
-Right, everyone except you. You were in the dressing rooms alone, weren't you?
-
-#name Jules
-Are you accusing me of murder?
+Jules` I get it. Becasue if the body was found right after the performance, it makes sense that they were murdered during the performance. While everyone else was performing.
++ [Right, everyone except you. You were in the dressing rooms alone, weren't you?]
+    Jules` Are you accusing me of murder?
 
 -> Choices
 

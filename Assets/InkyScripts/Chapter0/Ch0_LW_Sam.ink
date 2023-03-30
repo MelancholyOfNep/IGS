@@ -15,7 +15,7 @@ Player` How are you doing today?
                             Sam` My kid loves the roller coaster.
 +   +   +   +   +   +   +   + [Really? Good Choice.]
                                 Sam` Yeah, my kid loves roller coasters.
-+   +   +   +   +   +   +   +   + [continue]
++   +   +   +   +   +   +   +   + [(continue)]
                                     Sam` She's been riding them all day today. Soon I'll need to get her off of that thing to go get dinner.
 +   +   +   +   +   +   +   +   +   + [What sort of things do you like to eat while your here?]
                                         Sam` My kid loves the soft pretzels. She could eat million a million of them.
@@ -32,7 +32,7 @@ Player` How are you doing today?
 +   +   +   +   +   +   +   +   +   +   +   +   +   +   + [Well, that's a lot about your kid, tell me about yourself. Are you having a good time?]
                                                             Player` And I mean you, not your kid.
 +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   + [(continue)]
-                                                                Me?
+                                                                Sam` Me?
 +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   + [Yes, you.]
-                                                                    My legs hurt.
+                                                                    Sam` My legs hurt.
 +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   + [(exit)] -> END
