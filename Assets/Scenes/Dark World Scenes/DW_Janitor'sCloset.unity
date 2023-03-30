@@ -1517,7 +1517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelName: DW_Carnival_Outsid
-  nextScenePlayerLocation: 
+  nextScenePlayerLocation: DWOutsideJanitor
 --- !u!64 &1061742235
 MeshCollider:
   m_ObjectHideFlags: 0
