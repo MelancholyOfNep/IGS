@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelName: LW_Carnival_Outside 1
+  nextScenePlayerLocation: 
 --- !u!64 &31351957
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1616,6 +1617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelName: LW_Carnival_Outside 1
+  nextScenePlayerLocation: LWOutsideTim
 --- !u!1001 &1994883572
 PrefabInstance:
   m_ObjectHideFlags: 0
