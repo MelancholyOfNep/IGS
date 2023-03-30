@@ -1707,6 +1707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelName: DW_Carnival_Outsid
+  nextScenePlayerLocation: DWOutsideTim
 --- !u!1001 &1994883572
 PrefabInstance:
   m_ObjectHideFlags: 0

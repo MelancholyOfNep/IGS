@@ -82,5 +82,6 @@ public class RandomRoam : MonoBehaviour
     public void ContinueWalking()
     {
         isTalking = false;
+        StartCoroutine(Wander());
     }
 }
