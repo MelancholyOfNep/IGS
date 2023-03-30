@@ -1,1 +1,1 @@
-﻿{"inkVersion":21,"root":[["#","^name Jules","/#","^You serious? I was in the show this morning. Could you imagine firing a nobody clown like me?","\n","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
+﻿{"inkVersion":21,"root":[["^Jules` You serious? I was in the show this morning. Could you imagine firing a nobody clown like me?","\n","ev","str","^(exit)","/str","/ev",{"*":"0.c-0","flg":4},{"c-0":["^ ","end","\n",{"->":"0.g-0"},{"#f":5}],"g-0":["done",{"#f":5}]}],"done",{"#f":1}],"listDefs":{}}
