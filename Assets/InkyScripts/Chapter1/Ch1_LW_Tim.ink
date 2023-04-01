@@ -1,5 +1,4 @@
 VAR ch1Evidence7 = 0
-
 Tim` Hey there! I'm about to perform.
 +   [That's great! You're going to do great.]
     Thank you, I'm excited to perform again today.
