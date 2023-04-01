@@ -20,6 +20,9 @@ Amanda` Did you want to ask me something?
 + { ch2Evidence5 == 1} [Blood Splatter outside Dressing Room.] -> EvidenceA
 + { ch2Evidence2 == 1} [Gun in Janitor's Closet.] -> EvidenceB
 + { ch2Evidence0 } [Lost Key] -> EvidenceC
++ [Never Mind]
+    Player` Maybe I need to find some more evidence...
++   + [(exit)] -> END
 
 ==EvidenceA==
 Amanda` What do you mean there's blood outside the dressing rooms?

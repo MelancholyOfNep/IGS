@@ -17,6 +17,9 @@ Player` So, have you had a chance to ride that roller coaster yet?
 
 ==Interrogate==
 + { ch1Evidence3 } [Jake's memory of attending the carnival was erased.] -> EvidenceA
++ [Never Mind]
+    Player` Maybe I need to find some more evidence...
++   + [(exit)] -> END
 
 ==EvidenceA==
 Jake` What's that supposed to mean? I think I'd remember coming here.

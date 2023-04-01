@@ -43,7 +43,9 @@ Jules` I was fired.
 Jules` You want to tell me something?
 +   { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 +   { ch1Evidence1 == 1} [Body found in the circus tent after the morning performance.] -> EvidenceB
-+ [Never mind.] -> END
++ [Never Mind]
+    Player` Maybe I need to find some more evidence...
++   + [(exit)] -> END
 
 ==EvidenceA==
 Jules` Stolen!? You mean someone took it?

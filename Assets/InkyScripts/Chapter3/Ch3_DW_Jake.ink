@@ -17,6 +17,9 @@ Jake` I feel like time doesn't even matter anymore.
 
 ==Interrogate==
 + { ch3Evidence1 } [Amanda's key was stolen.] -> EvidenceA
++ [Never Mind]
+    Player` Maybe I need to find some more evidence...
++   + [(exit)] -> END
 
 ==EvidenceA==
 Jake` Oh! That's a real shame. Do you know who did it?

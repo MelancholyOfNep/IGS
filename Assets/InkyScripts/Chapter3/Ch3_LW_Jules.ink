@@ -18,6 +18,9 @@ Jules` This is the most excited I've ever been to go home for the night.
 ==Interrogate==
 + { ch1Evidence6 } [Jules heard a gunshot outside the dressing room.] -> EvidenceA
 + { ch1Evidence4 } [Jules was alone in the dressing room during the morning performance.] -> EvidenceB
++ [Never Mind]
+    Player` Maybe I need to find some more evidence...
++   + [(exit)] -> END
 
 ==EvidenceA==
 Jules` This is a gun-free zone. If I heard a gunshot I would be out of here in a blink.

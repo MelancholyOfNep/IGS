@@ -49,6 +49,10 @@ Amanda` Oh no, stomach ache?
 ==Interrogate==
 Amanda` Did you want to ask me something?
 + { ch2Evidence0 } [Lost Key] -> EvidenceC
++ [Never Mind]
+    Player` Maybe I need to find some more evidence...
++   + [(exit)] -> END
+
 ==EvidenceC==
 VAR ch3Evidence1 = 1
 Amanda` What is that?
