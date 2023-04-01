@@ -1,3 +1,4 @@
+VAR ch3Evidence1 = 1
 Amanda` What is that?
 + [I found this key, is it yours?]
     Amanda` No, my key is in my pocket.
@@ -11,5 +12,5 @@ Amanda` What is that?
                     Amanda` Wait!? This is the same key! But, how?
 +   +   +   +   +   + [This day is full of surprises, isn't it?]
                         Amanda` She never lost her key before the murder happened. It only makes sense, the murderer stole her key.
-VAR ch3Evidence1 = 1
+~ ch3Evidence1 = 1
 +   +   +   +   +   +   + [(exit)] -> END

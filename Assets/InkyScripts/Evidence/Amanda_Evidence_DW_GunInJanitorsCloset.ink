@@ -1,3 +1,4 @@
+VAR ch2Evidence6 = 1
 Amanda` Oh my! That's not mine.
 + [How should I know?]
     Amanda` I carry brooms, not guns! How should I know it's not yours?
@@ -9,5 +10,5 @@ Amanda` Oh my! That's not mine.
                 Player` Amanda, you didn't have your key. You're innocent. It's proven now.
 +   +   +   +   + [(continue)]
                     Amanda` Oh, thank you!
-VAR ch2Evidence6 = 1
+~ ch2Evidence6 = 1
 +   +   +   +   +   + [(exit)] -> END
