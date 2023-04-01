@@ -1,3 +1,11 @@
+-> Intro
+
+==Intro==
+Jake` What's up?
++ [(talk)] -> Talk
++ [(interrogate)] -> Interrogate
+
+==Talk==
 Player` So, have you had a chance to ride that roller coaster yet?
 + [(continue)]
     Jake` I think I might be more of a coward than I thought.
@@ -6,3 +14,10 @@ Player` So, have you had a chance to ride that roller coaster yet?
 +   +   + [Right, and you're sure you've never been before?]
             Jake` I think I would remember being here, wouldn't I?
 +   +   +   + [(exit)] -> END
+
+==Interrogate==
++ { ch1Evidence3 } [Jake's memory of attending the carnival was erased.] -> EvidenceA
+
+==EvidenceA==
+Jake` What's that supposed to mean? I think I'd remember coming here.
++ [(exit)] -> END

@@ -1,3 +1,9 @@
+==Intro==
+Jake` What's up?
++ [(talk)] -> Talk
++ [(interrogate)] -> Interrogate
+
+==Talk==
 Jake` Ugh, I'm thinking about heading out soon.
 + [Had a good day?]
     Jake` Yeah, long day. It's felt like two, honestly.
@@ -14,3 +20,10 @@ Jake` Ugh, I'm thinking about heading out soon.
 +   +   +   +   +   +   + [Your medicine, you talked to me about it.]
                             Jake` Yeah, but I don't remember talking to you about that.
 +   +   +   +   +   +   +   + [Sorry, I must have heard from Steven or one of the others.] -> END
+
+==Interrogate==
++ { ch1Evidence3 } [Jake's memory of attending the carnival was erased.] -> EvidenceA
+
+==EvidenceA==
+Jake` What's that supposed to mean? I think I'd remember coming here.
++ [(exit)] -> END

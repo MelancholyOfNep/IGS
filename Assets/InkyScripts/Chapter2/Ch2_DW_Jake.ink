@@ -1,5 +1,13 @@
 VAR ch2Evidence4 = 0
 
+-> Intro
+
+==Intro==
+Jake` What's up?
++ [(talk)] -> Talk
++ [(interrogate)] -> Interrogate
+
+==Talk==
 Jake` I used to think this sort of place was an escape from the real world.
 + [(Wait, I'm confused. How many times have you been here?)]
     Jake` I couldn't give you a specific number, but I've come here for years.
@@ -14,3 +22,13 @@ Jake` I used to think this sort of place was an escape from the real world.
 
 ~ ch2Evidence4 = 1
 +   +   +   +   +   + [(exit)] -> END
+
+
+==Interrogate==
++ { ch3Evidence1 } [Amanda's key was stolen.] -> EvidenceA
+
+==EvidenceA==
+Jake` Oh! That's a real shame. Do you know who did it?
++ [No. Do you?]
+    Jake` Nah. I can barely manage handling my own keys. I don't pay attention to anyone else's keys.
++   + [(exit)] -> END

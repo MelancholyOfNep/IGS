@@ -1,3 +1,11 @@
+-> Intro
+
+==Intro==
+Jake` What's up?
++ [(talk)] -> Talk
++ [(interrogate)] -> Interrogate
+
+==Talk==
 Jake` I feel like time doesn't even matter anymore.
 + [What do you mean?]
     Jake` We're all just sitting around, just waiting to figure out what's going on. None of us know what to do.
@@ -6,3 +14,12 @@ Jake` I feel like time doesn't even matter anymore.
 +   +   + [(continue)]
             Jake` The hardest thing to process is what to do next. All we can do is sit around and wait. But I have to wonder, what are we waiting for? 
 +   +   +   + [(exit)] -> END
+
+==Interrogate==
++ { ch3Evidence1 } [Amanda's key was stolen.] -> EvidenceA
+
+==EvidenceA==
+Jake` Oh! That's a real shame. Do you know who did it?
++ [No. Do you?]
+    Jake` Nah. I can barely manage handling my own keys. I don't pay attention to anyone else's keys.
++   + [(exit)] -> END
