@@ -1,3 +1,11 @@
+-> Intro
+
+==Intro==
+Jules` Did you need something?
++ [(talk)] -> Talk
++ [(interrogate)] -> Interrogate
+
+==Talk==
 Sam` I realize that eventually I'm going to have to get up again. My legs are so tired I don't even want to walk to my care.
 + [But has your day at least been good still?]
     Sam` Oh is this for your paper? Sorry, I mean yes! I've had a wonderful day.
@@ -20,3 +28,13 @@ Sam` I realize that eventually I'm going to have to get up again. My legs are so
 +   +   +   +   +   +   +   +   +   + [(continue)]
                                         Sam` You've had hard days too, haven't you?
 +   +   +   +   +   +   +   +   +   +   + [Yeah. Thank you.] -> END
+
+==Interrogate==
++ { ch1Evidence2 } [Bethany amalgamized with a roller coaster.] -> EvidenceB
++ [Never Mind]
+    Player` Maybe I need to find some more evidence...
++   + [(exit)] -> END
+
+==EvidenceB==
+Sam` Well, she does love riding that roller coaster.
++ [(exit)] -> END
