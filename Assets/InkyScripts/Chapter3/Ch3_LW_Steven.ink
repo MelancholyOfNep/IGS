@@ -1,3 +1,11 @@
+-> Intro
+
+==Intro==
+Steven` Yes?
++ [(talk)] -> Talk
++ [(interrogate)] -> Interrogate
+
+==Talk==
 Steven` Hi! What a great day! Is everything going well?
 + [Are you okay? I'ts okay if you're tired, you can be honest with me.]
     Steven` Ugh, I'm so tired.
@@ -14,3 +22,18 @@ Steven` Hi! What a great day! Is everything going well?
 +   +   +   +   +   +   + [That's not what that means. It's not healthy-]
                             Steven` But stress makes a lot of things make sense. I can't even remember how long I've been working here because of how stressed I am.
 +   +   +   +   +   +   +   + [You're putting too much on yourself. you should take a break.] -> END
+
+==Interrogate==
++ { Ch1Evidence0 } [Reginald was murdered] -> EvidenceA
++ [Never Mind]
+    Player` Maybe I need to find some more evidence...
++   + [(exit)] -> END
+
+==EvidenceA==
+Steven` Reginald who?
++ [Your boss? The Head Ring Master.]
+    Steven` Head Ring Master? That's me.
++   + [How long have you been Head Ring Master?]
+        Steven` As long as I can remember. I don't know anyone named Reginald.
+~ ch1Evidence8 = 1
++   +   + [(exit)] -> END

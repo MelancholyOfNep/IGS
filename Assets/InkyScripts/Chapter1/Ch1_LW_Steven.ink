@@ -1,4 +1,13 @@
 VAR ch1Evidence8 = 0
+VAR ch1Evidence0 = 0
+-> Intro
+
+==Intro==
+Steven` Yes?
++ [(talk)] -> Talk
++ [(interrogate)] -> Interrogate
+
+==Talk==
 Player` So how does it feel to be Ring Master of such a popular carnival?
 +   [(continue)]
     Steven` Is this off-book?
@@ -16,3 +25,18 @@ Player` So how does it feel to be Ring Master of such a popular carnival?
                             Steven` Yeah, maybe...
 ~ch1Evidence8 = 1
 +   +   +   +   +   +   +   +   [(exit)] -> END
+
+==Interrogate==
++ { Ch1Evidence0 } [Reginald was murdered] -> EvidenceA
++ [Never Mind]
+    Player` Maybe I need to find some more evidence...
++   + [(exit)] -> END
+
+==EvidenceA==
+Steven` Reginald who?
++ [Your boss? The Head Ring Master.]
+    Steven` Head Ring Master? That's me.
++   + [How long have you been Head Ring Master?]
+        Steven` As long as I can remember. I don't know anyone named Reginald.
+~ ch1Evidence8 = 1
++   +   + [(exit)] -> END

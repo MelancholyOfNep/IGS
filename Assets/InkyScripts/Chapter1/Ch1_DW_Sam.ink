@@ -1,7 +1,7 @@
 -> Intro
 
 ==Intro==
-Jules` Did you need something?
+Sam` How's it going?
 + [(talk)] -> Talk
 + [(interrogate)] -> Interrogate
 
