@@ -8,10 +8,10 @@ VAR ch1Evidence6 = 0
 
 ==Intro==
 Jules` Did you need something?
-+ [(talk)] -> Choices
-+ [(question)] -> Question
++ [(talk)] -> Talk
++ [(interrogate)] -> Interrogate
 
-==Choices==
+==Talk==
 Jules` I don't know what to do anymore.
 + [Are you unhappy being a clown?]
     Jules` Well, I can't even call myself that anymore.
@@ -39,10 +39,10 @@ Jules` I was fired.
 
 +   +   +   +   +   +   + [(exit)]-> END
 
-==Question==
+==Interrogate==
 Jules` You want to tell me something?
 +   { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
-+   { ch1Evidence1 == 1} [There was a body found in the circus tent after the morning performance.] -> EvidenceB
++   { ch1Evidence1 == 1} [Body found in the circus tent after the morning performance.] -> EvidenceB
 + [Never mind.] -> END
 
 ==EvidenceA==
