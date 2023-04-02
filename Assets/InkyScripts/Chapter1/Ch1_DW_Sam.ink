@@ -1,3 +1,5 @@
+VAR ch3Evidence1 = 0
+VAR ch1Evidence2 = 0
 -> Intro
 
 ==Intro==
@@ -23,8 +25,8 @@ Sam` God is dead.
                             Sam` Earlier today... after he died. Something just... changed. -> END
 
 ==Interrogate==
-+ { ch3Evidence1 } [Amanda's key was stolen.] -> EvidenceA
-+ { ch1Evidence2 } [Bethany amalgamized with a roller coaster.] -> EvidenceB
++ { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
++ { ch1Evidence2 == 1} [Bethany amalgamized with a roller coaster.] -> EvidenceB
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

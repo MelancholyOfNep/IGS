@@ -1,3 +1,5 @@
+VAR ch1Evidence6 = 0
+VAR ch1Evidence4 = 0
 -> Intro
 
 ==Intro==
@@ -22,8 +24,8 @@ Player` So, would you rather be a clown or be fired?
 +   +   +   +   +   +   +   [I guess I'm not very funny. (exit)] -> END
 
 ==Interrogate==
-+ { ch1Evidence6 } [Jules heard a gunshot outside the dressing room.] -> EvidenceA
-+ { ch1Evidence4 } [Jules was alone in the dressing room during the morning performance.] -> EvidenceB
++ { ch1Evidence6 == 1} [Jules heard a gunshot outside the dressing room.] -> EvidenceA
++ { ch1Evidence4 == 1} [Jules was alone in the dressing room during the morning performance.] -> EvidenceB
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

@@ -1,3 +1,4 @@
+VAR ch3Evidence1 = 0
 -> Intro
 
 ==Intro==
@@ -16,7 +17,7 @@ Jake` I feel like time doesn't even matter anymore.
 +   +   +   + [(exit)] -> END
 
 ==Interrogate==
-+ { ch3Evidence1 } [Amanda's key was stolen.] -> EvidenceA
++ { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

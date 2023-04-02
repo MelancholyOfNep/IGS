@@ -1,3 +1,5 @@
+VAR ch1Evidence6 = 0
+VAR ch1Evidence4 = 0
 -> Intro
 
 ==Intro==
@@ -16,8 +18,8 @@ Jules` This is the most excited I've ever been to go home for the night.
 +   +   +   + [I'm pretty sure I'm older than you.] -> END
 
 ==Interrogate==
-+ { ch1Evidence6 } [Jules heard a gunshot outside the dressing room.] -> EvidenceA
-+ { ch1Evidence4 } [Jules was alone in the dressing room during the morning performance.] -> EvidenceB
++ { ch1Evidence6 == 1} [Jules heard a gunshot outside the dressing room.] -> EvidenceA
++ { ch1Evidence4 == 1} [Jules was alone in the dressing room during the morning performance.] -> EvidenceB
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

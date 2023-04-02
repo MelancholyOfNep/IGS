@@ -1,3 +1,4 @@
+VAR ch1Evidence3 = 0
 -> Intro
 
 ==Intro==
@@ -16,7 +17,7 @@ Player` So, have you had a chance to ride that roller coaster yet?
 +   +   +   + [(exit)] -> END
 
 ==Interrogate==
-+ { ch1Evidence3 } [Jake's memory of attending the carnival was erased.] -> EvidenceA
++ { ch1Evidence3 == 1} [Jake's memory of attending the carnival was erased.] -> EvidenceA
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

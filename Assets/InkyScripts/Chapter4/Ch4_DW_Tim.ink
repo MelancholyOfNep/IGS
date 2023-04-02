@@ -1,3 +1,6 @@
+VAR ch3Evidence1 = 0
+VAR ch3Evidence0 = 0
+VAR ch2Evidence3 = 0
 -> Intro
 
 ==Intro==
@@ -12,9 +15,9 @@ Tim` I can't make up my mind. I don't know if I should keep performing or not.
 +   + [We're all stuck here, and we're just going to keep reliving this.] -> END
 
 ==Interrogate==
-+ { ch3Evidence1 } [Amanda's key was stolen.] -> EvidenceA
-+ { ch3Evidence0 } [Tim is innocent.] -> EvidenceB
-+ { ch2Evidence3 } [Tim's Flower] -> EvidenceC
++ { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
++ { ch3Evidence0 == 1} [Tim is innocent.] -> EvidenceB
++ { ch2Evidence3 == 1} [Tim's Flower] -> EvidenceC
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

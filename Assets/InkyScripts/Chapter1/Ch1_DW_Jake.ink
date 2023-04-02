@@ -1,4 +1,5 @@
 VAR ch1Evidence3 = 0
+VAR ch3Evidence1 = 0
 -> Intro
 
 ==Intro==
@@ -18,7 +19,7 @@ Jake` Today just isn't a great day for the carnival...
 +   +   +   + [(exit)] -> END
 
 ==Interrogate==
-+ { ch3Evidence1 } [Amanda's key was stolen.] -> EvidenceA
++ { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

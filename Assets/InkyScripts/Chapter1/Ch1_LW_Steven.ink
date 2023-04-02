@@ -27,7 +27,7 @@ Player` So how does it feel to be Ring Master of such a popular carnival?
 +   +   +   +   +   +   +   +   [(exit)] -> END
 
 ==Interrogate==
-+ { Ch1Evidence0 } [Reginald was murdered] -> EvidenceA
++ { ch1Evidence0 == 1} [Reginald was murdered] -> EvidenceA
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

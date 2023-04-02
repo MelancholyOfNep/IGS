@@ -1,3 +1,4 @@
+VAR ch2Evidence0 = 0
 -> Intro
 
 ==Intro==
@@ -27,7 +28,7 @@ Amanda` It's a beautiful day outside.
 
 ==Interrogate==
 Amanda` Did you want to ask me something?
-+ { ch2Evidence0 } [Lost Key] -> EvidenceC
++ { ch2Evidence0 == 1} [Lost Key] -> EvidenceC
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

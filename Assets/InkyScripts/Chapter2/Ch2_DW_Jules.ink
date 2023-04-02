@@ -1,3 +1,6 @@
+VAR ch3Evidence1 = 0
+VAR ch1Evidence1 = 0
+VAR ch1Evidence6 = 0
 -> Intro
 
 ==Intro==
@@ -79,7 +82,5 @@ Jules` You're kidding.
 ==NEXTB==
 +   You heard something? What did you hear?
     Jules` The sound of a gunshot, right outside my dressing room.
-
-~ch1Evidence6 = 1
-
+~ ch1Evidence6 = 1
 +   +   [(exit)]-> END

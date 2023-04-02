@@ -1,3 +1,6 @@
+VAR ch3Evidence1 = 0
+VAR ch1Evidence1 = 0
+VAR ch1Evidence6 = 0
 -> Intro
 
 ==Intro==

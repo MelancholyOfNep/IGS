@@ -1,3 +1,4 @@
+VAR ch1Evidence2 = 0
 -> Intro
 
 ==Intro==
@@ -30,7 +31,7 @@ Sam` I realize that eventually I'm going to have to get up again. My legs are so
 +   +   +   +   +   +   +   +   +   +   + [Yeah. Thank you.] -> END
 
 ==Interrogate==
-+ { ch1Evidence2 } [Bethany amalgamized with a roller coaster.] -> EvidenceB
++ { ch1Evidence2 == 1} [Bethany amalgamized with a roller coaster.] -> EvidenceB
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

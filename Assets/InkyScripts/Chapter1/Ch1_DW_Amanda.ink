@@ -1,3 +1,6 @@
+VAR ch2Evidence5 = 0
+VAR ch2Evidence2 = 0
+VAR ch2Evidence0 = 0
 -> Intro
 
 ==Intro==
@@ -32,7 +35,7 @@ Amanda` I don't know how it happened, but this is basically the last place I wan
 Amanda` Did you want to ask me something?
 + { ch2Evidence5 == 1} [Blood Splatter outside Dressing Room.] -> EvidenceA
 + { ch2Evidence2 == 1} [Gun in Janitor's Closet.] -> EvidenceB
-+ { ch2Evidence0 } [Lost Key] -> EvidenceC
++ { ch2Evidence0 == 1} [Lost Key] -> EvidenceC
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END
@@ -52,7 +55,7 @@ Amanda` What do you mean there's blood outside the dressing rooms?
 +   +   +   +   +   + [(exit)] -> END
 
 ==EvidenceB==
-VAR ch2Evidence6 = 1
+VAR ch2Evidence6 = 0
 Amanda` Oh my! That's not mine.
 + [How should I know?]
     Amanda` I carry brooms, not guns! How should I know it's not yours?

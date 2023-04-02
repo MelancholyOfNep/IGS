@@ -1,3 +1,5 @@
+VAR ch1Evidence0 = 0
+VAR ch1Evidence8 = 0
 -> Intro
 
 ==Intro==
@@ -24,7 +26,7 @@ Steven` Hi! What a great day! Is everything going well?
 +   +   +   +   +   +   +   + [You're putting too much on yourself. you should take a break.] -> END
 
 ==Interrogate==
-+ { Ch1Evidence0 } [Reginald was murdered] -> EvidenceA
++ { ch1Evidence0 == 1} [Reginald was murdered] -> EvidenceA
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

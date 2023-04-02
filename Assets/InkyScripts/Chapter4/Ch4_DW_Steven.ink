@@ -1,3 +1,5 @@
+VAR ch3Evidence1 = 0
+VAR ch2Evidence1 = 0
 -> Intro
 
 ==Intro==
@@ -18,8 +20,8 @@ Player` You deserve to know who murdered Reginald.
 +   +   +   +   + [(exit)] -> END
 
 ==Interrogate==
-+ { ch3Evidence1 } [Amanda's key was stolen.] -> EvidenceA
-+ { ch2Evidence1 } [There's a missing knife at the game booths.] -> EvidenceB
++ { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
++ { ch2Evidence1 == 1} [There's a missing knife at the game booths.] -> EvidenceB
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END

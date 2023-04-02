@@ -1,3 +1,6 @@
+VAR ch1Evidence3 = 0
+-> Intro
+
 ==Intro==
 Jake` What's up?
 + [(talk)] -> Talk
@@ -22,7 +25,7 @@ Jake` Ugh, I'm thinking about heading out soon.
 +   +   +   +   +   +   +   + [Sorry, I must have heard from Steven or one of the others.] -> END
 
 ==Interrogate==
-+ { ch1Evidence3 } [Jake's memory of attending the carnival was erased.] -> EvidenceA
++ { ch1Evidence3 == 1} [Jake's memory of attending the carnival was erased.] -> EvidenceA
 + [Never Mind]
     Player` Maybe I need to find some more evidence...
 +   + [(exit)] -> END
