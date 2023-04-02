@@ -50,7 +50,7 @@ Tim` The Ring Master is dead.
 + { ch3Evidence0 == 1} [Tim is innocent.] -> EvidenceB
 + { ch2Evidence3 == 1} [Tim's Flower] -> EvidenceC
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` Maybe I can talk to them again later when I know more...
 +   + [(exit)] -> END
 
 ==EvidenceA==

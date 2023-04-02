@@ -21,7 +21,7 @@ Jake` Today just isn't a great day for the carnival...
 ==Interrogate==
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` I don't have anything to ask him about right now.
 +   + [(exit)] -> END
 
 ==EvidenceA==

@@ -31,7 +31,7 @@ Player` Steven! What's going on?
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + { ch2Evidence1 == 1} [There's a missing knife at the game booths.] -> EvidenceB
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` I don't think I have anything to ask him about right now...
 +   + [(exit)] -> END
 
 ==EvidenceA==

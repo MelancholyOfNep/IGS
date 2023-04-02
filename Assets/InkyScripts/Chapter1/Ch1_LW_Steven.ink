@@ -28,9 +28,7 @@ Player` So how does it feel to be Ring Master of such a popular carnival?
 
 ==Interrogate==
 + { ch1Evidence0 == 1} [Reginald was murdered] -> EvidenceA
-+ [Never Mind]
-    Player` Maybe I need to find some more evidence...
-+   + [(exit)] -> END
++ [Never Mind] -> END
 
 ==EvidenceA==
 Steven` Reginald who?

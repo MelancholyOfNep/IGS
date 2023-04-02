@@ -17,9 +17,7 @@ Sam` I could really go for a nap right now.
             
 ==Interrogate==
 + { ch1Evidence2 == 1} [Bethany amalgamized with a roller coaster.] -> EvidenceB
-+ [Never Mind]
-    Player` Maybe I need to find some more evidence...
-+   + [(exit)] -> END
++ [Never Mind] -> END
 
 ==EvidenceB==
 Sam` Well, she does love riding that roller coaster.

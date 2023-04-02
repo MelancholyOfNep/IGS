@@ -30,7 +30,7 @@ Amanda` It's a beautiful day outside.
 Amanda` Did you want to ask me something?
 + { ch2Evidence0 == 1} [Lost Key] -> EvidenceC
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` I don't have anything to say right now...
 +   + [(exit)] -> END
 ==EvidenceC==
 VAR ch3Evidence1 = 1

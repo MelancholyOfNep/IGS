@@ -27,7 +27,7 @@ Player` So, would you rather be a clown or be fired?
 + { ch1Evidence6 == 1} [Jules heard a gunshot outside the dressing room.] -> EvidenceA
 + { ch1Evidence4 == 1} [Jules was alone in the dressing room during the morning performance.] -> EvidenceB
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` I wonder where they were at the time of the murder...
 +   + [(exit)] -> END
 
 ==EvidenceA==
