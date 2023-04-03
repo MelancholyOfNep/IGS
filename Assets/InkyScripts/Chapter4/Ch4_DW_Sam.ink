@@ -23,7 +23,7 @@ Sam` I think I'm getting over myself.
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + { ch1Evidence2 == 1} [Bethany amalgamized with a roller coaster.] -> EvidenceB
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` I think I know everything I need to know. I just need a find a way out...
 +   + [(exit)] -> END
 
 ==EvidenceA==

@@ -25,7 +25,7 @@ Jules` You want to tell me something?
 +   { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 +   { ch1Evidence1 == 1} [Body found in the circus tent after the morning performance.] -> EvidenceB
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` I think I know everything I need to know. I just need a find a way out...
 +   + [(exit)] -> END
 
 

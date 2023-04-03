@@ -23,7 +23,7 @@ Player` You deserve to know who murdered Reginald.
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + { ch2Evidence1 == 1} [There's a missing knife at the game booths.] -> EvidenceB
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` I think I know everything I need to know. I just need a find a way out...
 +   + [(exit)] -> END
 
 ==EvidenceA==
