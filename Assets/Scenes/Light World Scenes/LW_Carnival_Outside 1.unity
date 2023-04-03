@@ -13414,15 +13414,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2348845905518665440, guid: 9c6ddb56825898c45bb4d7130e87c3b5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -171.74501
+      value: -226.625
       objectReference: {fileID: 0}
     - target: {fileID: 2348845905518665440, guid: 9c6ddb56825898c45bb4d7130e87c3b5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15452881
+      value: 3.08
       objectReference: {fileID: 0}
     - target: {fileID: 2348845905518665440, guid: 9c6ddb56825898c45bb4d7130e87c3b5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.9709
+      value: -16.688
       objectReference: {fileID: 0}
     - target: {fileID: 2348845905518665440, guid: 9c6ddb56825898c45bb4d7130e87c3b5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13456,7 +13456,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bethany_Parent
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2348845905518665441, guid: 9c6ddb56825898c45bb4d7130e87c3b5, type: 3}
+    - {fileID: 7496039339462455801, guid: 9c6ddb56825898c45bb4d7130e87c3b5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9c6ddb56825898c45bb4d7130e87c3b5, type: 3}
 --- !u!1001 &2687437486185413288
 PrefabInstance:
