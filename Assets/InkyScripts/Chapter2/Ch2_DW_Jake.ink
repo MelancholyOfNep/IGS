@@ -27,7 +27,7 @@ Jake` I used to think this sort of place was an escape from the real world.
 ==Interrogate==
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` I have nothing to ask him right now...
 +   + [(exit)] -> END
 
 ==EvidenceA==

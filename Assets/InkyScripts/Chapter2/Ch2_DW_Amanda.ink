@@ -39,7 +39,7 @@ Amanda` Did you want to ask me something?
 + { ch2Evidence2 == 1} [Gun in Janitor's Closet.] -> EvidenceB
 + { ch2Evidence0 == 1} [Lost Key] -> EvidenceC
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` Maybe I can find more details about the murder...
 +   + [(exit)] -> END
 
 ==EvidenceA==

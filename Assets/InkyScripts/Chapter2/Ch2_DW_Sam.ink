@@ -23,7 +23,7 @@ Sam` I think I just need to talk to her.
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + { ch1Evidence2 == 1} [Bethany amalgamized with a roller coaster.] -> EvidenceB
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` I hope they're doing alright, considering...
 +   + [(exit)] -> END
 
 ==EvidenceA==

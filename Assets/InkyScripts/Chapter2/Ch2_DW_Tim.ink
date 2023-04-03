@@ -40,7 +40,7 @@ Tim` I've been worried about them ever since the accident yesterday.
 + { ch3Evidence0 == 1} [Tim is innocent.] -> EvidenceB
 + { ch2Evidence3 == 1} [Tim's Flower] -> EvidenceC
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    Player` Is his uniform missing something?
 +   + [(exit)] -> END
 
 ==EvidenceA==
