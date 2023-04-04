@@ -100,36 +100,43 @@ public class GameManager : MonoBehaviour
 		if (chapter == 1)
 		{
 			string[] pieces = { "ch1Evidence0", "ch1Evidence1", "ch1Evidence2", "ch1Evidence3", "ch1Evidence4", "ch1Evidence5", "ch1Evidence6", "ch1Evidence7", "ch1Evidence8" };
-			bool allEvidenceCollected = true;
 
-			foreach(string piece in pieces)
-			{
-				Debug.Log("ran");
-				if (InvestigationManager.evidence.ContainsKey(piece))
-				{
-					if ((InvestigationManager.evidence.TryGetValue(piece, out int value) && value == 0))
-					{
-						Debug.Log("False");
-						allEvidenceCollected=false;
-					}
-				}
-				else
-				{
-					Debug.Log("False");
-                    allEvidenceCollected = false;
-                }
-					
-			}
-			if (allEvidenceCollected)
-			{
-				SceneManager.LoadScene("MainMenu");
-				//chapter = 2;
-				OnCh2Start.Invoke();
-			}
-		}
+            if (EvidenceCheck(pieces))
+            {
+                chapter = 2;
+                OnCh2Start.Invoke();
+            }
+        }
 		else if (chapter == 2)
 		{
 			//SceneManager.LoadScene("MainMenu");
 		}
 	}
+
+	public bool EvidenceCheck(string[] evidence)
+	{
+        foreach (string piece in evidence)
+        {
+            Debug.Log("ran");
+            if (InvestigationManager.evidence.ContainsKey(piece))
+            {
+                if ((InvestigationManager.evidence.TryGetValue(piece, out int value) && value == 0))
+                {
+                    Debug.Log("False");
+					return false;
+                }
+				else if ((InvestigationManager.evidence.TryGetValue(piece, out int valueA) && valueA == 1))
+				{
+					Debug.Log("True");
+					return true;
+				}
+            }
+            else
+            {
+                Debug.Log("False");
+				return false;
+            }
+        }
+		return false;
+    }
 }
