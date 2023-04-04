@@ -13901,6 +13901,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Steven_Parent
       objectReference: {fileID: 0}
+    - target: {fileID: 6873499158484053580, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873499158484053580, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873499158484053580, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873499158484053580, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.122
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873499158484053580, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
 --- !u!1001 &6591620836435688968
