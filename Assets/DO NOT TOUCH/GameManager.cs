@@ -13,10 +13,12 @@ public class GameManager : MonoBehaviour
 	public bool paused = false;
 	public int chapter = 0;
 	public bool isDarkWorld;
-	public UnityEvent OnCh2Start;
 	public string playerStartLocation;
 
-	public SaveGame saveGame;
+    public UnityEvent OnCh2Start;
+	public UnityEvent OnCh3Start;
+
+    public SaveGame saveGame;
 
 	private void Awake()
 	{
@@ -109,7 +111,17 @@ public class GameManager : MonoBehaviour
         }
 		else if (chapter == 2)
 		{
-			//SceneManager.LoadScene("MainMenu");
+			Debug.Log("Chapter 3 not yet implemented. See ChapterCheck function under GameManager.cs.");
+
+			// evidence pieces not present yet.
+			/*string[] pieces = { };
+
+			if(EvidenceCheck(pieces))
+			{
+				chapter = 3;
+				// need to arrange the Ch3Start event. currently not actually implemented.
+				OnCh3Start.Invoke();
+			}*/
 		}
 	}
 
