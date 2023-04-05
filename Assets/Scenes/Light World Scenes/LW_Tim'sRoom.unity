@@ -303,11 +303,11 @@ PrefabInstance:
     - target: {fileID: -4683669308469848369, guid: a8aac37d279837e43bb9b74947bf70bd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8e0d806713685db4b993b1f552a7ec6f, type: 2}
+      objectReference: {fileID: 2100000, guid: ab1895551dff64f44be32433dbb7d9ac, type: 2}
     - target: {fileID: -1439730007547781893, guid: a8aac37d279837e43bb9b74947bf70bd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c7863a204c2898b4389415c029032fb1, type: 2}
+      objectReference: {fileID: 2100000, guid: d5de84ce6f7b764448781cf54af67022, type: 2}
     - target: {fileID: -1439730007547781893, guid: a8aac37d279837e43bb9b74947bf70bd, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -363,7 +363,7 @@ PrefabInstance:
     - target: {fileID: 6073019617962563511, guid: a8aac37d279837e43bb9b74947bf70bd, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 248fade7ac9033043aaf2dd8c28421ef, type: 2}
+      objectReference: {fileID: 2100000, guid: ab1895551dff64f44be32433dbb7d9ac, type: 2}
     - target: {fileID: 7071182760956848314, guid: a8aac37d279837e43bb9b74947bf70bd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -371,11 +371,11 @@ PrefabInstance:
     - target: {fileID: 7071182760956848314, guid: a8aac37d279837e43bb9b74947bf70bd, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: f32c4f02eec59c84a9a3a667c379e179, type: 2}
+      objectReference: {fileID: 2100000, guid: 84cbb2105cca71540b9ca01044a8d76c, type: 2}
     - target: {fileID: 7071182760956848314, guid: a8aac37d279837e43bb9b74947bf70bd, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 7931a8aba48ddd048902fe758168170b, type: 2}
+      objectReference: {fileID: 2100000, guid: 50179df0cbf1422459ae3dd492f9c04a, type: 2}
     - target: {fileID: 7800219917424603212, guid: a8aac37d279837e43bb9b74947bf70bd, type: 3}
       propertyPath: m_LocalPosition.y
       value: 3.942
@@ -1307,7 +1307,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 62d37d8a3f973c74b9889329d411a213, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c7863a204c2898b4389415c029032fb1, type: 2}
+      objectReference: {fileID: 2100000, guid: 9dd4e766b16dc5e48b6f3e4671497cf4, type: 2}
     - target: {fileID: 919132149155446097, guid: 62d37d8a3f973c74b9889329d411a213, type: 3}
       propertyPath: m_Name
       value: Chair
