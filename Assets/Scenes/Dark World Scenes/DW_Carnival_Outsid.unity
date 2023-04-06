@@ -5913,7 +5913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   informationDiscovered:
-  - name: bloodsplatter_discovered
+  - name: ch2Evidence5
     val: 1
   messages:
   - I think I'm going to vomit. This must be where the murder happened.
