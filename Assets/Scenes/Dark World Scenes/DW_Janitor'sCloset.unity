@@ -1241,7 +1241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   informationDiscovered:
-  - name: gun_discovered
+  - name: ch2Evidence2
     val: 1
   messages:
   - Aah! There it is. Murder weapon. Murder weapon for sure! And it was in Amanda's

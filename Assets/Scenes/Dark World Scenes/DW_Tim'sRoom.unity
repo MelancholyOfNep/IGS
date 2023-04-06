@@ -1625,7 +1625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   informationDiscovered:
-  - name: flower_discovered
+  - name: ch2Evidence3
     val: 1
   messages:
   - This looks like the acrobat's performance flower. I bet this is Tim's.
