@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: b92eadf4ccaec724eb3185739da75ee4, type: 2}
 --- !u!1 &182318997
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,7 +580,7 @@ PrefabInstance:
     - target: {fileID: 4606769448639525687, guid: d2ab4007849c8d6438ed35515a10fc0e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 036edcf5d32da64448d9b1b80a37a048, type: 2}
+      objectReference: {fileID: 2100000, guid: a21dcfed80b494d46a6aed90b8b058dd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2ab4007849c8d6438ed35515a10fc0e, type: 3}
 --- !u!1 &621814446
@@ -850,6 +850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carnival Tent Stands
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b2c2ebfe3b9bc4648ac2391029c075e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2c2ebfe3b9bc4648ac2391029c075e3, type: 3}
 --- !u!1001 &934328655
@@ -914,6 +918,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fb29eb5f59cc6d74c8cc833555d6bec3, type: 3}
       propertyPath: m_Name
       value: Seal Tank
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fb29eb5f59cc6d74c8cc833555d6bec3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb29eb5f59cc6d74c8cc833555d6bec3, type: 3}
@@ -1627,7 +1635,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1839901844
 MeshCollider:
@@ -2112,9 +2120,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3022189109716302780, guid: 6621ffd6750a4b746a62dd5973689718, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075110503451724126, guid: 6621ffd6750a4b746a62dd5973689718, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170329482730554119, guid: 6621ffd6750a4b746a62dd5973689718, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039344673149413583, guid: 6621ffd6750a4b746a62dd5973689718, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5385885921508913149, guid: 6621ffd6750a4b746a62dd5973689718, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001501178984299741, guid: 6621ffd6750a4b746a62dd5973689718, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7142057194120615604, guid: 6621ffd6750a4b746a62dd5973689718, type: 3}
       propertyPath: m_Name
       value: Trapeze
+      objectReference: {fileID: 0}
+    - target: {fileID: 7142057194120615604, guid: 6621ffd6750a4b746a62dd5973689718, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7518336820500057102, guid: 6621ffd6750a4b746a62dd5973689718, type: 3}
       propertyPath: m_RootOrder
