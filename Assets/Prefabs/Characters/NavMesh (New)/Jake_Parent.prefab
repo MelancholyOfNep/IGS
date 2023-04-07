@@ -171,6 +171,61 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4863468747366217930, guid: 5d36e13895a377041863e0752aa2d7cc, type: 3}
+--- !u!114 &3451632808421555994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2533204497166090831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28941ab4dba41df428370ddb34c5b02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsPerCharacter: 0
+  conversationChapter0: {fileID: 4900000, guid: 4577dbedff6650745995763756b6cd0c, type: 3}
+  conversationChapter1: {fileID: 4900000, guid: a56af590b6f17df4595c70077f489e39, type: 3}
+  conversationChapter2: {fileID: 4900000, guid: 5d26c14525fc8be4dae0a0e24efd29b9, type: 3}
+  conversationChapter3: {fileID: 0}
+  conversationChapter4: {fileID: 0}
+  conversationChapter5: {fileID: 4900000, guid: b077c719a39b3034880141fc3cfc15dd, type: 3}
+  conversationChapter0Dark: {fileID: 0}
+  conversationChapter1Dark: {fileID: 4900000, guid: eeb75fcdd954f394db45c45887b8e47a, type: 3}
+  conversationChapter2Dark: {fileID: 4900000, guid: 2bc70f79f059fe148b850ff06bab8c2c, type: 3}
+  conversationChapter3Dark: {fileID: 4900000, guid: 994ec66a630c11a479bf2ecd870ebf38, type: 3}
+  conversationChapter4Dark: {fileID: 4900000, guid: 0b74af3f0fe996f43b3397b1b3de2817, type: 3}
+  conversationChapter5Dark: {fileID: 0}
+  OnConversationStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3451632808590091657}
+        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
+        m_MethodName: StopWalking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnConversationEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3451632808590091657}
+        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
+        m_MethodName: ContinueWalking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3451632808421555995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,58 +259,3 @@ MonoBehaviour:
   OnTriggerUp:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3451632808421555994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2533204497166090831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28941ab4dba41df428370ddb34c5b02c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  secondsPerCharacter: 0
-  conversationChapter0: {fileID: 0}
-  conversationChapter1: {fileID: 0}
-  conversationChapter2: {fileID: 0}
-  conversationChapter3: {fileID: 0}
-  conversationChapter4: {fileID: 0}
-  conversationChapter5: {fileID: 0}
-  conversationChapter0Dark: {fileID: 0}
-  conversationChapter1Dark: {fileID: 0}
-  conversationChapter2Dark: {fileID: 0}
-  conversationChapter3Dark: {fileID: 0}
-  conversationChapter4Dark: {fileID: 0}
-  conversationChapter5Dark: {fileID: 0}
-  OnConversationStart:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3451632808590091657}
-        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
-        m_MethodName: StopWalking
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnConversationEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3451632808590091657}
-        m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
-        m_MethodName: ContinueWalking
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2

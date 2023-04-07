@@ -57,8 +57,7 @@ Jules` I get it. Becasue if the body was found right after the performance, it m
     
 ==ChoiceB1==
 
-Jules` Saw? No, but I heard something.
-+   [(continue)] ->NEXTB
+Jules` Saw? No, but I heard something. ->NEXTB
 
 ==ChoiceB2==
 Jules` You're kidding.

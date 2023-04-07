@@ -189,13 +189,13 @@ MonoBehaviour:
   conversationChapter2: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
   conversationChapter3: {fileID: 4900000, guid: 5cdf2550cd9d7af44872abcb46f2e7a3, type: 3}
   conversationChapter4: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
-  conversationChapter5: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
+  conversationChapter5: {fileID: 4900000, guid: 08a6dda0a7514114097820b397a4b9c1, type: 3}
   conversationChapter0Dark: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
   conversationChapter1Dark: {fileID: 4900000, guid: 3a365a8fbf6cdd8448e61ab74ead3549, type: 3}
   conversationChapter2Dark: {fileID: 4900000, guid: 33ae326ef2921a746a6d58ec5ffe4b3e, type: 3}
   conversationChapter3Dark: {fileID: 4900000, guid: 91ce10e2bd8ad124e9ba6f30565f1d2a, type: 3}
   conversationChapter4Dark: {fileID: 4900000, guid: 6d676cf7ae6d3164289e6732a2387404, type: 3}
-  conversationChapter5Dark: {fileID: 4900000, guid: 08a6dda0a7514114097820b397a4b9c1, type: 3}
+  conversationChapter5Dark: {fileID: 0}
   OnConversationStart:
     m_PersistentCalls:
       m_Calls:

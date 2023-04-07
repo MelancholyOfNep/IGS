@@ -25,9 +25,9 @@ Jules` Part of me just wants to know why the Ring Master decided to fire me.
 +   +   +   +   +   +   + [(continue)]
                             Jules` It makes me feel sick. Sure I was mad at him, but someone was mad enough to kill him?
 +   +   +   +   +   +   +   + [(continue)]
-                                Jake` Somehow I feel like a murderer just for being mad at him while he died.
+                                Jules` Somehow I feel like a murderer just for being mad at him while he died.
 +   +   +   +   +   +   +   +   + [(...)]
-                                    Jake` That's not a confession!
+                                    Jules` That's not a confession!
 +   +   +   +   +   +   +   +   +   + [(No, of course not. I understand.)] -> END
 
 ==Interrogate==
@@ -67,8 +67,7 @@ Jules` I get it. Becasue if the body was found right after the performance, it m
     
 ==ChoiceB1==
 
-Jules` Saw? No, but I heard something.
-+   [(continue)] ->NEXTB
+Jules` Saw? No, but I heard something. ->NEXTB
 
 ==ChoiceB2==
 Jules` You're kidding.
@@ -80,7 +79,7 @@ Jules` You're kidding.
 -> NEXTB
 
 ==NEXTB==
-+   You heard something? What did you hear?
++   [You heard something? What did you hear?]
     Jules` The sound of a gunshot, right outside my dressing room.
 ~ ch1Evidence6 = 1
 +   +   [(exit)]-> END
