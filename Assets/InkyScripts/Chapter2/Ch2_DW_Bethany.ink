@@ -14,4 +14,4 @@ Bethany` MAKE ME STOP BEING A ROLLER COASTER!
 Bethany` I LIKE BEING A HUMAN!
 + [Me too. And this human likes food, so I could get you food. That might make you feel more human.]
     Player` Oh, sorry. I don't think you can actually digest anything right now. Sorry!
-+   + (exit) -> END
++   + [(exit)] -> END

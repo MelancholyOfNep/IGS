@@ -9,7 +9,7 @@ Jake` What's up?
 
 ==Talk==
 Jake` I used to think this sort of place was an escape from the real world.
-+ [(Wait, I'm confused. How many times have you been here?)]
++ [Wait, I'm confused. How many times have you been here?]
     Jake` I couldn't give you a specific number, but I've come here for years.
 +   + [(continue)]
         Jake` Working in a lab is exhausting, especially in my field.
