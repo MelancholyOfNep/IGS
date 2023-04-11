@@ -125,8 +125,6 @@ public class GameManager : MonoBehaviour
 		}
 		else if (chapter == 2)
 		{
-			Debug.Log("Chapter 3 not yet implemented. See ChapterCheck function under GameManager.cs.");
-
 			// evidence 1 not needed because not incredibly relevant and also obscure.
 			List<string> pieces = new List<string>() { "ch2evidence0", "ch2evidence2", "ch2evidence3", "ch2evidence4", "ch2evidence5", "ch2evidence6", "ch2evidence7" };
 
@@ -138,5 +136,9 @@ public class GameManager : MonoBehaviour
 				Debug.Log("Chapter 3 start!");
 			}
 		}
+		else if (chapter == 3)
+		{
+            List<string> pieces = new List<string>() { "ch2evidence0", "ch2evidence2", "ch2evidence3", "ch2evidence4", "ch2evidence5", "ch2evidence6", "ch2evidence7" };
+        }
 	}
 }
