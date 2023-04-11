@@ -15,10 +15,10 @@ public class GameManager : MonoBehaviour
 	public bool isDarkWorld;
 	public string playerStartLocation;
 
-    public UnityEvent OnCh2Start;
+	public UnityEvent OnCh2Start;
 	public UnityEvent OnCh3Start;
 
-    public SaveGame saveGame;
+	public SaveGame saveGame;
 
 	private void Awake()
 	{
@@ -96,27 +96,41 @@ public class GameManager : MonoBehaviour
 		GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>().paused = false;
 	}
 
+	public bool EvidenceCheck(List<string> evidence)
+	{
+		foreach (string piece in evidence)
+		{
+			Debug.Log("ran");
+			if (!InvestigationManager.evidence.ContainsKey(piece) || InvestigationManager.evidence[piece] != 1)
+			{
+				Debug.Log("False");
+				return false;
+			}
+		}
+		return true;
+	}
+
 	public void ChapterCheck()
 	{
 		Debug.Log("checked");
 		if (chapter == 1)
 		{
-			string[] pieces = { "ch1Evidence0", "ch1Evidence1", "ch1Evidence2", "ch1Evidence3", "ch1Evidence4", "ch1Evidence5", "ch1Evidence6", "ch1Evidence7", "ch1Evidence8" };
+			List<string> pieces = new List<string>() { "ch1Evidence0", "ch1Evidence1", "ch1Evidence2", "ch1Evidence3", "ch1Evidence4", "ch1Evidence5", "ch1Evidence6", "ch1Evidence7", "ch1Evidence8" };
 
-            if (EvidenceCheck(pieces))
-            {
-                chapter = 2;
-                OnCh2Start.Invoke();
-            }
-        }
+			if (EvidenceCheck(pieces))
+			{
+				chapter = 2;
+				OnCh2Start.Invoke();
+			}
+		}
 		else if (chapter == 2)
 		{
 			Debug.Log("Chapter 3 not yet implemented. See ChapterCheck function under GameManager.cs.");
 
 			// evidence 1 not needed because not incredibly relevant and also obscure.
-			string[] pieces = { "ch2evidence0", "ch2evidence2", "ch2evidence3", "ch2evidence4", "ch2evidence5", "ch2evidence6", "ch2evidence7" };
+			List<string> pieces = new List<string>() { "ch2evidence0", "ch2evidence2", "ch2evidence3", "ch2evidence4", "ch2evidence5", "ch2evidence6", "ch2evidence7" };
 
-			if(EvidenceCheck(pieces))
+			if (EvidenceCheck(pieces))
 			{
 				chapter = 3;
 				// need to arrange the Ch3Start event. currently not actually implemented.
@@ -125,31 +139,4 @@ public class GameManager : MonoBehaviour
 			}
 		}
 	}
-
-	public bool EvidenceCheck(string[] evidence)
-	{
-        foreach (string piece in evidence)
-        {
-            Debug.Log("ran");
-            if (InvestigationManager.evidence.ContainsKey(piece))
-            {
-                if ((InvestigationManager.evidence.TryGetValue(piece, out int value) && value == 0))
-                {
-                    Debug.Log("False");
-					return false;
-                }
-				else if ((InvestigationManager.evidence.TryGetValue(piece, out int valueA) && valueA == 1))
-				{
-					Debug.Log("True");
-					return true;
-				}
-            }
-            else
-            {
-                Debug.Log("False");
-				return false;
-            }
-        }
-		return false;
-    }
 }
