@@ -41,7 +41,7 @@ Tim` The Ring Master is dead.
         Tim` His body was found in the Circus Tent after our morning performance.
 
 ~ch1Evidence1 = 1
-+   +   +   [When?]
++   +   +   [What happened?]
             Tim` I- I don't know. Today just feels cursed.
 +   +   +   +   [(exit)] -> END
 

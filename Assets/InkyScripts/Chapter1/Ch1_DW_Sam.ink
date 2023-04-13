@@ -22,7 +22,8 @@ Sam` God is dead.
 +   +   +   +   +   + [My god...]
                         Sam` Not mine.
 +   +   +   +   +   +   + [When did things become a nightmare?]
-                            Sam` Earlier today... after he died. Something just... changed. -> END
+                            Sam` Earlier today... after he died. Something just... changed. 
++   +   +   +   +   +   +   + [(exit)] -> END
 
 ==Interrogate==
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
