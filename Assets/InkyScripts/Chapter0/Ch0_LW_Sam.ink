@@ -18,7 +18,7 @@ Player` How are you doing today?
 +   +   +   +   +   +   +   +   + [(continue)]
                                     Sam` She's been riding them all day today. Soon I'll need to get her off of that thing to go get dinner.
 +   +   +   +   +   +   +   +   +   + [What sort of things do you like to eat while your here?]
-                                        Sam` My kid loves the soft pretzels. She could eat million a million of them.
+                                        Sam` My kid loves the soft pretzels. She could eat millions and millions of them.
 
 +   +   +   +   +   +   +   +   +   +   + [Me too. Those things are delicious.]
                                             Player` I want to make them at home but I get scared about using Lye.

@@ -43,9 +43,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7c31a2fa02ae10c43b825ce773c78a0e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.025
-  m_Pitch: 1
-  Loop: 0
+  m_Volume: 0.1
+  m_Pitch: 0.47
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -170,8 +170,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 744f12d3ad2c11d4e8f20eb949fed323, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
-  m_Pitch: 1
+  m_Volume: 0.2
+  m_Pitch: 0.51
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -297,9 +297,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3838b726ca24a334582bf33aeea9f0a5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.025
-  m_Pitch: 1
-  Loop: 0
+  m_Volume: 0.05
+  m_Pitch: 0.25
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -391,7 +391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7574772736783089899}
   m_Layer: 0
-  m_Name: LW_Audio_Interior
+  m_Name: DW_Audio Outside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
