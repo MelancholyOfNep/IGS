@@ -11,7 +11,7 @@ public class JanitorLock : MonoBehaviour
 		if (!InvestigationManager.evidence.ContainsKey("ch2evidence0"))
 			InvestigationManager.evidence.Add("ch2evidence0", 0);
 		janitorDoor = GameObject.Find("JanitorDoorCollider");
-		if (InvestigationManager.evidence["ch2evidence0"] == 1)
+		if (InvestigationManager.evidence["ch2evidence0"] != 1)
 		{
             janitorDoor.GetComponent<ChangeScene>().enabled = false;
 			janitorDoor.GetComponent<MeshCollider>().isTrigger = false;
@@ -21,7 +21,6 @@ public class JanitorLock : MonoBehaviour
 
 	public void unlockDoors()
 	{
-		InvestigationManager.evidence["ch2evidence0"] = 0;
 		janitorDoor.GetComponent<ChangeScene>().enabled = true;
         janitorDoor.GetComponent<MeshCollider>().isTrigger = true;
     }
