@@ -1,15 +1,17 @@
 Steven` There you are!
 +   [Sorry for being late...]
     Steven` Don't worry, this place is hard to find sometimes. I'm so glad you could make it! The name's Steven.
-+   +   [Pleasure to meet you, Steven. And I'm happy to be here, too. I can never pass up on an opportunity to get paid while going to a carnival.]
-        Steven` Well, we're happy to have you here. And even if you're here for work, we want you to have a good time.
++   +   [Pleasure to meet you, Steven.]
+            Player` And I'm happy to be here, too. I can never pass up on an opportunity to get paid while going to a carnival.
 +   +   +   [(continue)]
+        Steven` Well, we're happy to have you here. And even if you're here for work, we want you to have a good time.
++   +   +   +   [(continue)]
             Steven` Here's an all-day pass, in case you want to do any activities or watch any of the shows. The whole place is yours to enjoy for the day.
-+   +   +   +   [Thanks. I feel like a kid again.]
++   +   +   +   +   [Thanks. I feel like a kid again.]
                 Steven` We specialize in making adults feel young again. Oh, and if there's any questions you'd like to ask anyone here, you're free to do so.
-+   +   +   +   +   [(continue)]
++   +   +   +   +   +   [(continue)]
                     Steven` Me, the employees, even the guests. Everyone will be happy to talk to you to help you write your piece.
-+   +   +   +   +   +   [Actually, I do have a quick question for you.] -> Choices
++   +   +   +   +   +   +   [Actually, I do have a quick question for you.] -> Choices
 
 ==Choices==
 Steven` Sure!
