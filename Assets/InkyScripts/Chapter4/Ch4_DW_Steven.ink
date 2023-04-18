@@ -8,13 +8,13 @@ Steven` Yes?
 + [(interrogate)] -> Interrogate
 
 ==Talk==
-Player` You deserve to know who murdered Reginald.
+You` You deserve to know who murdered Reginald.
 + [(continue)]
     Steven` Yeah, I do. But I don't think we'll ever figure it out.
 +   + [It was Jake.]
         Steven` What? Jake? But they were, like, friends.
 +   +   + [I know. But it was Jake.]
-            Player` I'm sorry I don't have anything else to say. I can't save you.
+            You` I'm sorry I don't have anything else to say. I can't save you.
 +   +   +   + [(continue)]
                 Steven` And you don't have to.
 +   +   +   +   + [(exit)] -> END
@@ -23,7 +23,7 @@ Player` You deserve to know who murdered Reginald.
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + { ch2Evidence1 == 1} [There's a missing knife at the game booths.] -> EvidenceB
 + [Never Mind]
-    Player` I think I know everything I need to know. I just need a find a way out...
+    You` I think I know everything I need to know. I just need a find a way out...
 +   + [(exit)] -> END
 
 ==EvidenceA==

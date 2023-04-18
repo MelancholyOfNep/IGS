@@ -37,7 +37,7 @@ Amanda` You know what?
 ==Choice1==
 Amanda` What? Where?
 + [Here, just in a different universe, I think. It feels like the whole world split in two.]
-    Player` Everyone here is happy, but you're all grieving on the other side.
+    You` Everyone here is happy, but you're all grieving on the other side.
 +   + [(continue)]
         Amanda` That's a whole lot to take in. I tend not to believe in the paranormal, but it's still awfully scary. -> END
 ==Choice2==
@@ -51,7 +51,7 @@ Amanda` Oh no, stomach ache?
 Amanda` Did you want to ask me something?
 + { ch2Evidence0 == 1} [Lost Key] -> EvidenceC
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    You` Maybe I need to find some more evidence...
 +   + [(exit)] -> END
 
 ==EvidenceC==

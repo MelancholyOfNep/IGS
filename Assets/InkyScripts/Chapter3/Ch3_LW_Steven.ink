@@ -16,7 +16,7 @@ Steven` Hi! What a great day! Is everything going well?
 +   +   + [I get that. Do you think you need a break?]
             Steven` No. I just need to work harder.
 +   +   +   + [That isn't always the answer, you know.]
-                Player` You can't just distract your stress with work. That just creates more stress.
+                You` You can't just distract your stress with work. That just creates more stress.
 +   +   +   +   + [(continue)]
                     Steven` People always say that, you know?
 +   +   +   +   +   + [(continue)]
@@ -28,7 +28,7 @@ Steven` Hi! What a great day! Is everything going well?
 ==Interrogate==
 + { ch1Evidence0 == 1} [Reginald was murdered] -> EvidenceA
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    You` Maybe I need to find some more evidence...
 +   + [(exit)] -> END
 
 ==EvidenceA==

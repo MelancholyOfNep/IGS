@@ -19,7 +19,7 @@ Tim` I can't make up my mind. I don't know if I should keep performing or not.
 + { ch3Evidence0 == 1} [Tim is innocent.] -> EvidenceB
 + { ch2Evidence3 == 1} [Tim's Flower] -> EvidenceC
 + [Never Mind]
-    Player` I think I know everything I need to know. I just need a find a way out...
+    You` I think I know everything I need to know. I just need a find a way out...
 +   + [(exit)] -> END
 
 ==EvidenceA==

@@ -7,7 +7,7 @@ Jake` What's up?
 + [(interrogate)] -> Interrogate
 
 ==Talk==
-Player` So, have you had a chance to ride that roller coaster yet?
+You` So, have you had a chance to ride that roller coaster yet?
 + [(continue)]
     Jake` I think I might be more of a coward than I thought.
 +   + [Me too. This place can be scary at times... Do you go to many other carnivals?]
@@ -19,7 +19,7 @@ Player` So, have you had a chance to ride that roller coaster yet?
 ==Interrogate==
 + { ch1Evidence3 == 1} [Jake's memory of attending the carnival was erased.] -> EvidenceA
 + [Never Mind]
-    Player` I wonder how much he remembers...
+    You` I wonder how much he remembers...
 +   + [(exit)] -> END
 
 ==EvidenceA==

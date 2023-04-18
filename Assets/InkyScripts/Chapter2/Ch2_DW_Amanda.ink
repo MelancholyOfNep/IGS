@@ -15,9 +15,9 @@ Amanda` Normally I would hide in my closet, but I can't seem to find the key.
 +   + [(continue)]
         Amanda` But do you mind if I theorize a bit?
 +   +   + [Please, you're more than welcome to theorize with me.]
-            Player` But are you at all concerned about theorizing with a stranger?
+            You` But are you at all concerned about theorizing with a stranger?
 +   +   +   + [(continue)]
-                Player` I mean, you only met me today. You don't actually know me.
+                You` I mean, you only met me today. You don't actually know me.
 +   +   +   +   + [(continue)]
                     Amanda` You're right, it is stupid, isn't it? But sometimes it's nice to just trust in something without really thinking about it?
 +   +   +   +   +   + [(continue)]
@@ -25,7 +25,7 @@ Amanda` Normally I would hide in my closet, but I can't seem to find the key.
 +   +   +   +   +   +   + [(continue)]
                             Amanda` So I think I'm okay choosing to trust you. And if that gets me killed, then I die. What happens happens.
 +   +   +   +   +   +   +   + [That's... Don't worry, Amanda. I'm not going to kill you. You or anyone.]
-                                Player` So what's your theory?
+                                You` So what's your theory?
 +   +   +   +   +   +   +   +   + [(continue)]
                                     Amanda` Well, I don't think I lost my keys.
 
@@ -39,7 +39,7 @@ Amanda` Did you want to ask me something?
 + { ch2Evidence2 == 1} [Gun in Janitor's Closet.] -> EvidenceB
 + { ch2Evidence0 == 1} [Lost Key] -> EvidenceC
 + [Never Mind]
-    Player` Maybe I can find more details about the murder...
+    You` Maybe I can find more details about the murder...
 +   + [(exit)] -> END
 
 ==EvidenceA==
@@ -53,7 +53,7 @@ Amanda` What do you mean there's blood outside the dressing rooms?
 +   +   +   + [(continue)]
                 Amanda` I... I don't remember seeing any blood, though.
 +   +   +   +   + [Thank you, that's all I need to know.]
-                    Player` That must mean the murder happened there. The murderer must have moved the body... for some reason.
+                    You` That must mean the murder happened there. The murderer must have moved the body... for some reason.
 +   +   +   +   +   + [(exit)] -> END
 
 ==EvidenceB==
@@ -64,9 +64,9 @@ Amanda` Oh my! That's not mine.
 +   + [I wasn't even here at the time of the murder.]
         Amanda` Right, yeah. I trust you. Do you trust me?
 +   +   + [I do, Amanda.]
-            Player` If the gun was found in your closet, the person who put it there would need that key. 
+            You` If the gun was found in your closet, the person who put it there would need that key. 
 +   +   +   + [(continue)]
-                Player` Amanda, you didn't have your key. You're innocent. It's proven now.
+                You` Amanda, you didn't have your key. You're innocent. It's proven now.
 +   +   +   +   + [(continue)]
                     Amanda` Oh, thank you!
 ~ ch2Evidence6 = 1

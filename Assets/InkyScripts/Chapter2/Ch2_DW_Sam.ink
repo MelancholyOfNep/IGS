@@ -12,7 +12,7 @@ Sam` I think I just need to talk to her.
 + [Your daughter?]
     Sam` Yeah, I hate seeing her so sad. It makes me feel like a bad parent.
 +   + [You're not a bad parent. A bad parent would have left a long time ago.]
-        Player` Even if you don't know what to do , just thinking about it shows you care.
+        You` Even if you don't know what to do , just thinking about it shows you care.
 +   +   + [(continue)]
             Sam` I know, but that's not a judgement I can rightfully make myself.
 +   +   +   + [To be fair, this isn't the type of thing any parent would expect to do.]
@@ -23,7 +23,7 @@ Sam` I think I just need to talk to her.
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + { ch1Evidence2 == 1} [Bethany amalgamized with a roller coaster.] -> EvidenceB
 + [Never Mind]
-    Player` I hope they're doing alright, considering...
+    You` I hope they're doing alright, considering...
 +   + [(exit)] -> END
 
 ==EvidenceA==
@@ -35,9 +35,9 @@ Sam` What?
 + [I'm so sorry... I don't even understand how something like this happens.]
     Sam` I- I don't know what to say.
 +   + [Listen, I know it's not my place to give the parent advice on how to parent.]
-        Player` But Bethany needs you. She's scared.
+        You` But Bethany needs you. She's scared.
 +   +   + [(continue)]
-            Player` I know you're scared too, but you can let her be scared alone.
+            You` I know you're scared too, but you can let her be scared alone.
 +   +   +   + [(continue)] -> SamMonologue
 ==SamMonologue==
 Sam` But what am I supposed to say?

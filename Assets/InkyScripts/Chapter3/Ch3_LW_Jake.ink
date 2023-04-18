@@ -27,7 +27,7 @@ Jake` Ugh, I'm thinking about heading out soon.
 ==Interrogate==
 + { ch1Evidence3 == 1} [Jake's memory of attending the carnival was erased.] -> EvidenceA
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    You` Maybe I need to find some more evidence...
 +   + [(exit)] -> END
 
 ==EvidenceA==

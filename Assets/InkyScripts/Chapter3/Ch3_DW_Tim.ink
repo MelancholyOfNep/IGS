@@ -17,7 +17,7 @@ Tim` I don't think I want to perform again.
 +   +   + [(continue)]
             Tim` I need some space to think before I do.
 +   +   +   + [That's a good idea.]
-                Player` Just don't let something sad get in the way of doing what you want to do.
+                You` Just don't let something sad get in the way of doing what you want to do.
 +   +   +   +   + [(exit)] -> END
 
 ==Interrogate==
@@ -25,7 +25,7 @@ Tim` I don't think I want to perform again.
 + { ch3Evidence0 == 1} [Tim is innocent.] -> EvidenceB
 + { ch2Evidence3 == 1} [Tim's Flower] -> EvidenceC
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    You` Maybe I need to find some more evidence...
 +   + [(exit)] -> END
 
 ==EvidenceA==

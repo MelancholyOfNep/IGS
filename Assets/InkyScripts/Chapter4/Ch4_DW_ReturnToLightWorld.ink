@@ -1,4 +1,4 @@
-Player` It worked, we're here!
+You` It worked, we're here!
 + [(continue)]
     Reginald` We're... What?
 +   + [This is the world that existed before the day you were murdered.]
@@ -8,4 +8,4 @@ Player` It worked, we're here!
 +   +   +   + [That's odd. This mirror looks normal now. The portal is gone.]
                 Reginald` I guess we're stuck here now.
 +   +   +   +   + [I wonder what life is like for the rest of them, though...]
-                    Player` Does their world still exist?
+                    You` Does their world still exist?

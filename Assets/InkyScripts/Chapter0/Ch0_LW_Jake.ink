@@ -6,7 +6,7 @@ Jake` This is my first time at the carnival.
 +   +   + [I bet. Have you been on any of the rides?]
             Jake` Rides? There are rides? This changes everything!
 +   +   +   + [Yeah, I keep looking at the roller coaster. I think I'll need to give it a ride...]
-                Player` ...for research.
+                You` ...for research.
 +   +   +   +   + [(continue)]
                     Jake` Well, I'm not waiting. I'll give it a go, too.
 +   +   +   +   +   +[(continue)]

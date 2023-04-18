@@ -23,7 +23,7 @@ Sam` Oh, hi.
 +   +   +   +   +   + [That sounds like the perfect answer.]
                         Sam` I still feel sick about it.
 +   +   +   +   +   +   + [I know, but you've done the best thing you can do.]
-                            Player` Even then, the best thing you can do can't always fix everything.
+                            You` Even then, the best thing you can do can't always fix everything.
 +   +   +   +   +   +   +   + [(continue)]
                                 Sam` But what if she never comes back?
 +   +   +   +   +   +   +   +   + [I don't know.]
@@ -36,7 +36,7 @@ Sam` Oh, hi.
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + { ch1Evidence2 == 1} [Bethany amalgamized with a roller coaster.] -> EvidenceB
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    You` Maybe I need to find some more evidence...
 +   + [(exit)] -> END
 
 ==EvidenceA==
@@ -48,9 +48,9 @@ Sam` What?
 + [I'm so sorry... I don't even understand how something like this happens.]
     Sam` I- I don't know what to say.
 +   + [Listen, I know it's not my place to give the parent advice on how to parent.]
-        Player` But Bethany needs you. She's scared.
+        You` But Bethany needs you. She's scared.
 +   +   + [(continue)]
-            Player` I know you're scared too, but you can let her be scared alone.
+            You` I know you're scared too, but you can let her be scared alone.
 +   +   +   + [(continue)] -> SamMonologue
 ==SamMonologue==
 Sam` But what am I supposed to say?

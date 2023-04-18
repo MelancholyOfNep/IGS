@@ -29,7 +29,7 @@ Sam` God is dead.
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + { ch1Evidence2 == 1} [Bethany amalgamized with a roller coaster.] -> EvidenceB
 + [Never Mind]
-    Player` I wonder where their daughter is...
+    You` I wonder where their daughter is...
 +   + [(exit)] -> END
 
 ==EvidenceA==
@@ -41,9 +41,9 @@ Sam` What?
 + [I'm so sorry... I don't even understand how something like this happens.]
     Sam` I- I don't know what to say.
 +   + [Listen, I know it's not my place to give the parent advice on how to parent.]
-        Player` But Bethany needs you. She's scared.
+        You` But Bethany needs you. She's scared.
 +   +   + [(continue)]
-            Player` I know you're scared too, but you can let her be scared alone.
+            You` I know you're scared too, but you can let her be scared alone.
 +   +   +   + [(continue)] -> SamMonologue
 ==SamMonologue==
 Sam` But what am I supposed to say?

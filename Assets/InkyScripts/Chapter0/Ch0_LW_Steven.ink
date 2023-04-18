@@ -2,7 +2,7 @@ Steven` There you are!
 +   [Sorry for being late...]
     Steven` Don't worry, this place is hard to find sometimes. I'm so glad you could make it! The name's Steven.
 +   +   [Pleasure to meet you, Steven.]
-            Player` And I'm happy to be here, too. I can never pass up on an opportunity to get paid while going to a carnival.
+            You` And I'm happy to be here, too. I can never pass up on an opportunity to get paid while going to a carnival.
 +   +   +   [(continue)]
         Steven` Well, we're happy to have you here. And even if you're here for work, we want you to have a good time.
 +   +   +   +   [(continue)]

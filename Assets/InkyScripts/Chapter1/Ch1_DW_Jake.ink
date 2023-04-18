@@ -10,7 +10,7 @@ Jake` What's up?
 ==Talk==
 Jake` Today just isn't a great day for the carnival...
 + [I can see that. The atmosphere got very dark here.]
-    Player` This is your first time at a carnival, isn't it?
+    You` This is your first time at a carnival, isn't it?
 +   + [(continue)]
         Jake` Who told you that?
 +   +   + [I must have heard it through the grapevine. So you've been here before?]
@@ -21,7 +21,7 @@ Jake` Today just isn't a great day for the carnival...
 ==Interrogate==
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + [Never Mind]
-    Player` I don't have anything to ask him about right now.
+    You` I don't have anything to ask him about right now.
 +   + [(exit)] -> END
 
 ==EvidenceA==

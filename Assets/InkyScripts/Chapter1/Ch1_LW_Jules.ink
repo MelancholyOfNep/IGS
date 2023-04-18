@@ -8,7 +8,7 @@ Jules` Did you need something?
 + [(interrogate)] -> Interrogate
 
 ==Talk==
-Player` So, would you rather be a clown or be fired?
+You` So, would you rather be a clown or be fired?
 +   [(continue)]
     Jules` That's your leading question?
 +   +   [Right, sorry. That's inappropriate of me. What I mean to ask is have you considered leaving if you have to be a clown?]
@@ -27,7 +27,7 @@ Player` So, would you rather be a clown or be fired?
 + { ch1Evidence6 == 1} [Jules heard a gunshot outside the dressing room.] -> EvidenceA
 + { ch1Evidence4 == 1} [Jules was alone in the dressing room during the morning performance.] -> EvidenceB
 + [Never Mind]
-    Player` I wonder where they were at the time of the murder...
+    You` I wonder where they were at the time of the murder...
 +   + [(exit)] -> END
 
 ==EvidenceA==

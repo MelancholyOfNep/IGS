@@ -1,8 +1,8 @@
-Player` Hey, there!
+You` Hey, there!
 + [(continue)]
     Bethany` WHY AM I STILL A ROLLER COASTER?
 +   + [That's a very good question. I wish I had an answer, too.]
-        Player` Good news is, since you're over here being a roller coaster, you're not a suspect.
+        You` Good news is, since you're over here being a roller coaster, you're not a suspect.
 +   +   + [(continue)]
             YOU AREN'T HELPING!!
 +   +   +   + [You're right, I'm sorry. Is there anything I can do for you?] -> Choices
@@ -13,5 +13,5 @@ Bethany` MAKE ME STOP BEING A ROLLER COASTER!
 ==NEXT==
 Bethany` I LIKE BEING A HUMAN!
 + [Me too. And this human likes food, so I could get you food. That might make you feel more human.]
-    Player` Oh, sorry. I don't think you can actually digest anything right now. Sorry!
+    You` Oh, sorry. I don't think you can actually digest anything right now. Sorry!
 +   + [(exit)] -> END

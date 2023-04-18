@@ -9,7 +9,7 @@ Steven` Yes?
 + [(interrogate)] -> Interrogate
 
 ==Talk==
-Player` Steven! What's going on?
+You` Steven! What's going on?
 +   [(continue)]
     Steven` Do I know you?
 +   +   [Yeah, I'm-]
@@ -31,7 +31,7 @@ Player` Steven! What's going on?
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + { ch2Evidence1 == 1} [There's a missing knife at the game booths.] -> EvidenceB
 + [Never Mind]
-    Player` I don't think I have anything to ask him about right now...
+    You` I don't think I have anything to ask him about right now...
 +   + [(exit)] -> END
 
 ==EvidenceA==

@@ -2,14 +2,14 @@
 -> Intro
 
 ==Intro==
-Player` Weird. My insides feel tingly. 
+You` Weird. My insides feel tingly. 
 +   [(continue)] -> Second
 ==Second==
-Player` I don't think I'll put that in the report.
+You` I don't think I'll put that in the report.
 +   [(continue)] -> Third
 ==Third==
-Player` Does the Ring Master know about this?
+You` Does the Ring Master know about this?
 +   [(continue)] -> Fourth
 ==Fourth==
-Player` When did it become dark outside? Did something... change?
+You` Wait, were the walls red before?
 +   [(exit)] -> END

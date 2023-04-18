@@ -8,7 +8,7 @@ Steven` Yes?
 + [(interrogate)] -> Interrogate
 
 ==Talk==
-Player` So how does it feel to be Ring Master of such a popular carnival?
+You` So how does it feel to be Ring Master of such a popular carnival?
 +   [(continue)]
     Steven` Is this off-book?
 +   +   [It can be, absolutely.]

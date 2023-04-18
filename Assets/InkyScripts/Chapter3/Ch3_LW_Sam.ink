@@ -19,9 +19,9 @@ Sam` I realize that eventually I'm going to have to get up again. My legs are so
 +   +   +   +   + [I think your're being hard on yourself. She's having a good time, isn't she?]
                     Sam` Sure, but she's having a good time with the coaster, not with me.
 +   +   +   +   +   + [I see. But you were the one who broguht her here, right?]
-                        Player` You let her reach the thing she wanted to do.
+                        You` You let her reach the thing she wanted to do.
 +   +   +   +   +   +   + [(continue)]
-                            Player` And even if you don't spend much time with her here, try talking with her in the car. let her know you care.
+                            You` And even if you don't spend much time with her here, try talking with her in the car. let her know you care.
 +   +   +   +   +   +   +   + [(continue)]
                             Sam` What, are you giving parenting advice?
 +   +   +   +   +   +   +   +   + [Oh, sorry.]
@@ -33,7 +33,7 @@ Sam` I realize that eventually I'm going to have to get up again. My legs are so
 ==Interrogate==
 + { ch1Evidence2 == 1} [Bethany amalgamized with a roller coaster.] -> EvidenceB
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    You` Maybe I need to find some more evidence...
 +   + [(exit)] -> END
 
 ==EvidenceB==

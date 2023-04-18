@@ -21,7 +21,7 @@ Jules` This is the most excited I've ever been to go home for the night.
 + { ch1Evidence6 == 1} [Jules heard a gunshot outside the dressing room.] -> EvidenceA
 + { ch1Evidence4 == 1} [Jules was alone in the dressing room during the morning performance.] -> EvidenceB
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    You` Maybe I need to find some more evidence...
 +   + [(exit)] -> END
 
 ==EvidenceA==

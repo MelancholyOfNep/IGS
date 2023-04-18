@@ -115,7 +115,7 @@ MonoBehaviour:
   conversationChapter1: {fileID: 4900000, guid: a56af590b6f17df4595c70077f489e39, type: 3}
   conversationChapter2: {fileID: 0}
   conversationChapter3: {fileID: 4900000, guid: 5d26c14525fc8be4dae0a0e24efd29b9, type: 3}
-  conversationChapter4: {fileID: 0}
+  conversationChapter4: {fileID: 4900000, guid: 370180038246ba54abed21544a9a5e0e, type: 3}
   conversationChapter5: {fileID: 4900000, guid: b077c719a39b3034880141fc3cfc15dd, type: 3}
   conversationChapter0Dark: {fileID: 0}
   conversationChapter1Dark: {fileID: 4900000, guid: eeb75fcdd954f394db45c45887b8e47a, type: 3}

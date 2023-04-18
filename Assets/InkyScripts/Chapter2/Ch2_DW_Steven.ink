@@ -8,7 +8,7 @@ Steven` Yes?
 + [(interrogate)] -> Interrogate
 
 ==Talk==
-Player` Hey, so how are you doing?
+You` Hey, so how are you doing?
 + [(continue)]
     Steven` Not good.
 +   + [Yeah, I'd imagine.]
@@ -40,14 +40,14 @@ Steven` People come here to be happy, not sad. I can help make them happy again.
 ==NEXT==
 Steven` Yeah, but-
 + [I get it. Thinking about what to do next can make the present less scary and sad.]
-Player` It gets your mind off things, and you think you feel better. But that feeling is temporary and you only end up hiding your sadness.
+You` It gets your mind off things, and you think you feel better. But that feeling is temporary and you only end up hiding your sadness.
 +   + [Just let yourself be sad.] -> END
 
 ==Interrogate==
 + { ch3Evidence1 == 1} [Amanda's key was stolen.] -> EvidenceA
 + { ch2Evidence1 == 1} [There's a missing knife at the game booths.] -> EvidenceB
 + [Never Mind]
-    Player` Maybe I need to find some more evidence...
+    You` Maybe I need to find some more evidence...
 +   + [(exit)] -> END
 
 ==EvidenceA==

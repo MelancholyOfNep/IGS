@@ -1,12 +1,12 @@
-Player` Ah!
+You` Ah!
 + [(continue)]
-    Player` I mean, h-hi!
+    You` I mean, h-hi!
 +   + [(continue)]
         Jake` You come in here a lot, don't you?
 +   +   + [Yeah, I love the... Mirrors. They're so... Reflective.]
             Jake` Why do you come in here so often?
 +   +   +   + [Well it's nice and quiet in here, away from the crowds.]
-                Player` It gives me time to think.
+                You` It gives me time to think.
 +   +   +   +   + [(continue)]
                     Jake` You need a lot of time to think, it seems.
 +   +   +   +   +   + [Don't we all? Why do you seem so worried about it?]
@@ -46,17 +46,17 @@ Jake` I know.
 +   +   +   +   +   +   +   + [(continue)]
                                 Jake` It's quite an ordeal, isn't it?
 +   +   +   +   +   +   +   +   + [They're suffering, all of them.]
-                                    Player` When you removed that day from the world, it broke. The rules of reality changed.
+                                    You` When you removed that day from the world, it broke. The rules of reality changed.
 +   +   +   +   +   +   +   +   +   + [(continue)]
-                                        Player` People morphed into animals and objects - their matter intertwined.
+                                        You` People morphed into animals and objects - their matter intertwined.
 +   +   +   +   +   +   +   +   +   +   + [(continue)]
-                                            Player` Children are screaming out for their parents, just begging to be free.
+                                            You` Children are screaming out for their parents, just begging to be free.
 +   +   +   +   +   +   +   +   +   +   +   + [(continue)]
-                                                Player` Whatever you wnated from this can't be worth the pain they're going through.
+                                                You` Whatever you wnated from this can't be worth the pain they're going through.
 +   +   +   +   +   +   +   +   +   +   +   +   + [(continue)]
                                                     Jake` We're all suffering. I wanted to save everyone from that.
 +   +   +   +   +   +   +   +   +   +   +   +   +   + [You murder the Ring Master. Don't act like you're a hero here.]
-                                                        Player` You haven't saved anyone from suffering. You've made their suffering worse.
+                                                        You` You haven't saved anyone from suffering. You've made their suffering worse.
 +   +   +   +   +   +   +   +   +   +   +   +   +   +   + [(continue)] -> JakeMonologue
 ==JakeMonologue==
 Jake` That's not my fault, that's his.
