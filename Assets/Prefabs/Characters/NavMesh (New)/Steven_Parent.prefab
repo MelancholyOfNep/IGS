@@ -243,9 +243,9 @@ MonoBehaviour:
   OnTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7946303120787092064}
+      - m_Target: {fileID: 2913675283463436686}
         m_TargetAssemblyTypeName: CommunicationSubject, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: StartConversation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
