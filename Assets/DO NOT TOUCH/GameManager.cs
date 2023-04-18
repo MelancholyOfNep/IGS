@@ -138,7 +138,13 @@ public class GameManager : MonoBehaviour
 		}
 		else if (chapter == 3)
 		{
-            List<string> pieces = new List<string>() { "ch2evidence0", "ch2evidence2", "ch2evidence3", "ch2evidence4", "ch2evidence5", "ch2evidence6", "ch2evidence7" };
+            List<string> pieces = new List<string>() { "ch3evidence0", "ch3evidence1" };
+
+			if (EvidenceCheck(pieces))
+			{
+				chapter = 4;
+				Debug.Log("Chapter 4 start!");
+			}
         }
 	}
 }

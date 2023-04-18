@@ -6,6 +6,8 @@ public class Ch4Trigger : MonoBehaviour
 {
 	GameManager manager;
 	CommunicationSubject communicator;
+	[SerializeField]
+	GameObject homDoor;
 
 	private void Awake()
 	{
@@ -13,15 +15,16 @@ public class Ch4Trigger : MonoBehaviour
 		if (manager.chapter != 3)
 			gameObject.SetActive(false);
 		communicator = gameObject.GetComponent<CommunicationSubject>();
+
 	}
+
     private void OnTriggerEnter(Collider other)
     {
-		communicator.ColdOpen();
+		if (manager.chapter == 3)
+		{
+			manager.ChapterCheck();
+        }
+		if (manager.chapter == 4)
+			homDoor.SetActive(false);
     }
-
-	public void Ch4Start()
-	{
-		manager.chapter = 4;
-		gameObject.SetActive(false);
-	}
 }
