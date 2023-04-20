@@ -96,6 +96,10 @@ public class CommunicationSubject : MonoBehaviour
 		{
 			story = new Story(conversationChapter3.text);
 		}
+		else if (manager.chapter == 4)
+		{
+			story = new Story(conversationChapter4.text);
+		}
 		CommunicationManager.Instance.LoadSubject(this);
 		CommunicationManager.Instance.StartConversation();
 		CommunicationManager.Instance.ChangeSecondsPerCharacter(secondsPerCharacter);
