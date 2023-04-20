@@ -25,7 +25,7 @@ MonoBehaviour:
     m_Value: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 0.36568174, g: 0.40506008, b: 0.4528302, a: 1}
+    m_Value: {r: 0.5691349, g: 0.65386707, b: 0.6886792, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
