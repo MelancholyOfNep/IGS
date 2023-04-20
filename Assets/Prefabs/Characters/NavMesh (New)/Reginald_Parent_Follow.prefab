@@ -126,9 +126,9 @@ MonoBehaviour:
   OnConversationStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5794471416857602182}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: StopWalking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -141,9 +141,9 @@ MonoBehaviour:
   OnConversationEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5794471416857602182}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RandomRoam, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: ContinueWalking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -196,9 +196,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5794471416857602185}
   - component: {fileID: 5794471418023933499}
-  - component: {fileID: 1794588384268289908}
+  - component: {fileID: 634007740782035985}
   m_Layer: 0
-  m_Name: Reginald_Parent_Chapter5
+  m_Name: Reginald_Parent_Follow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,10 +240,10 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 1.5
+  m_BaseOffset: 0.65
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1794588384268289908
+--- !u!114 &634007740782035985
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -766,7 +766,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7298665759957392812, guid: 0debac11f27d25f40a4eca55476c831c, type: 3}
   m_PrefabInstance: {fileID: 5948284123600131895}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &3778046547386284535
+--- !u!95 &506158421303781182
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
