@@ -15,6 +15,13 @@ public class RandomRoam : MonoBehaviour
     private bool isRotatingRight = false;
     private bool isWalking = false;
 
+    Animator anim;
+
+    private void Awake()
+    {
+        anim = GetComponentInChildren<Animator>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -78,11 +85,13 @@ public class RandomRoam : MonoBehaviour
         StopAllCoroutines();
         transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+        anim.speed = 0;
     }
 
     public void ContinueWalking()
     {
         isTalking = false;
+        anim.speed = 1;
         StartCoroutine(Wander());
     }
 }
