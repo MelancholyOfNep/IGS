@@ -76,7 +76,8 @@ public class RandomRoam : MonoBehaviour
     {
         isTalking = true;
         StopAllCoroutines();
-        transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform, Vector3.up);
+        transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
     }
 
     public void ContinueWalking()
