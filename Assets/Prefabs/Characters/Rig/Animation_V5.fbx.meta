@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1e9cdb76cf437694fb6c7ddb54c0eec6
+guid: 0880275a64777af4ea8d0a7a0f6fe3d5
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
@@ -32,40 +32,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Jules_Walking
-      takeName: DefaultSkeleton.001|Walking
-      internalID: -71166330619923076
+      name: Armature_Revised.001|Armature_Revised.001Action
+      takeName: Armature_Revised.001|Armature_Revised.001Action
+      internalID: 8016180689035404328
       firstFrame: 0
-      lastFrame: 56
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Jules_Walking (1)
-      takeName: DefaultSkeleton.001|Walking.001
-      internalID: 4709980840572711368
-      firstFrame: 0
-      lastFrame: 57
+      lastFrame: 41
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
