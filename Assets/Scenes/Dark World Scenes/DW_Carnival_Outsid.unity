@@ -11585,6 +11585,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 285497531}
     m_Modifications:
+    - target: {fileID: 2913675283463436686, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: OnConversationStart.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6406698590369018690, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
       propertyPath: m_RootOrder
       value: 2
