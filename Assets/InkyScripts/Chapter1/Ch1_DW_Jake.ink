@@ -14,7 +14,7 @@ Jake` Today just isn't a great day for the carnival...
 +   + [(continue)]
         Jake` Who told you that?
 +   +   + [I must have heard it through the grapevine. So you've been here before?]
-            Many times. The Ring Master and I go way back.
+            Jake` Many times. The Ring Master and I go way back.
 ~ ch1Evidence3 = 1
 +   +   +   + [(exit)] -> END
 

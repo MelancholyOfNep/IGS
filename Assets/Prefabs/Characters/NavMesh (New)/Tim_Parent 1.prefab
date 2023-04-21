@@ -116,7 +116,7 @@ MonoBehaviour:
   OnTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2695846083101880035}
         m_TargetAssemblyTypeName: CommunicationSubject, Assembly-CSharp
         m_MethodName: StartConversation
         m_Mode: 1
