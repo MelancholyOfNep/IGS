@@ -30,7 +30,7 @@ Amanda` Normally I would hide in my closet, but I can't seem to find the key.
                                     Amanda` Well, I don't think I lost my keys.
 
 +   +   +   +   +   +   +   +   +   + [You think they were stolen?]
-                                        Exactly. And if I'm right I want to know why.
+                                        Amanda` Exactly. And if I'm right I want to know why.
 +   +   +   +   +   +   +   +   +   +   + [(exit)] -> END
 
 ==Interrogate==

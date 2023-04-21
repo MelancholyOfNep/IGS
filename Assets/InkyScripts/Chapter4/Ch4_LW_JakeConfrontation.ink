@@ -36,9 +36,9 @@ Jake` I know.
 +   +   + [(continue)]
             Jake` Do you know how long it took to figure out how to split a timeline?
 +   +   +   + [(continue)]
-                Jake` I had to elarn how to separate a single day in it's own isolated world.
+                Jake` I had to elarn how to separate a single day in its own isolated world.
 +   +   +   +   + [(continue)]
-                    Jake` A whole day, ripped from this unverse and brought into it's own.
+                    Jake` A whole day, ripped from this unverse and brought into its own.
 +   +   +   +   +   + [(continue)]
                         Jake` All the grief they feel, repeaetd over and over. No "tomorrow" to run off to.
 +   +   +   +   +   +   + [(continue)]
@@ -115,6 +115,6 @@ Jake` I made my decision. And so long as another soul steps through that mirror,
 + [(continue)]
     Jake` Everyone will be better off for it, too. Never having to worry about that selfish, egotistical, good-for-nothing Ring Master.
 +   + [(continue)]
-        I never thought a journalist would be such a nuisance. Goodbye, and enjoy the universe you've spent so much time exploring. 
+        Jake` I never thought a journalist would be such a nuisance. Goodbye, and enjoy the universe you've spent so much time exploring. 
 +   +   + [(exit)] -> END
 
