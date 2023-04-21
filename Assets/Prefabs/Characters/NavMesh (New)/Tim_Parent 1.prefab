@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1934524795805176314}
   - component: {fileID: 5087993097171201442}
   - component: {fileID: 7206773183642140604}
-  - component: {fileID: 2594393552216174703}
   - component: {fileID: 6900593420689399932}
+  - component: {fileID: 2695846083101880035}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -98,7 +98,40 @@ CapsuleCollider:
   m_Height: 1.9999999
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2594393552216174703
+--- !u!114 &6900593420689399932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2170197516568287444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec18f3370f017c848b609159f49d5a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageOnPublish: 
+  ENABLED: 1
+  tags: []
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CommunicationSubject, Assembly-CSharp
+        m_MethodName: StartConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerUp:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2695846083101880035
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,17 +144,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsPerCharacter: 0.025
-  conversationChapter0: {fileID: 4900000, guid: 4577dbedff6650745995763756b6cd0c, type: 3}
-  conversationChapter1: {fileID: 4900000, guid: a56af590b6f17df4595c70077f489e39, type: 3}
+  conversationChapter0: {fileID: 4900000, guid: 83fc16e92b9f31449b7dc6b0987872a7, type: 3}
+  conversationChapter1: {fileID: 4900000, guid: 55a5054b63e9ff647bbe965cd66d58e5, type: 3}
   conversationChapter2: {fileID: 0}
-  conversationChapter3: {fileID: 4900000, guid: 5d26c14525fc8be4dae0a0e24efd29b9, type: 3}
+  conversationChapter3: {fileID: 4900000, guid: 1e91d6f7ea86c4643a0ad299cd6e03be, type: 3}
   conversationChapter4: {fileID: 0}
-  conversationChapter5: {fileID: 4900000, guid: b077c719a39b3034880141fc3cfc15dd, type: 3}
+  conversationChapter5: {fileID: 4900000, guid: 75bd0ccfce287854ca5bc6e61e060ab8, type: 3}
   conversationChapter0Dark: {fileID: 0}
-  conversationChapter1Dark: {fileID: 4900000, guid: eeb75fcdd954f394db45c45887b8e47a, type: 3}
-  conversationChapter2Dark: {fileID: 4900000, guid: 2bc70f79f059fe148b850ff06bab8c2c, type: 3}
-  conversationChapter3Dark: {fileID: 4900000, guid: 994ec66a630c11a479bf2ecd870ebf38, type: 3}
-  conversationChapter4Dark: {fileID: 4900000, guid: 0b74af3f0fe996f43b3397b1b3de2817, type: 3}
+  conversationChapter1Dark: {fileID: 4900000, guid: 0e32084874671d14b8c2db940e5402ea, type: 3}
+  conversationChapter2Dark: {fileID: 4900000, guid: f60941c010301d94f8799972d0315283, type: 3}
+  conversationChapter3Dark: {fileID: 4900000, guid: b418c635fdf67a04c808c920a0a58dfb, type: 3}
+  conversationChapter4Dark: {fileID: 4900000, guid: 60328cae93d294146b362883a3bc9b9a, type: 3}
   conversationChapter5Dark: {fileID: 0}
   OnConversationStart:
     m_PersistentCalls:
@@ -201,39 +234,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6900593420689399932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2170197516568287444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec18f3370f017c848b609159f49d5a6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messageOnPublish: 
-  ENABLED: 1
-  tags: []
-  OnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2594393552216174703}
-        m_TargetAssemblyTypeName: CommunicationSubject, Assembly-CSharp
-        m_MethodName: StartConversation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnTriggerUp:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &3610745733236853568
 GameObject:
   m_ObjectHideFlags: 0

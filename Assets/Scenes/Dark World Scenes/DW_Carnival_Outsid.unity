@@ -3059,7 +3059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a103e697b1f63c4db6d33257a626b2e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.16000006
+      value: -0.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a103e697b1f63c4db6d33257a626b2e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11321,6 +11321,14 @@ PrefabInstance:
     - target: {fileID: 2348845905518665443, guid: 9c6ddb56825898c45bb4d7130e87c3b5, type: 3}
       propertyPath: m_Name
       value: Bethany_Parent
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773709528333764813, guid: 9c6ddb56825898c45bb4d7130e87c3b5, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773709528333764813, guid: 9c6ddb56825898c45bb4d7130e87c3b5, type: 3}
+      propertyPath: OnConversationStart.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2348845905518665441, guid: 9c6ddb56825898c45bb4d7130e87c3b5, type: 3}
