@@ -7,6 +7,8 @@ public class ReginaldDeactivate : MonoBehaviour
 	GameManager manager;
 	[SerializeField]
 	GameObject reginald;
+	[SerializeField]
+	GameObject jake;
 
 	// Start is called before the first frame update
 	void Start()
@@ -21,5 +23,6 @@ public class ReginaldDeactivate : MonoBehaviour
 	public void ReginaldActivate()
 	{
 		reginald.SetActive(true);
+		jake.SetActive(false);
 	}
 }

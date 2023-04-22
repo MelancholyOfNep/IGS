@@ -13,18 +13,40 @@ public class Ch4Trigger : MonoBehaviour
 	{
 		manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
 		if (manager.chapter != 3)
-			gameObject.SetActive(false);
+        {
+            gameObject.SetActive(false);
+            gameObject.GetComponent<Collider>().enabled = false;
+        }
 		communicator = gameObject.GetComponent<CommunicationSubject>();
-
-	}
+    }
 
     private void OnTriggerEnter(Collider other)
     {
 		if (manager.chapter == 3)
 		{
-			manager.ChapterCheck();
+            List<string> pieces3 = new List<string>() { "ch3Evidence0", "ch3Evidence1" };
+
+            if (EvidenceCheck(pieces3))
+            {
+                manager.chapter = 4;
+                homDoor.SetActive(false);
+                Debug.Log("Chapter 4 start!");
+            }
         }
 		if (manager.chapter == 4)
 			homDoor.SetActive(false);
+    }
+    private bool EvidenceCheck(List<string> evidence)
+    {
+        foreach (string piece in evidence)
+        {
+            Debug.Log("ran");
+            if (!InvestigationManager.evidence.ContainsKey(piece) || InvestigationManager.evidence[piece] != 1)
+            {
+                Debug.Log("False");
+                return false;
+            }
+        }
+        return true;
     }
 }

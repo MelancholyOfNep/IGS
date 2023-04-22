@@ -379,15 +379,8 @@ public class FirstPersonController : MonoBehaviour
 
 		if(Input.GetKeyDown(KeyCode.Alpha9))
 		{
-			InvestigationManager.evidence.Add("ch1Evidence0", 1);
-            InvestigationManager.evidence.Add("ch1Evidence1", 1);
-            InvestigationManager.evidence.Add("ch1Evidence2", 1);
-            InvestigationManager.evidence.Add("ch1Evidence3", 1);
-            InvestigationManager.evidence.Add("ch1Evidence4", 1);
-            InvestigationManager.evidence.Add("ch1Evidence5", 1);
-            InvestigationManager.evidence.Add("ch1Evidence6", 1);
-            InvestigationManager.evidence.Add("ch1Evidence7", 1);
-			InvestigationManager.evidence.Add("ch1Evidence8", 1);
+			InvestigationManager.evidence.Add("ch3Evidence0", 1);
+            InvestigationManager.evidence.Add("ch3Evidence1", 1);
         }
 
 		if(Input.GetButtonDown("Save Debug"))
