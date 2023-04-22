@@ -11590,8 +11590,40 @@ PrefabInstance:
     m_TransformParent: {fileID: 285497531}
     m_Modifications:
     - target: {fileID: 2913675283463436686, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
-      propertyPath: OnConversationStart.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913675283463436686, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913675283463436686, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6406698590246143420}
+    - target: {fileID: 2913675283463436686, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6406698590246143419}
+    - target: {fileID: 2913675283463436686, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913675283463436686, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913675283463436686, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913675283463436686, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: OnConversationEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913675283463436686, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+      propertyPath: OnConversationStart.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6406698590369018690, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
       propertyPath: m_RootOrder
@@ -11673,8 +11705,19 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.045
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6161879901308803835, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+--- !u!208 &6406698590246143419 stripped
+NavMeshObstacle:
+  m_CorrespondingSourceObject: {fileID: 6091163913761642356, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+  m_PrefabInstance: {fileID: 6406698590246143418}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &6406698590246143420 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 6406698590285545322, guid: d8c8fbffe3d38d843a3a41fb401a2b67, type: 3}
+  m_PrefabInstance: {fileID: 6406698590246143418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6591620836435688968
 PrefabInstance:
   m_ObjectHideFlags: 0
