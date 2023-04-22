@@ -16,7 +16,13 @@ public class MenuChangeScene : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         if (eraseEvidence)
+        {
+            GameObject manager;
+            manager = GameObject.FindGameObjectWithTag("Manager");
+            Destroy(manager);
             InvestigationManager.evidence = new Dictionary<string, int>();
+        }
+            
         if (loadingGame)
         {
             GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>().Load();

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Manager
   - Evidence
+  - Reginald
   layers:
   - Default
   - TransparentFX

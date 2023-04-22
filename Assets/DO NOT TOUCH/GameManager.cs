@@ -4,6 +4,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
@@ -198,6 +199,7 @@ public class GameManager : MonoBehaviour
 				{
 					chapter = 5;
 					Debug.Log("Chapter 5 start!");
+					GameObject.Find("ReginaldSwitch").GetComponent<ReginaldDeactivate>().ReginaldActivate();
 				}
 				break;
         }
