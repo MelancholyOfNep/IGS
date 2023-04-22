@@ -113,38 +113,93 @@ public class GameManager : MonoBehaviour
 	public void ChapterCheck()
 	{
 		Debug.Log("checked");
+
+		/*
 		if (chapter == 1)
 		{
-			List<string> pieces = new List<string>() { "ch1Evidence0", "ch1Evidence1", "ch1Evidence2", "ch1Evidence3", "ch1Evidence4", "ch1Evidence5", "ch1Evidence6", "ch1Evidence7", "ch1Evidence8" };
+            List<string> pieces = new List<string>() { "ch1Evidence0", "ch1Evidence1", "ch1Evidence2", "ch1Evidence3", "ch1Evidence4", "ch1Evidence5", "ch1Evidence6", "ch1Evidence7", "ch1Evidence8" };
 
-			if (EvidenceCheck(pieces))
-			{
-				chapter = 2;
-				OnCh2Start.Invoke();
-			}
-		}
+            if (EvidenceCheck(pieces))
+            {
+                chapter = 2;
+                OnCh2Start.Invoke();
+            }
+        }
 		else if (chapter == 2)
 		{
-			// evidence 1 not needed because not incredibly relevant and also obscure.
-			List<string> pieces = new List<string>() { "ch2evidence0", "ch2evidence2", "ch2evidence3", "ch2evidence4", "ch2evidence5", "ch2evidence6", "ch2evidence7" };
+            // evidence 1 not needed because not incredibly relevant and also obscure.
+            List<string> pieces2 = new List<string>() { "ch2Evidence0", "ch2Evidence2", "ch2Evidence3", "ch2Evidence4", "ch2Evidence5", "ch2Evidence6", "ch2Evidence7" };
 
-			if (EvidenceCheck(pieces))
-			{
-				chapter = 3;
-				// need to arrange the Ch3Start event. currently not actually implemented.
-				OnCh3Start.Invoke();
-				Debug.Log("Chapter 3 start!");
-			}
-		}
+            if (EvidenceCheck(pieces2))
+            {
+                chapter = 3;
+                // need to arrange the Ch3Start event. currently not actually implemented.
+                OnCh3Start.Invoke();
+                Debug.Log("Chapter 3 start!");
+            }
+        }
 		else if (chapter == 3)
 		{
-            List<string> pieces = new List<string>() { "ch3evidence0", "ch3evidence1" };
+            List<string> pieces3 = new List<string>() { "chEvidence0", "ch3Evidence1" };
 
-			if (EvidenceCheck(pieces))
-			{
-				chapter = 4;
-				Debug.Log("Chapter 4 start!");
-			}
+            if (EvidenceCheck(pieces3))
+            {
+                chapter = 4;
+                Debug.Log("Chapter 4 start!");
+            }
+        }
+		else if (chapter == 4)
+		{
+            List<string> pieces4 = new List<string>() { "ch4Evidence0" };
+
+            if (EvidenceCheck(pieces4))
+            {
+                chapter = 5;
+                Debug.Log("Chapter 5 start!");
+            }
+        }*/
+
+		switch (chapter)
+		{
+			case 1:
+                List<string> pieces = new List<string>() { "ch1Evidence0", "ch1Evidence1", "ch1Evidence2", "ch1Evidence3", "ch1Evidence4", "ch1Evidence5", "ch1Evidence6", "ch1Evidence7", "ch1Evidence8" };
+
+                if (EvidenceCheck(pieces))
+                {
+                    chapter = 2;
+                    OnCh2Start.Invoke();
+                }
+				break;
+			case 2:
+                // evidence 1 not needed because not incredibly relevant and also obscure.
+                List<string> pieces2 = new List<string>() { "ch2Evidence0", "ch2Evidence2", "ch2Evidence3", "ch2Evidence4", "ch2Evidence5", "ch2Evidence6", "ch2Evidence7" };
+
+                if (EvidenceCheck(pieces2))
+                {
+                    chapter = 3;
+                    // need to arrange the Ch3Start event. currently not actually implemented.
+                    OnCh3Start.Invoke();
+                    Debug.Log("Chapter 3 start!");
+                }
+				break;
+			case 3:
+                List<string> pieces3 = new List<string>() { "chEvidence0", "ch3Evidence1" };
+
+                if (EvidenceCheck(pieces3))
+                {
+                    chapter = 4;
+                    Debug.Log("Chapter 4 start!");
+                }
+				break;
+			case 4:
+				List<string> pieces4 = new List<string>() { "ch4Evidence0" };
+
+				if(EvidenceCheck(pieces4))
+				{
+					chapter = 5;
+					Debug.Log("Chapter 5 start!");
+				}
+				break;
         }
 	}
 }
