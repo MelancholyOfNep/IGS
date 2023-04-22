@@ -20,5 +20,10 @@ public class OpeningMovieTimer : MonoBehaviour
         {
             SceneManager.LoadScene(MainMenu);
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(MainMenu);
+        }
     }
 }

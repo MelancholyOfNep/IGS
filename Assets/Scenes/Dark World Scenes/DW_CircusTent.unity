@@ -563,6 +563,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999996, z: 0.1590388}
   m_Center: {x: 0, y: 0, z: 0.06951939}
+--- !u!1001 &336692524
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3410542105496798261, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410542105496798267, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410542105496798267, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.075644
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410542105496798267, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1360209
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410542105496798267, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.707703
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410542105496798267, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410542105496798267, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410542105496798267, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410542105496798267, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410542105496798267, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410542105496798267, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410542105496798267, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
 --- !u!1 &367759600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +1969,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1525250330}
+        m_TargetAssemblyTypeName: TakeKey, Assembly-CSharp
+        m_MethodName: CollectKey
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTriggerUp:
     m_PersistentCalls:
       m_Calls: []
@@ -1928,6 +1997,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.08, y: 2.67, z: 8.41}
   m_Center: {x: 0, y: 0, z: 4.36}
+--- !u!114 &1525250330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525250327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c570f3ea8ffdc4e8ffeb293a1e4526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: {fileID: 1525250327}
 --- !u!1 &1546677916
 GameObject:
   m_ObjectHideFlags: 0

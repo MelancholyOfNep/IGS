@@ -10615,16 +10615,16 @@ Terrain:
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
-  m_DrawInstanced: 0
+  m_DrawInstanced: 1
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 0455c3d3969f7994ab5e01c7d82f8bf6, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: 5b6479ca628136f4db1ccee8234ce179, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
   m_ScaleInLightmap: 0.0256
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
+  m_GroupingID: 1
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
 --- !u!4 &2040318002
