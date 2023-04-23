@@ -869,7 +869,7 @@ PrefabInstance:
     - target: {fileID: -6463813039801078170, guid: 86ee3d28b3a79fa429d1d0a186d3c3b8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f32c4f02eec59c84a9a3a667c379e179, type: 2}
+      objectReference: {fileID: 2100000, guid: 84cbb2105cca71540b9ca01044a8d76c, type: 2}
     - target: {fileID: -2713610342760964062, guid: 86ee3d28b3a79fa429d1d0a186d3c3b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.44
@@ -1344,6 +1344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reginald: {fileID: 690329294}
+  jake: {fileID: 0}
 --- !u!4 &170779808
 Transform:
   m_ObjectHideFlags: 0
