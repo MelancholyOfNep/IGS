@@ -184,7 +184,7 @@ MonoBehaviour:
   secondsPerCharacter: 0.025
   conversationChapter0: {fileID: 4900000, guid: 30ebd6c43826c2d499241708ffe33548, type: 3}
   conversationChapter1: {fileID: 4900000, guid: 9e76ab09f1293e54b9548817e799bba1, type: 3}
-  conversationChapter2: {fileID: 0}
+  conversationChapter2: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
   conversationChapter3: {fileID: 4900000, guid: a1e788bb67f03ab45b1217e6188e5507, type: 3}
   conversationChapter4: {fileID: 4900000, guid: 2ff56fa3f31a2a2449fc9709cfcf0e92, type: 3}
   conversationChapter5: {fileID: 4900000, guid: f4203d723448ee145b2a60507528181f, type: 3}
