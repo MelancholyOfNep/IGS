@@ -19,7 +19,7 @@ Bethany` OH MY GOSH I LOVE THE ROLLER COASTER THEY GO UP AND DOWN AND UP AND DOW
 +   +   +   [(continue)]
             Bethany` I COULD RIDE ALL DAY IT'S SO FUN-
 +   +   +   +   [Yeah! There's lots of fun things to do... like the horseshow throwing over by the games!]
-                Player` I love horseshow throwing.
+                You` I love horseshow throwing.
 +   +   +   +   + [(continue)]
                     Bethany` ...
 +   +   +   +   +   + [(exit)] -> END

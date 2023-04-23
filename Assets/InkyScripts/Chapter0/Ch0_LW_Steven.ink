@@ -38,5 +38,6 @@ Steven` Before me? Well, we had the great...
 
 ==Outro==
 Steven` Well, I hope you enjoy your visit!
-
-+   [(exit)] -> END
++ [(continue)]
+    Steven` And if you want to get away for a moment, I recommend the Hall of Mirrors. It tends to be pretty quiet in there.
++   + [(exit)] -> END

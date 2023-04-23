@@ -74,6 +74,6 @@ Amanda` Oh my! That's not mine.
 
 ==EvidenceC==
 Amanda` Oh thank god, you found it!
-+ [Yeah, it was over by the dressing rooms.]
++ [Yeah, it was over in the Carnival Tent.]
     Amanda` I thought it was gone forever. Can we go open the janitor closet?
 +   + [Sure.] -> END

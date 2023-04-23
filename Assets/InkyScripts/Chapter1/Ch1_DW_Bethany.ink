@@ -10,6 +10,6 @@ Bethany` HELP!
 +   +   +   +   [And you don't have to. I promise. What's your name?]
                 Bethany` Be-B-Bethany.
 +   +   +   +   +   [Bethany, Bethany. Don't worry, you're going to be okay. Not every kid gets to become a roller coaster.]
-                    I DON'T WANNA BE A ROLLER COASTER!!!
+                    Bethany` I DON'T WANNA BE A ROLLER COASTER!!!
 ~ch1Evidence2 = 1
 +   +   +   +   +   +   [(exit)] -> END
