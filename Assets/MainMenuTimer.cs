@@ -13,13 +13,28 @@ public class MainMenuTimer : MonoBehaviour
     [SerializeField]
     private float timerElapse;
 
+    [SerializeField]
+    bool paused;
+
     private void Update()
     {
-        timerElapse += Time.deltaTime;
+        if (!paused)
+            timerElapse += Time.deltaTime;
 
         if (timerElapse > delayTime)
         {
             SceneManager.LoadScene(movie);
         }
+    }
+
+    public void Pause()
+    {
+        paused = true;
+        timerElapse = 0;
+    }
+
+    public void Unpause()
+    {
+        paused = false;
     }
 }
