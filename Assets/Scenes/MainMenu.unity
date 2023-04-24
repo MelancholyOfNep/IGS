@@ -493,15 +493,15 @@ RectTransform:
   m_GameObject: {fileID: 551451578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_Children: []
   m_Father: {fileID: 2109700425}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 453.6, y: 50}
+  m_AnchoredPosition: {x: 0, y: 120}
+  m_SizeDelta: {x: 1360.8, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &551451580
 MonoBehaviour:
@@ -523,7 +523,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Help goes here
+  m_text: 'Uncanny is a supernatural murder mystery game. Talking with characters
+    and using evidence to investigate is key to progressing the narrative. Evidence
+    can be discovered through conversation and through examining key items.
+
+    Once
+    evidence is discovered, it can be used to investigate certain characters.
+
+
+    CONTROLS
+
+    Press
+    "E" to talk with characters and to examine key items scattered around the world.
+
+    Look
+    Around with Mouse Controls and use WASD to move.
+
+    Press and Hold "Shift"
+    to sprint.
+
+    Right Click to Zoom In.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 56ebeeac7714c444d8ea3df7985e208f, type: 2}
   m_sharedMaterial: {fileID: -4005359561430658831, guid: 56ebeeac7714c444d8ea3df7985e208f, type: 2}
@@ -550,8 +569,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
