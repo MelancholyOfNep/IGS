@@ -189,8 +189,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -323,8 +323,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -523,26 +523,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Uncanny is a supernatural murder mystery game. Talking with characters
-    and using evidence to investigate is key to progressing the narrative. Evidence
-    can be discovered through conversation and through examining key items.
-
-    Once
-    evidence is discovered, it can be used to investigate certain characters.
-
-
-    CONTROLS
-
-    Press
-    "E" to talk with characters and to examine key items scattered around the world.
-
-    Look
-    Around with Mouse Controls and use WASD to move.
-
-    Press and Hold "Shift"
-    to sprint.
-
-    Right Click to Zoom In.'
+  m_text: "STORY\nUncanny is a supernatural murder mystery game. \nTalking with characters
+    and using evidence to investigate is key to progressing the narrative. \nEvidence
+    can be discovered through conversation and through examining key items.\nOnce
+    evidence is discovered, it can be used to investigate certain characters.\n\nCONTROLS\nPress
+    \"E\" to talk with characters and to examine key items scattered around the world.\nLook
+    Around with Mouse Controls and use WASD to move.\nPress and Hold \"Shift\" to
+    sprint.\nRight Click to Zoom In."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 56ebeeac7714c444d8ea3df7985e208f, type: 2}
   m_sharedMaterial: {fileID: -4005359561430658831, guid: 56ebeeac7714c444d8ea3df7985e208f, type: 2}
@@ -551,8 +538,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1336,8 +1323,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1616,8 +1603,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1887,7 +1874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
