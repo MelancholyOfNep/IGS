@@ -29,12 +29,12 @@ public class MainMenuTimer : MonoBehaviour
 
     public void Pause()
     {
-        paused = true;
-        timerElapse = 0;
-    }
-
-    public void Unpause()
-    {
-        paused = false;
+        if (!paused)
+        {
+            paused = true;
+            timerElapse = 0;
+        }
+        else
+            paused = false;
     }
 }
