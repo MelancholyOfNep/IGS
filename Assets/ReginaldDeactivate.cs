@@ -18,6 +18,11 @@ public class ReginaldDeactivate : MonoBehaviour
 		{
 			reginald.SetActive(false);
 		}
+		if (reginald.activeSelf)
+		{
+			if (jake != null)
+				jake.SetActive(false);
+		}
 	}
 
 	public void ReginaldActivate()

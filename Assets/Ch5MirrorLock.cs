@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ch5DWMirrorLock : MonoBehaviour
+public class Ch5MirrorLock : MonoBehaviour
 {
 	GameManager gameManager;
 	[SerializeField]
