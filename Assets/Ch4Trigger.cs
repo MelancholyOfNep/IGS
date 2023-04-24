@@ -22,19 +22,22 @@ public class Ch4Trigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-		if (manager.chapter == 3)
-		{
-            List<string> pieces3 = new List<string>() { "ch3Evidence0", "ch3Evidence1" };
-
-            if (EvidenceCheck(pieces3))
+        if (other.gameObject.tag == "Player")
+        {
+            if (manager.chapter == 3)
             {
-                manager.chapter = 4;
-                homDoor.SetActive(false);
-                Debug.Log("Chapter 4 start!");
+                List<string> pieces3 = new List<string>() { "ch3Evidence0", "ch3Evidence1" };
+
+                if (EvidenceCheck(pieces3))
+                {
+                    manager.chapter = 4;
+                    homDoor.SetActive(false);
+                    Debug.Log("Chapter 4 start!");
+                }
             }
+            if (manager.chapter == 4)
+                homDoor.SetActive(false);
         }
-		if (manager.chapter == 4)
-			homDoor.SetActive(false);
     }
     private bool EvidenceCheck(List<string> evidence)
     {

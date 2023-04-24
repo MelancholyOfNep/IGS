@@ -17,6 +17,7 @@ public class Ch4JakeConversation : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        communicator.ColdOpen();
+        if (other.gameObject.tag == "Player")
+            communicator.ColdOpen();
     }
 }

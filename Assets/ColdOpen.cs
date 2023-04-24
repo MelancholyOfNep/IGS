@@ -17,7 +17,8 @@ public class ColdOpen : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        communicator.ColdOpen();
+        if (other.gameObject.tag == "Player")
+            communicator.ColdOpen();
     }
 
     public void Chapter0Start()
