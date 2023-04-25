@@ -82,7 +82,7 @@ public class CommunicationSubject : MonoBehaviour
 	public void ColdOpen()
 	{
 		GameManager manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
-		
+		/*
 		if (manager.chapter == 0)
 		{
 			story = new Story(conversationChapter0.text);
@@ -100,6 +100,33 @@ public class CommunicationSubject : MonoBehaviour
 		{
 			story = new Story(conversationChapter4.text);
 		}
+		else if (manager.chapter == 5)
+		{
+			story = new Story(conversationChapter5.text);
+		}
+		*/
+		switch(manager.chapter)
+		{
+			case 0:
+				story = new Story(conversationChapter0.text);
+				break;
+			case 1:
+				story = new Story(conversationChapter1.text);
+				break;
+			case 2:
+				story = new Story(conversationChapter2.text);
+				break;
+			case 3:
+				story = new Story(conversationChapter3.text);
+				break;
+			case 4:
+				story =new Story(conversationChapter4.text);
+                break;
+			case 5:
+				story = new Story(conversationChapter5.text);
+                break;
+		}
+
 		CommunicationManager.Instance.LoadSubject(this);
 		CommunicationManager.Instance.StartConversation();
 		CommunicationManager.Instance.ChangeSecondsPerCharacter(secondsPerCharacter);
