@@ -8398,7 +8398,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3410542105496798260, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
       propertyPath: chapter
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3410542105496798261, guid: 77559aaa087f2254caf216e286306dcd, type: 3}
       propertyPath: m_Name
@@ -13901,6 +13901,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4606769448226833359, guid: d2ab4007849c8d6438ed35515a10fc0e, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4606769448639525681, guid: d2ab4007849c8d6438ed35515a10fc0e, type: 3}
       propertyPath: m_Name
       value: CanvasPlayer
