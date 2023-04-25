@@ -529,7 +529,9 @@ MonoBehaviour:
     evidence is discovered, it can be used to investigate certain characters.\n\nCONTROLS\nPress
     \"E\" to talk with characters and to examine key items scattered around the world.\nLook
     Around with Mouse Controls and use WASD to move.\nPress and Hold \"Shift\" to
-    sprint.\nRight Click to Zoom In."
+    sprint.\nRight Click to Zoom In.\n\n! IMPORTANT !\nPress \"F\" to open your notebook.
+    This is a very useful tool that will give you hints on what evidence you have
+    found and what evidence you still need to find to progress!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 56ebeeac7714c444d8ea3df7985e208f, type: 2}
   m_sharedMaterial: {fileID: -4005359561430658831, guid: 56ebeeac7714c444d8ea3df7985e208f, type: 2}
@@ -999,7 +1001,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: 417.8, y: 77.8}
+  m_SizeDelta: {x: 887.8, y: 77.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1133614966
 MonoBehaviour:
@@ -1594,7 +1596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Help & Controls
+  m_text: Help & Controls (Recommended)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 56ebeeac7714c444d8ea3df7985e208f, type: 2}
   m_sharedMaterial: {fileID: -4005359561430658831, guid: 56ebeeac7714c444d8ea3df7985e208f, type: 2}

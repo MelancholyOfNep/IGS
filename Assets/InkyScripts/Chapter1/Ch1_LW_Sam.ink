@@ -13,7 +13,8 @@ Sam` I could really go for a nap right now.
 +   + [(continue)]
         Sam` But I mean, she loves that roller coaster so much she would probably love to become a roller coaster herself.
 +   +   + [That's not funny.]
-            Sam` I think I stopped being funny when I became a parent. -> END
+            Sam` I think I stopped being funny when I became a parent.
++   +   +   +   [(exit)] -> END
             
 ==Interrogate==
 + { ch1Evidence2 == 1} [Bethany amalgamized with a roller coaster.] -> EvidenceB

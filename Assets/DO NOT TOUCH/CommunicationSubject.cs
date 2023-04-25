@@ -123,8 +123,13 @@ public class CommunicationSubject : MonoBehaviour
 				story =new Story(conversationChapter4.text);
                 break;
 			case 5:
-				story = new Story(conversationChapter5.text);
+				if (!manager.isDarkWorld)
+					story = new Story(conversationChapter5.text);
+				else
+					story = new Story(conversationChapter5Dark.text);
                 break;
+			default:
+				break;
 		}
 
 		CommunicationManager.Instance.LoadSubject(this);

@@ -17,7 +17,14 @@ public class ColdOpen : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (manager.chapter != 0)
+        {
+            gameObject.SetActive(false);
+            gameObject.GetComponent<Collider>().enabled = false;
+        }
+            
+
+        else if (other.gameObject.tag == "Player")
             communicator.ColdOpen();
     }
 

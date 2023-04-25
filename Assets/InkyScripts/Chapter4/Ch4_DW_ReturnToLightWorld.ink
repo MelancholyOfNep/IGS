@@ -9,3 +9,4 @@ You` It worked, we're here!
                 Reginald` I guess we're stuck here now.
 +   +   +   +   + [I wonder what life is like for the rest of them, though...]
                     You` Does their world still exist?
++   +   +   +   +   + [(exit)] -> END

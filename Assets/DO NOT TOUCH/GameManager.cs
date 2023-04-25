@@ -202,6 +202,8 @@ public class GameManager : MonoBehaviour
 					GameObject.Find("ReginaldSwitch").GetComponent<ReginaldDeactivate>().ReginaldActivate();
 				}
 				break;
+			default:
+				break;
         }
 	}
 }

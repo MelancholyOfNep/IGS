@@ -38,6 +38,7 @@ public class MenuControlsShow : MonoBehaviour
             exitButton.SetActive(false);
             helpText.SetActive(true);
             helpButton.GetComponentInChildren<TextMeshProUGUI>().text = "Back";
+            helpButton.GetComponentInChildren<TextMeshProUGUI>().color = Color.gray;
         }
         else
         {
@@ -47,7 +48,8 @@ public class MenuControlsShow : MonoBehaviour
             exitButton.SetActive(true);
             helpButton.SetActive(true);
             helpText.SetActive(false);
-            helpButton.GetComponentInChildren<TextMeshProUGUI>().text = "Help & Controls";
+            helpButton.GetComponentInChildren<TextMeshProUGUI>().text = "Help & Controls (Recommended)";
+            helpButton.GetComponentInChildren<TextMeshProUGUI>().color = Color.black;
         }
 
         inControlsMenu = !inControlsMenu;

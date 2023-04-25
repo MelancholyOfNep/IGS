@@ -42,6 +42,8 @@ public class FirstPersonController : MonoBehaviour
 	private float pitch = 0.0f;
 	private Image crosshairObject;
 
+	
+
 	#region Camera Zoom Variables
 
 	public bool enableZoom = true;
@@ -136,10 +138,21 @@ public class FirstPersonController : MonoBehaviour
 
 	#endregion
 
+	bool inventoryOpen;
+	[SerializeField]
+	GameObject inventoryUIObj;
+	InventoryUI invUIscript;
+	
+
 	private void Awake()
 	{
 		rb = GetComponent<Rigidbody>();
 		manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
+
+		inventoryUIObj = GameObject.FindGameObjectWithTag("InventoryUI");
+		invUIscript = inventoryUIObj.GetComponent<InventoryUI>();
+		inventoryUIObj.SetActive(false);
+		inventoryOpen = false;
 
 		crosshairObject = GetComponentInChildren<Image>();
 
@@ -370,18 +383,24 @@ public class FirstPersonController : MonoBehaviour
 		
 		if(Input.GetButtonDown("Debug View Inventory"))
 		{
+			/*
 			//CommunicationManager.Instance.isDarkWorld = true;
 			foreach(KeyValuePair<string, int> pair in InvestigationManager.evidence)
 			{
 				print(pair.Key + " " + pair.Value);
 			}
-		}
+			*/
 
-		if(Input.GetKeyDown(KeyCode.Alpha9))
+            Debug.Log("Inventory");
+            if (!manager.paused)
+                Inventory();
+        }
+
+		/*if(Input.GetKeyDown(KeyCode.Alpha9))
 		{
 			InvestigationManager.evidence.Add("ch3Evidence0", 1);
-            InvestigationManager.evidence.Add("ch3Evidence1", 1);
-        }
+			InvestigationManager.evidence.Add("ch3Evidence1", 1);
+		}*/
 
 		if(Input.GetButtonDown("Save Debug"))
 		{
@@ -399,42 +418,77 @@ public class FirstPersonController : MonoBehaviour
 
 		if(Input.GetButtonDown("Cancel"))
 		{
-			if(manager.paused)
+			if (!inventoryOpen)
 			{
-				Unpause();
+				if (manager.paused)
+				{
+					Unpause();
+				}
+				else
+				{
+					Pause();
+				}
 			}
 			else
-			{
-				Pause();
-			}
+				Inventory();
 		}
 	}
 
 	public void Unpause()
 	{
-        manager.pauseBG.SetActive(false);
-        Time.timeScale = 1.0f;
-        manager.paused = false;
-        playerCanMove = true;
-        cameraCanMove = true;
-        enableSprint = true;
-        enableCrouch = true;
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = false;
-    }
+		manager.pauseBG.SetActive(false);
+		Time.timeScale = 1.0f;
+		manager.paused = false;
+		playerCanMove = true;
+		cameraCanMove = true;
+		enableSprint = true;
+		enableCrouch = true;
+		Cursor.lockState = CursorLockMode.Confined;
+		Cursor.visible = false;
+	}
 
 	public void Pause()
 	{
-        manager.pauseBG.SetActive(true);
-        Time.timeScale = 0.0f;
-        manager.paused = true;
-        playerCanMove = false;
-        cameraCanMove = false;
-        enableSprint = false;
-        enableCrouch = false;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+		manager.pauseBG.SetActive(true);
+		Time.timeScale = 0.0f;
+		manager.paused = true;
+		playerCanMove = false;
+		cameraCanMove = false;
+		enableSprint = false;
+		enableCrouch = false;
+		Cursor.lockState = CursorLockMode.None;
+		Cursor.visible = true;
     }
+
+	public void Inventory()
+	{
+		if(!inventoryOpen)
+		{
+			inventoryUIObj.SetActive(true);
+			inventoryOpen = true;
+
+			playerCanMove = false;
+			cameraCanMove = false;
+			enableSprint = false;
+			enableCrouch = false;
+			enableHeadBob = false;
+
+			invUIscript.ShowInventory();
+		}
+		else
+		{
+            inventoryUIObj.SetActive(false);
+			inventoryOpen = false;
+
+			playerCanMove = true;
+			cameraCanMove = true;
+			enableSprint = true;
+			enableCrouch = true;
+			Cursor.lockState = CursorLockMode.Confined;
+			Cursor.visible = false;
+			enableHeadBob = true;
+		}
+	}
 
 	void FixedUpdate()
 	{
@@ -810,10 +864,10 @@ public class FirstPersonControllerEditor : Editor
 		this.serializedObject.ApplyModifiedProperties();
 		GUI.enabled = true;
 
-		#endregion
+        #endregion
 
-		//Sets any changes from the prefab
-		if (GUI.changed)
+        //Sets any changes from the prefab
+        if (GUI.changed)
 		{
 			EditorUtility.SetDirty(fpc);
 			Undo.RecordObject(fpc, "FPC Change");

@@ -10,8 +10,8 @@ public class ReginaldDeactivate : MonoBehaviour
 	[SerializeField]
 	GameObject jake;
 
-	// Start is called before the first frame update
-	void Start()
+    // Start is called before the first frame update
+    void Start()
 	{
 		manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
 		if (manager.chapter != 5)
