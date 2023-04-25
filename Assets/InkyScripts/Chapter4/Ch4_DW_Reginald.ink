@@ -4,7 +4,7 @@ You` What? Who are you?
 +   + [The day reset. Just like Jake said.]
         You` We're starting the day again. Is there anything I can do?
 +   +   + [(continue)]
-            Reginald` I'm sorry I didn't quite catch that. Now what were you doing here?
+            Reginald` I'm sorry, I didn't quite catch that. Now, what were you doing here?
 +   +   +   + [You're Reginald?]
                 Reginald` I'm Reginald. You're not very good at answering questions-
 +   +   +   +   + [The Ring Master. You're still alive?]
@@ -22,7 +22,7 @@ You` What? Who are you?
 +   +   +   +   +   +   +   +   +   +   + [Actually, I work in the "Fun and Entertainment" department. Today's a little weird.]
                                             Reginald` It sounds like it. What do you mean he trapped you here?
 +   +   +   +   +   +   +   +   +   +   +   + [Today was pulled out of the timeline.]
-                                                You` It's isolated from the rest ofthe world, and just keeps looping over and over again.
+                                                You` It's isolated from the rest of the world, and just keeps looping over and over again.
 +   +   +   +   +   +   +   +   +   +   +   +   + [(continue)]
                                                     You` There was a portal between the two worlds hidden in a mirror, but the mirror was smashed. And, well, I'm on this side of it now.
 +   +   +   +   +   +   +   +   +   +   +   +   +   + [(continue)]

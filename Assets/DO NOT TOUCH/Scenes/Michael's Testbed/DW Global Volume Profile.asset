@@ -23,15 +23,15 @@ MonoBehaviour:
     min: 1
   aspectMode:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 2
   targetRasterizationResolutionWidth:
     m_OverrideState: 1
-    m_Value: 256
+    m_Value: 400
     min: 1
     max: 4096
   targetRasterizationResolutionHeight:
     m_OverrideState: 1
-    m_Value: 224
+    m_Value: 300
     min: 1
     max: 4096
   isDepthBufferEnabled:

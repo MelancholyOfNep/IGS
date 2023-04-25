@@ -567,6 +567,7 @@ GameObject:
   - component: {fileID: 217105948}
   - component: {fileID: 217105947}
   - component: {fileID: 217105946}
+  - component: {fileID: 217105952}
   m_Layer: 0
   m_Name: Ch4ConversationTrigger
   m_TagString: Untagged
@@ -613,7 +614,19 @@ MonoBehaviour:
   conversationChapter5Dark: {fileID: 0}
   OnConversationStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5108231991489941830}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: set_speed
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnConversationEnd:
     m_PersistentCalls:
       m_Calls:
@@ -621,6 +634,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 217105952}
+        m_TargetAssemblyTypeName: ForceChangeScene, Assembly-CSharp
+        m_MethodName: ForceMoveScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -705,6 +730,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &217105952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217105945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d600dfa60196cf448429ceb6b1dd3cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelName: DW_HallofMirrors
+  nextScenePlayerLocation: DWMirror
 --- !u!1001 &240126648
 PrefabInstance:
   m_ObjectHideFlags: 0

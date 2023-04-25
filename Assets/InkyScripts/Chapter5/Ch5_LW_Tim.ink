@@ -8,5 +8,5 @@ Tim` Have you heard the news? Reginald is back?
 +   +   +   + [Sure. It was nice meeting you.]
                 Tim` Likewise! You will have to come back sometime to see the show.
 +   +   +   +   + [Sorry I missed it.]
-                    Tim` It's okay... Just an excuse to come back sometime. We all love having you here.
+                    Tim` It's okay... Just an excuse to come back sometime. We all loved having you here.
 +   +   +   +   +   + [(exit)] -> END

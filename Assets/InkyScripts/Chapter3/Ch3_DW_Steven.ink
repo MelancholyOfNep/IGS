@@ -31,7 +31,7 @@ You` I can't say I know what happens after death. It's nice to think that those 
 ==NEXT==
 Steven` I just don't like to think that those people are just gone.
 + [No one goes away forever.]
-    You` Someone will remember them, or something they did. SOme part of them will be left behind. 
+    You` Someone will remember them, or something they did. Some part of them will be left behind. 
 +   + [(exit)] -> END
 
 ==Interrogate==

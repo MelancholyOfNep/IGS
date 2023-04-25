@@ -1,6 +1,6 @@
-Steven` I'm just... So confused.
+Steven` I'm just... so confused.
 + [Because you forgot about Reginald?]
-    Steven` Yeah, Reginald. I-yeah he's the Ring Master.
+    Steven` Yeah, Reginald. I... yeah, he's the Ring Master.
 +   + [He is, did you think you were?]
         Steven` I was... I had been the Ring Master for years. But I don't think I actually was.
 +   +   + [(continue)]

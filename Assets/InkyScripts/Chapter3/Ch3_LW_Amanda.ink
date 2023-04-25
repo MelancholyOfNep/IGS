@@ -25,12 +25,12 @@ Amanda` You know what?
 +   +   +   +   +   +   +   + [I'm happy to hear that... Was that for the news article?]
                                 Amanda` No. Well, sure, you can use it. But it was for you.
 +   +   +   +   +   +   +   +   + [Me?]
-                                    Amanda` Yes, you. You've been looking more tired since this morning. And I know that work can be stressful sometimes, but I want you to know that it's okay to stop and breath.
+                                    Amanda` Yes, you. You've been looking more tired since this morning. And I know that work can be stressful sometimes, but I want you to know that it's okay to stop and breathe.
 +   +   +   +   +   +   +   +   +   + [(continue)]
                                         Amanda` Just enjoy where you are, take in the atmosphere. It's nice here, isn't it?
 +   +   +   +   +   +   +   +   +   +   + [Yeah, sure. But I don't know how much I can enjoy it. Things have been weird here.]
                                             Amanda` How so?
-+   +   +   +   +   +   +   +   +   +   +   + [It's... Complicated.] -> Choices
++   +   +   +   +   +   +   +   +   +   +   + [It's... complicated.] -> Choices
 ==Choices==
 + [There was a murder here.] -> Choice1
 + [I've just been feeling a little sick.] -> Choice2

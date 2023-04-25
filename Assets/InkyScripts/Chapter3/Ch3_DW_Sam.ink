@@ -27,7 +27,7 @@ Sam` Oh, hi.
 +   +   +   +   +   +   +   + [(continue)]
                                 Sam` But what if she never comes back?
 +   +   +   +   +   +   +   +   + [I don't know.]
-                                Sam` Yeah, I just can't le tmyself think about it.
+                                Sam` Yeah, I just can't let myself think about it.
 +   +   +   +   +   +   +   +   +   + [(continue)]
                                     Sam` But if it does happen, I guess I'll just have to stay by her side.
 +   +   +   +   +   +   +   +   +   +   + [I don't know what else you could do.] -> END
@@ -50,7 +50,7 @@ Sam` What?
 +   + [Listen, I know it's not my place to give the parent advice on how to parent.]
         You` But Bethany needs you. She's scared.
 +   +   + [(continue)]
-            You` I know you're scared too, but you can let her be scared alone.
+            You` I know you're scared too, but you can't let her be scared alone.
 +   +   +   + [(continue)] -> SamMonologue
 ==SamMonologue==
 Sam` But what am I supposed to say?

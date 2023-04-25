@@ -283,7 +283,7 @@ public class InventoryUI : MonoBehaviour
                 if (InvestigationManager.evidence["ch3Evidence0"] == 1 && InvestigationManager.evidence["ch3Evidence1"] == 1)
                 {
                     progHint.gameObject.SetActive(true);
-                    progHint.text = "I should head back to the light world to try to wrap my head around this.";
+                    progHint.text = "I should head back to the other world to try to wrap my head around this.";
                 }
                 break;
 

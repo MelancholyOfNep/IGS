@@ -5,7 +5,7 @@ You` Ah!
         Jake` You come in here a lot, don't you?
 +   +   + [Yeah, I love the... Mirrors. They're so... Reflective.]
             Jake` Why do you come in here so often?
-+   +   +   + [Well it's nice and quiet in here, away from the crowds.]
++   +   +   + [Well, it's nice and quiet in here, away from the crowds.]
                 You` It gives me time to think.
 +   +   +   +   + [(continue)]
                     Jake` You need a lot of time to think, it seems.
@@ -32,15 +32,15 @@ Jake` I know.
 + [What?]
     Jake` Who do you think broke the timeline apart?
 +   + [(continue)]
-        Jake` You try so hard to play detective yet you can't even figure out the answer to that question.
+        Jake` You try so hard to play detective, yet you can't even figure out the answer to that question.
 +   +   + [(continue)]
             Jake` Do you know how long it took to figure out how to split a timeline?
 +   +   +   + [(continue)]
-                Jake` I had to elarn how to separate a single day in its own isolated world.
+                Jake` I had to learn how to separate a single day in its own isolated world.
 +   +   +   +   + [(continue)]
-                    Jake` A whole day, ripped from this unverse and brought into its own.
+                    Jake` A whole day, ripped from this unverse, and brought into its own.
 +   +   +   +   +   + [(continue)]
-                        Jake` All the grief they feel, repeaetd over and over. No "tomorrow" to run off to.
+                        Jake` All the grief they feel, repeated over and over. No "tomorrow" to run off to.
 +   +   +   +   +   +   + [(continue)]
                             Jake` Their every hour passing alongside ours, not knowing they have no future.
 +   +   +   +   +   +   +   + [(continue)]
@@ -52,10 +52,10 @@ Jake` I know.
 +   +   +   +   +   +   +   +   +   +   + [(continue)]
                                             You` Children are screaming out for their parents, just begging to be free.
 +   +   +   +   +   +   +   +   +   +   +   + [(continue)]
-                                                You` Whatever you wnated from this can't be worth the pain they're going through.
+                                                You` Whatever you wanted from this can't be worth the pain they're going through.
 +   +   +   +   +   +   +   +   +   +   +   +   + [(continue)]
                                                     Jake` We're all suffering. I wanted to save everyone from that.
-+   +   +   +   +   +   +   +   +   +   +   +   +   + [You murder the Ring Master. Don't act like you're a hero here.]
++   +   +   +   +   +   +   +   +   +   +   +   +   + [You murdered the Ring Master. Don't act like you're a hero here.]
                                                         You` You haven't saved anyone from suffering. You've made their suffering worse.
 +   +   +   +   +   +   +   +   +   +   +   +   +   +   + [(continue)] -> JakeMonologue
 ==JakeMonologue==
@@ -89,7 +89,7 @@ Jake` That's not my fault, that's his.
 +   +   +   +   +   +   +   +   +   +   +   +   +   +   + [(continue)]
                                                             Jake` And if he wouldn't let me save lives, why should I give him the right to live?
 +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   + [(continue)]
-                                                                Jake` So I killed him, and by doing so created a universe where he never existed.
+                                                                Jake` So I killed him, and by doing so, created a universe where he never existed.
 +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   + [(continue)]
                                                                     Jake` No one has to remember him, and he can't hurt anyone ever again.
 +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   +   + [(continue)]

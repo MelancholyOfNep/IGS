@@ -16,7 +16,7 @@ Sam` I realize that eventually I'm going to have to get up again. My legs are so
             Sam` My legs are tired because I've been going around and enjoying things.
 +   +   +   + [I'm happy to hear that.]
                 Sam` It's great and all, but sometimes I feel like an absent parent, letting her ride that coaster all day.
-+   +   +   +   + [I think your're being hard on yourself. She's having a good time, isn't she?]
++   +   +   +   + [I think you're being hard on yourself. She's having a good time, isn't she?]
                     Sam` Sure, but she's having a good time with the coaster, not with me.
 +   +   +   +   +   + [I see. But you were the one who broguht her here, right?]
                         You` You let her reach the thing she wanted to do.

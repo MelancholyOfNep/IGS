@@ -11834,17 +11834,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6107505335409597496, guid: b345ef3f02d52124f9fdfb7ffa74176f, type: 3}
-      propertyPath: weight
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6107505335409597497, guid: b345ef3f02d52124f9fdfb7ffa74176f, type: 3}
       propertyPath: m_Name
       value: DW Global Volume
-      objectReference: {fileID: 0}
-    - target: {fileID: 6107505335409597497, guid: b345ef3f02d52124f9fdfb7ffa74176f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6107505335409597499, guid: b345ef3f02d52124f9fdfb7ffa74176f, type: 3}
       propertyPath: m_RootOrder

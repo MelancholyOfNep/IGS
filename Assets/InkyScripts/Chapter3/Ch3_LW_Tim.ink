@@ -9,7 +9,7 @@ You` Hey Tim!
 ==Choice1==
 Tim` Ugh, no. I'm still trying to process how that even happened.
 + [It's weird, isn't it?]
-    Tim` It's been bothering me all day. How could I forget something I care so much about. -> NEXT
+    Tim` It's been bothering me all day. How could I forget something I care so much about? -> NEXT
 ==Choice2==
 Tim` Oh, um. I went back right after the morning performance.
 + [You didn't wait until your next performance?]
