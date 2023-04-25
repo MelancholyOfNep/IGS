@@ -213,7 +213,7 @@ Transform:
   m_GameObject: {fileID: 5794471416857602182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -173.02, y: 0.25, z: -4.95}
-  m_LocalScale: {x: 0.81757, y: 0.81757, z: 0.81757}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6126643271595028700}
   - {fileID: 3899746866052240527}
@@ -256,6 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   follower: {fileID: 5794471418023933499}
   player: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1001 &5948284123600131895
 PrefabInstance:
   m_ObjectHideFlags: 0
