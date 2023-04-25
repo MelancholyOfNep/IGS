@@ -9,17 +9,17 @@ Amanda` Hi.
 + [(interrogate)] -> Interrogate
 
 ==Talk==
-Amanda` Normally I would hide in my closet, but I can't seem to find the key.
-+ [You mean you lost your key?]
-    Amanda` I mean... Maybe. I never lose my keys but I'd be willing to beleive just about anything today.
+Amanda` Normally, I would hide in my closet, but I can't seem to find the key.
++ [You mean, you lost your key?]
+    Amanda` I mean... Maybe. I never lose my keys, but I'd be willing to beleive just about anything today.
 +   + [(continue)]
         Amanda` But do you mind if I theorize a bit?
 +   +   + [Please, you're more than welcome to theorize with me.]
-            You` But are you at all concerned about theorizing with a stranger?
+            You` But aren't you at all concerned about theorizing with a stranger?
 +   +   +   + [(continue)]
                 You` I mean, you only met me today. You don't actually know me.
 +   +   +   +   + [(continue)]
-                    Amanda` You're right, it is stupid, isn't it? But sometimes it's nice to just trust in something without really thinking about it?
+                    Amanda` You're right, it is stupid, isn't it? But sometimes, isn't it nice to just trust in something without really thinking about it?
 +   +   +   +   +   + [(continue)]
                         Amanda` At this point, I feel like I should be dead, but I'm not. So if I die because I trusted someone I shouldn't have, then it's like that was supposed to have already happened anyway, right?
 +   +   +   +   +   +   + [(continue)]
@@ -30,7 +30,7 @@ Amanda` Normally I would hide in my closet, but I can't seem to find the key.
                                     Amanda` Well, I don't think I lost my keys.
 
 +   +   +   +   +   +   +   +   +   + [You think they were stolen?]
-                                        Amanda` Exactly. And if I'm right I want to know why.
+                                        Amanda` Exactly. And if I'm right, I want to know why.
 +   +   +   +   +   +   +   +   +   +   + [(exit)] -> END
 
 ==Interrogate==
@@ -43,13 +43,13 @@ Amanda` Did you want to ask me something?
 +   + [(exit)] -> END
 
 ==EvidenceA==
-Amanda` What do you mean there's blood outside the dressing rooms?
+Amanda` What do you mean, there's blood outside the dressing rooms?
 + [I think that's where the murder happened.]
     Amanda` I don't have to clean that, do I?
 +   + [You don't have to do a thing. I just wanted to know if you had been around there earlier.]
         Amanda` Like, this morning?
 +   +   + [Yes, I want to know if the blood is fresh or not.]
-            Amanda` Oh, right. I did make a roung over there this morning.
+            Amanda` Oh, right. I did make a round over there this morning.
 +   +   +   + [(continue)]
                 Amanda` I... I don't remember seeing any blood, though.
 +   +   +   +   + [Thank you, that's all I need to know.]

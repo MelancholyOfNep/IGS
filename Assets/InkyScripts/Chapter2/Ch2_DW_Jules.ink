@@ -13,7 +13,7 @@ Jules` Part of me just wants to know why the Ring Master decided to fire me.
 + [(Well, you couldn't really perform anymore, could you?)]
     Jules` Sure, but he was the one who made me a clown in the first place. 
 +   + [(continue)]
-        Jules` You can't just make someone a clown then fire them for for being a clown.
+        Jules` You can't just make someone a clown, then fire them for being a clown.
 +   +   + [(continue)]
             Jules` I just keep wondering if it's me. Was I the problem?
 +   +   +   + [(Why would you be the problem?)]
@@ -21,7 +21,7 @@ Jules` Part of me just wants to know why the Ring Master decided to fire me.
 +   +   +   +   + [(continue)]
                     Jules` And sure, I was upset when he made me a clown, but I don't blame him. It's not like I could do anything else. He was still giving me a chance.
 +   +   +   +   +   + [(continue)]
-                        Jules` But firing me? That's the first time I've actualy been mad at him. And that happened no the day he was murdered.
+                        Jules` But firing me? That's the first time I've actualy been mad at him. And that happened on the day he was murdered.
 +   +   +   +   +   +   + [(continue)]
                             Jules` It makes me feel sick. Sure I was mad at him, but someone was mad enough to kill him?
 +   +   +   +   +   +   +   + [(continue)]
@@ -41,7 +41,7 @@ Jules` You want to tell me something?
 
 ==EvidenceA==
 Jules` Stolen!? You mean someone took it?
-+   [That is what 'stolen' means. Do you know who did it?]
++   [That's what 'stolen' means. Do you know who did it?]
         Jules` I don't, but it wasn't me!
 +   +   [(continue)]
         Jules` The only thing I've stolen here are some kids' balloons, but only if they're being annoying.

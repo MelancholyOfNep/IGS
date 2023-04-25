@@ -4,7 +4,7 @@ You` Hey, there!
 +   + [That's a very good question. I wish I had an answer, too.]
         You` Good news is, since you're over here being a roller coaster, you're not a suspect.
 +   +   + [(continue)]
-            YOU AREN'T HELPING!!
+            Bethany` YOU AREN'T HELPING!!
 +   +   +   + [You're right, I'm sorry. Is there anything I can do for you?] -> Choices
 ==Choices==
 Bethany` MAKE ME STOP BEING A ROLLER COASTER!

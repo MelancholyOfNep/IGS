@@ -22,7 +22,7 @@ Amanda` I think I need a career change.
         Amanda` The Ring Master is dead.
 +   +   + [what?] -> NEXT
 + [Did something happen?]
-    Amanda` Yeah, something happening. The Ring Master was murdered. 
+    Amanda` Yeah, something's happening. The Ring Master was murdered. 
 +   +   [what?] -> NEXT
 
 ==NEXT==
@@ -47,7 +47,7 @@ Amanda` What do you mean there's blood outside the dressing rooms?
 +   + [You don't have to do a thing. I just wanted to know if you had been around there earlier.]
         Amanda` Like, this morning?
 +   +   + [Yes, I want to know if the blood is fresh or not.]
-            Amanda` Oh, right. I did make a roung over there this morning.
+            Amanda` Oh, right. I did make a round over there this morning.
 +   +   +   + [(continue)]
                 Amanda` I... I don't remember seeing any blood, though.
 +   +   +   +   + [Thank you, that's all I need to know.]

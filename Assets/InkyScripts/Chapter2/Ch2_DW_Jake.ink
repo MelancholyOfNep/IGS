@@ -18,7 +18,7 @@ Jake` I used to think this sort of place was an escape from the real world.
 +   +   +   + [(continue)]
                 Jake` And ever time they do, I think about all the people that could die because of their decision.
 +   +   +   +   + [(continue)]
-                    Jake` When I com here, the last thing I want to think about is death.
+                    Jake` When I come here, the last thing I want to think about is death.
 
 ~ ch2Evidence4 = 1
 +   +   +   +   +   + [(exit)] -> END

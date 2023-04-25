@@ -23,7 +23,7 @@ Jules` I don't know what to do anymore.
 ==NEXT==
 Jules` I was fired.
 + [What?]
-    Jules` Fired. Aex. Let go. Gone.
+    Jules` Fired. Axed. Let go. Gone.
 +   + [By who?]
         Jules` The Ring Master. But he's dead now, so I can't say anything mean about him.
 +   +   + [But you want to?]
@@ -33,7 +33,7 @@ Jules` I was fired.
 +   +   +   +   + [(continue)]
                     Jules` Everyone else was performing. I was just sitting there, alone.
 +   +   +   +   +   + [(continue)]
-                        Jules` I was a clown. The lowliest type of performer. And still, I was fired. Isn't that humiliating?
+                        Jules` I was a clown. The lowest type of performer. And still, I was fired. Isn't that humiliating?
 ~ch1Evidence4 = 1
 ~ch1Evidence5 = 1
 
@@ -60,7 +60,7 @@ Jules` Stolen!? You mean someone took it?
 +   +   +   +   +   [(exit)] -> END
 
 ==EvidenceB==
-Jules` I get it. Becasue if the body was found right after the performance, it makes sense that they were murdered during the performance. While everyone else was performing.
+Jules` I get it. Because if the body was found right after the performance, it makes sense that they were murdered during the performance. While everyone else was performing.
 +   [Right, everyone except you. You were in the dressing rooms alone, weren't you?]
         Jules` Are you accusing me of murder?
 

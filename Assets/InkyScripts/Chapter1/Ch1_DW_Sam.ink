@@ -67,7 +67,7 @@ Sam` But what am I supposed to say?
 + [You should tell her the truth.] -> EChoice1
 + [You should tell her It'll be okay.] -> EChoice2
 ==EChoice1==
-Sam` Maybe you're right. We're in hell, the least I can do is be honst with her. 
+Sam` Maybe you're right. We're in hell, the least I can do is be honest with her. 
 + [(exit)] -> END
 ==EChoice2==
 Sam` And lie? It might make her feel better, at least for a little bit.

@@ -12,7 +12,7 @@ Sam` I think I just need to talk to her.
 + [Your daughter?]
     Sam` Yeah, I hate seeing her so sad. It makes me feel like a bad parent.
 +   + [You're not a bad parent. A bad parent would have left a long time ago.]
-        You` Even if you don't know what to do , just thinking about it shows you care.
+        You` Even if you don't know what to do, just thinking about it shows you care.
 +   +   + [(continue)]
             Sam` I know, but that's not a judgement I can rightfully make myself.
 +   +   +   + [To be fair, this isn't the type of thing any parent would expect to do.]
@@ -59,9 +59,9 @@ Sam` But what am I supposed to say?
                                 Sam` So I either lie to my child or I accept defeat. I don't know which I should do. -> EChoices
 ==EChoices==
 + [You should tell her the truth.] -> EChoice1
-+ [You should tell her It'll be okay.] -> EChoice2
++ [You should tell her it'll be okay.] -> EChoice2
 ==EChoice1==
-Sam` Maybe you're right. We're in hell, the least I can do is be honst with her. 
+Sam` Maybe you're right. We're in hell, the least I can do is be honest with her. 
 + [(exit)] -> END
 ==EChoice2==
 Sam` And lie? It might make her feel better, at least for a little bit.

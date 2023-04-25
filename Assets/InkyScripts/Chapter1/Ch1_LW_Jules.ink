@@ -11,10 +11,10 @@ Jules` Did you need something?
 You` So, would you rather be a clown or be fired?
 +   [(continue)]
     Jules` That's your leading question?
-+   +   [Right, sorry. That's inappropriate of me. What I mean to ask is have you considered leaving if you have to be a clown?]
++   +   [Right, sorry. That's inappropriate of me. What I meant to ask is have you considered leaving if you have to be a clown?]
         Jules` Hmph... No.
 +   +   +   [Why not?]
-            Jules` Because as long as I'm still here my leg can heal. Maybe I can be an acrobat again.
+            Jules` Because as long as I'm still here, my leg can heal. Maybe I can be an acrobat again.
 +   +   +   +   [Did you and Tim ever have a chance to perform together?]
                 Jules` How do you think I broke my leg? They dropped me.
 +   +   +   +   +   [They DROPPED you?]
